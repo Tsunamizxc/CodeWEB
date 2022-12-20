@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="imagetoolbar" content="no" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <header class="header">
     <div class="container">
@@ -38,50 +40,229 @@
     </div>
   </header>
   <body>
-    <div class="hello">
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-center"
+      class="hello">
       <div class="container">
         <div class="hello__row">
           <div class="hello__row_content">
-            <div class="content">
-              <div class="content__title">
-                <h1>
-                  Разработка веб-сайтов
-                  <span style="color: #5e25c8">под ключ</span>
-                </h1>
-              </div>
-              <div class="content__discription">
-                <p>
-                  Создаем готовые сайты, разработка с нуля, продвижение в
-                  поисковых системах
-                </p>
-              </div>
-              <div class="content__button">
-                <a href="#" id="popup">Заказать</a>
-              </div>
+            <div class="content__title">
+              <h1>
+                Разработка веб-сайтов
+                <span style="color: #5e25c8">под ключ</span>
+              </h1>
+            </div>
+            <div class="content__discription">
+              <p>
+                Создаем готовые сайты, разработка с нуля, продвижение в
+                поисковых системах
+              </p>
+            </div>
+            <div class="content__button">
+              <a href="#" id="popup">Заказать</a>
             </div>
           </div>
           <div class="hello__row_image">
-            <div class="image__first-frame">
+            <div class="image__first-frame image-hello">
               <img src="image/1.png" alt="" />
             </div>
-            <div class="image__second-frame">
+            <div class="image__second-frame image-hello">
               <img src="image/3.png" alt="" />
             </div>
-            <div class="image__three-frame">
+            <div class="image__three-frame image-hello">
               <img src="image/2.png" alt="" />
             </div>
-            <div class="image__four-frame">
+            <div class="image__four-frame image-hello">
               <img src="image/4.png" alt="" />
             </div>
-            <div class="image__five-frame">
+            <div class="image__five-frame image-hello">
               <img src="image/5.png" alt="" />
             </div>
-            <div class="image__six-frame">
+            <div class="image__six-frame image-hello">
               <img src="image/6.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="about-us">
+      <img class="ellipse-ab-us-one" src="image/Ellipse-ab-us1.png" alt="" />
+      <img class="ellipse-ab-us-two" src="image/Ellipse-ab-us2.png" alt="" />
+      <div class="container">
+        <div class="about-us__row">
+          <div class="about-us__content">
+            <div data-aos="zoom-in-right" class="about-us__content_title">
+              <h2>Code <span style="color: #5e25c8">WEB</span></h2>
+            </div>
+            <div data-aos="fade-up" class="about-us__content_discription">
+              <p>
+                Это небольшая команда молодых и перспективных IT специалистов
+                готовых выполнять различные по тематике и сложности проекты в
+                области Web-разработки. <br />
+                Мы очень любим наше дело, и всегда заботимся о качестве нашего
+                продукта, в каждый наш проект мы вкладываем все свои силы и
+                стараемся сделать не обычный шаблонный сайт, а нечто особенное!
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="about-us__image">
+            <img src="image/about-us-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="container">
+        <div class="service__header">
+          <div class="service__header_title">
+            <h2>Какие услуги мы предлагаем?</h2>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="service__cards">
+          <div class="service__card visitBG">
+            <div class="service__card_key">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_title">
+              <h3>Сайт визитка</h3>
+            </div>
+            <div data-aos="fade-right" class="service__card_discription">
+              <p>
+                Представительский сайт небольших размеров с информацией об
+                организации, фирме, компании или частном лице.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="service__card_price">
+              <p>От 3.000 ₽</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_button">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="service__card lpBG">
+            <div data-aos="fade-left" class="service__card_key">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_title">
+              <h3>Landing Page</h3>
+            </div>
+            <div class="service__card_discription">
+              <p>
+                Креативная посадочная страница дляпрезентации товаров, услуг и
+                проведениярекламных компаний, акций.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="service__card_price">
+              <p>От 12.000 ₽</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_button">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="service__card mnogoBG">
+            <div data-aos="fade-right" class="service__card_key">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_title">
+              <h3>Многостраничный сайт</h3>
+            </div>
+            <div data-aos="fade-right" class="service__card_discription">
+              <p>
+                Многостраничный сайт с товарами или услугами для увеличения
+                клиентской базы и получения контактов клиента.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="service__card_price">
+              <p>От 18.000 ₽</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_button">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="service__card seoBG">
+            <div data-aos="fade-right" class="service__card_key hidden">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_title">
+              <h3>SEO оптимизация</h3>
+            </div>
+            <div data-aos="fade-right" class="service__card_discription">
+              <p>
+                Оптимизация вашего сайта с исправлением ошибок и большим списком
+                рекомендаций по улучшению сайта.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="service__card_price">
+              <p>От 5.000 ₽</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_button">
+              <a href="#">Заполнить бриф</a>
+            </div>
+          </div>
+          <div class="service__card tildaBG">
+            <div data-aos="fade-right" class="service__card_key">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_title">
+              <h3>Разработка сайта на Tilda</h3>
+            </div>
+            <div data-aos="fade-right" class="service__card_discription">
+              <p>
+                Креативная посадочная страница дляпрезентации товаров, услуг
+                выполненная на Tilda.
+              </p>
+            </div>
+            <div data-aos="fade-right" class="service__card_price">
+              <p>От 3.000 ₽</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_button">
+              <a href="#">Заполнить бриф</a>
+            </div>
+          </div>
+          <div class="service__card designBG">
+            <div data-aos="fade-left" class="service__card_key hidden">
+              <p>под ключ</p>
+            </div>
+            <div data-aos="fade-right" class="service__card_title">
+              <h3>Создание макета сайта</h3>
+            </div>
+            <div data-aos="fade-left" class="service__card_discription">
+              <p>
+                Предварительный дизайн, который определяет внешний вид сайта и
+                его функционал.
+              </p>
+            </div>
+            <div data-aos="fade-right" class="service__card_price">
+              <p>От 10.000 ₽</p>
+            </div>
+            <div data-aos="fade-left" class="service__card_button">
+              <a href="#">Заполнить бриф</a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="service__button">
+          <a href="#">Посмотреть всё</a>
+        </div>
+      </div>
+    </div>
+    <div class="works">
+      <div class="container">
+        <div class="works__header">
+          <div class="works__header_title">
+            <h2>Примеры наших
+              работ</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/script.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
