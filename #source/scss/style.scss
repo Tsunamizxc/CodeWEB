@@ -1,0 +1,202 @@
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.header {
+    // .header__row
+
+    &__row {
+        margin: 48px 0px 58px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // .header__row_logo
+
+        &_logo {
+            a {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+
+                color: #000000;
+            }
+        }
+
+        // .header__row_menu
+
+        &_menu {
+            width: 552px;
+            ul {
+                li {
+                    a {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+
+                        color: #000000;
+                        opacity: 0.7;
+                        transition: opacity 1s ease;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        // .header__row_button
+
+        &_button {
+            a {
+                padding: 18px 24px 18px 24px;
+                border: 1px solid #000000;
+                border-radius: 105px;
+                background-color: white;
+                // text
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+
+                color: #000000;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.ul-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.hello {
+    // .hello__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        // .hello__row_content
+
+        &_content {
+        }
+
+        // .hello__row_image
+
+        &_image {
+        }
+    }
+}
+
+.content {
+    // .content__title
+
+    &__title {
+        max-width: 573px;
+        margin-bottom: 24px;
+        h1 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 100.9%;
+            /* or 81px */
+
+            color: #101010;
+        }
+    }
+
+    // .content__discription
+
+    &__discription {
+        max-width: 573px;
+        margin-bottom: 36px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140.9%;
+            /* or 34px */
+
+            color: #000000;
+        }
+    }
+
+    // .content__button
+
+    &__button {
+        a {
+            display: inline-block;
+            padding: 25px 105px;
+            background: #5e25c8;
+            border-radius: 105px;
+            // text
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: -0.05em;
+
+            color: #ffffff;
+        }
+    }
+}
+.image {
+    position: relative;
+    // .image__first-frame
+
+    &__first-frame {
+        position: absolute;
+    }
+
+    // .image__second-frame
+
+    &__second-frame {
+        position: absolute;
+    }
+
+    // .image__three-frame
+
+    &__three-frame {
+        position: absolute;
+    }
+
+    // .image__four-frame
+
+    &__four-frame {
+        position: absolute;
+    }
+
+    // .image__five-frame
+
+    &__five-frame {
+        position: absolute;
+    }
+
+    // .image__six-frame
+
+    &__six-frame {
+        position: absolute;
+        animation: move 2s infinite ease alternate;
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-70px);
+    }
+}
