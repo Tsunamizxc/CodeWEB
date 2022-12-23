@@ -1,3 +1,6 @@
+
+
+
 body {
     scroll-behavior: smooth;
 }
@@ -118,6 +121,7 @@ body {
 // header finish
 
 .hello {
+    height: 76vh;
     // .hello__row
     margin-top: 150px;
     &__row {
@@ -127,7 +131,6 @@ body {
         // .hello__row_content
 
         &_content {
-            margin-bottom: 267px;
         }
 
         // .hello__row_image
@@ -660,7 +663,7 @@ body {
         margin-top: 100px;
         margin-bottom: 70px;
         display: flex;
-        margin-left: -140px;
+        margin-left: -150px;
         // .works__row_first-column
 
         &_first-column {
@@ -1326,7 +1329,7 @@ body {
 }
 .footer {
     position: relative;
-    padding: 49px 0px 98px 0px;
+    padding: 49px 0px 48px 0px;
     // .footer__row
     background: #0e153a;
 
@@ -1418,7 +1421,7 @@ body {
     position: absolute;
     top: 50px;
     right: 50px;
-    img{
+    img {
         animation: arrow 2s infinite ease alternate;
     }
     &:hover {
@@ -1433,4 +1436,10 @@ body {
     100% {
         transform: scaleY(10px);
     }
+}
+
+// first adaptive
+
+@media (min-width: 1400px) and (max-width: 1770px) {
+    @import "firstadap";
 }
