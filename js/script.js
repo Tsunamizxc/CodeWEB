@@ -103,13 +103,27 @@ let abUsVis = document.querySelector(".ab-us__visibled");
 let abUsHid = document.querySelector(".ab-us__hidden");
 abUsVis.addEventListener("click", function () {
   abUsHid.classList.toggle("visiblesss");
-  abUsVis.style.left = "70px";
+  
 
-  if (abUsVis.textContent === "Свернуть") {
+  if (abUsVis.innerHTML ===
+      '<p class="ab-us__visibled"> <img src="image/arrowback.png" alt=""></p>') {
     abUsVis.innerHTML =
       '<p class="ab-us__visibled"> <img src="image/Arrow3.png" alt=""></p>';
-    abUsVis.style.left = "40px";
+    abUsVis.style.left = "0px";
+    
   } else {
-    abUsVis.textContent = "Свернуть";
+    abUsVis.innerHTML =
+      '<p class="ab-us__visibled"> <img src="image/arrowback.png" alt=""></p>';
+    abUsVis.style.left = "0px";
   }
+});
+
+
+$('.stages__cards-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  dots: true,
+  arrows: true,
 });
