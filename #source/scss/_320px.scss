@@ -24,9 +24,7 @@ body {
     border: 1px solid gray;
   }
 }
-.burger {
-  display: none;
-}
+
 %bluebtn {
   display: inline-block;
   padding: 25px 105px;
@@ -50,7 +48,7 @@ body {
 }
 
 .container {
-  max-width: 1420px;
+  max-width: 260px;
   margin: 0 auto;
 }
 
@@ -59,9 +57,10 @@ body {
 }
 
 .header {
+  overflow: hidden;
+  position: relative;
   // .header__row
   &__row {
-    margin: 48px 0px 58px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,21 +70,27 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 35px;
+        font-size: 20px;
+        line-height: 24px;
+
         color: #000000;
       }
     }
     // .header__row_menu
     &_menu {
+      display: none;
       width: 552px;
       ul {
+        display: flex;
+        flex-direction: column;
         li {
           a {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            font-size: 16px;
+            line-height: 20px;
+
             color: #000000;
             opacity: 0.7;
             transition: opacity 0.4s ease;
@@ -98,6 +103,7 @@ body {
     }
     // .header__row_button
     &_button {
+      display: none;
       a {
         @extend %blackbtn;
       }
@@ -109,58 +115,201 @@ body {
   display: flex;
   justify-content: space-between;
 }
+// бургер старт
+.burger {
+  display: block;
+  top: 0px;
+  padding-top: 150px;
+  transition: all 1s ease;
+  left: -1000px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+.burger-title {
+  margin-bottom: 20px;
+  a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
 
+    color: #000000;
+  }
+}
+.burger-menu {
+  ul {
+    li {
+      margin-bottom: 10px;
+      a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #000000;
+        opacity: 0.7;
+        transition: opacity 0.4s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.range {
+  transition: all 1s ease;
+  left: 0px;
+}
+.burger-btn {
+  a {
+    display: inline-block;
+    padding: 10px 38px;
+    background: #5e25c8;
+    border-radius: 105px;
+    // text
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    &:hover {
+      background: #7644d3;
+    }
+    &:active {
+      background: #5800ff;
+    }
+  }
+}
+.header {
+  &__row {
+    &_burger-btn {
+      position: fixed;
+      z-index: 5;
+      right: 10px;
+      top: 1px;
+    }
+  }
+}
+#toggle {
+  display: none;
+}
+
+/**
+    Hamburger
+  **/
+.hamburger {
+  position: absolute;
+  top: 5.7em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 1em;
+  height: 1px;
+  border-radius: 1px;
+  background-color: black;
+  margin-top: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.firstLine {
+  transform: rotate(-45deg);
+  top: 5px;
+}
+.threeLine {
+  display: none;
+  transform: rotate(45deg);
+}
+.secondLine {
+  transform: rotate(45deg);
+}
+
+// бургер финиш
 // header finish
 .hello {
   // .hello__row
-  margin-top: 150px;
+  margin-top: 30px;
+  height: 76vh;
   &__row {
     display: flex;
     justify-content: space-between;
     // .hello__row_content
     &_content {
-      margin-bottom: 267px;
+      margin-bottom: 10px;
     }
     // .hello__row_image
     &_image {
+      left: 15px;
       position: relative;
     }
   }
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   // .content__title
   &__title {
-    max-width: 573px;
-    margin-bottom: 24px;
+    margin: 0 50px 15px 50px;
+    text-align: center;
+    width: 153px;
     h1 {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 80px;
+      font-size: 24px;
       line-height: 100.9%;
-      /* or 81px */
-      color: #101010;
+      /* or 24px */
+
+      text-align: center;
     }
   }
   // .content__discription
   &__discription {
-    max-width: 573px;
-    margin-bottom: 36px;
+    width: 198px;
+    margin: 0 30px 15px 30px;
+
+    text-align: center;
     p {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
-      font-size: 24px;
-      line-height: 140.9%;
-      /* or 34px */
-      color: #000000;
+      font-size: 14px;
+      line-height: 160.4%;
+      /* or 22px */
+
+      text-align: center;
     }
   }
   // .content__button
   &__button {
+    text-align: center;
     a {
-      @extend %bluebtn;
+      padding: 10px 38px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.05em;
+
+      color: #ffffff;
     }
   }
 }
@@ -173,16 +322,23 @@ body {
     animation: items 2s infinite ease alternate;
     z-index: 0;
     right: 1px;
+    top: 240px;
+    img {
+      max-width: 300px;
+    }
   }
   // .image__second-frame
   &__second-frame {
     position: absolute;
     animation: shadow 2s infinite ease alternate;
-    top: 240px;
+
     z-index: 0;
-    right: 530px;
+    top: 326px;
+    right: 192px;
     img {
       animation: shadow-cup 2s infinite ease alternate;
+
+      max-width: 300px;
     }
   }
   // .image__three-frame
@@ -190,34 +346,54 @@ body {
     position: absolute;
     animation: shadow 2s infinite ease alternate;
     right: 1px;
+    top: 240px;
     z-index: -1;
+    img {
+      max-width: 300px;
+    }
   }
   // .image__four-frame
   &__four-frame {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
+    top: 240px;
     z-index: 0;
+    img {
+      max-width: 300px;
+    }
   }
   // .image__five-frame
   &__five-frame {
     position: absolute;
     animation: cup 2s infinite ease alternate;
     right: 1px;
+    top: 240px;
     z-index: 0;
+    img {
+      max-width: 300px;
+    }
   }
   // .image__six-frame
   &__six-frame {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
+    top: 240px;
     z-index: 0;
+    img {
+      max-width: 300px;
+    }
   }
   &__seven-frame {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
+    top: 240px;
     z-index: 0;
+    img {
+      max-width: 300px;
+    }
   }
 }
 
@@ -250,10 +426,10 @@ body {
 
 @keyframes shadow-cup {
   0% {
-    transform: scale(1);
+    transform: scale(0.3);
   }
   100% {
-    transform: scale(0.5);
+    transform: scale(0.2);
   }
 }
 
@@ -265,15 +441,39 @@ body {
     transform: translateY(-20px);
   }
 }
+.ab-us__hidden {
+  transition: all 1s ease;
+  display: none;
 
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160.9%;
+  /* or 23px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.ab-us__visibled {
+  max-width: 200px;
+  left: 55px;
+  bottom: -20;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+}
 // about-us
 .about-us {
   // .about-us__row
   overflow: hidden;
   background: #1e0972;
   position: relative;
+  padding: 20px;
   &__row {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 0px 20px 0px;
@@ -287,22 +487,43 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 80px;
+        font-size: 24px;
         line-height: 100.9%;
-        /* or 81px */
+        /* or 24px */
+        text-align: center;
+
         color: #ffffff;
       }
     }
     // .about-us__content_discription
     &_discription {
-      max-width: 701.34px;
-      p {
+      position: relative;
+      text-align: center;
+      z-index: 5;
+      a {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 160.9%;
-        /* or 29px */
+        /* or 23px */
+
+        text-align: center;
+        padding-top: 20px;
+        color: #ffffff;
+      }
+      max-width: 219px;
+      p {
+        z-index: 5;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160.9%;
+        /* or 23px */
+
+        text-align: center;
+
         color: #ffffff;
       }
     }
@@ -310,39 +531,68 @@ body {
   // .about-us__image
   &__image {
     &_row {
+      margin-top: 50px;
       position: relative;
     }
   }
 }
 
 .image {
+  position: absolute;
+  z-index: 0;
   // .image__row
+
   &__row {
     // .image__row_first
     &_first {
+      z-index: 0;
       animation: ab-us1 5s infinite ease alternate;
+      img {
+        z-index: -1;
+        max-width: 300px;
+      }
     }
     // .image__row_second
     &_second {
       top: 0px;
+      z-index: 0;
       position: absolute;
       animation: ab-us2 3s infinite ease alternate;
+      img {
+        z-index: -1;
+        max-width: 300px;
+      }
     }
     // .image__row_three
     &_three {
+      img {
+        z-index: -1;
+        max-width: 300px;
+      }
       top: 0px;
+      z-index: 0;
       position: absolute;
       animation: ab-us3 5s infinite ease alternate;
     }
     // .image__row_four
     &_four {
+      img {
+        z-index: -1;
+        max-width: 300px;
+      }
       top: 0px;
+      z-index: 0;
       position: absolute;
       animation: ab-us4 2s infinite ease alternate;
     }
     // .image__row_five
     &_five {
+      img {
+        z-index: -1;
+        max-width: 300px;
+      }
       top: 0px;
+      z-index: 0;
       position: absolute;
       animation: ab-us5 2s infinite ease alternate;
     }
@@ -396,14 +646,17 @@ body {
 
 .ellipse-ab-us-one {
   position: absolute;
-  left: 0px;
+  left: -150px;
+  img {
+    width: 100px;
+  }
   bottom: 0px;
   animation: buble-one 5s infinite ease alternate;
 }
 
 .ellipse-ab-us-two {
   position: absolute;
-  right: 0px;
+  right: -150px;
   animation: buble-two 5s infinite ease alternate;
 }
 
@@ -427,6 +680,7 @@ body {
 
 // about-us finish
 .service {
+  overflow: hidden;
   margin-bottom: 98px;
   // .service__header
   &__button {
@@ -945,6 +1199,7 @@ body {
 
 // stages start
 .stages {
+  overflow: hidden;
   background: url(../image/stagesBG.png) no-repeat;
   &__header {
     // .stages__header_title
@@ -1036,11 +1291,13 @@ body {
 }
 
 .question {
+  overflow: hidden;
   padding: 90px 0px;
   // .question__row
   background: #f6f7fe;
   &__row {
     display: flex;
+    flex-direction: column;
     align-items: center;
     // .question__row_img
     &_img {
@@ -1096,6 +1353,7 @@ body {
 }
 
 .robots {
+  overflow: hidden;
   padding: 98px 0px;
   // .robots__row
   &__row {
@@ -1157,6 +1415,7 @@ body {
 }
 
 .footer {
+  overflow: hidden;
   position: relative;
   padding: 49px 0px 98px 0px;
   // .footer__row
@@ -1252,7 +1511,8 @@ body {
     transform: scaleY(10px);
   }
 }
-
-@media (min-width: 320px) and (max-width: 575px) {
-  @import "_320px";
+.visiblesss {
+  transition: all 1s ease;
+  display: block;
+  transform: scaleY(200px);
 }
