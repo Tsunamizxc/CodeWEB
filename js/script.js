@@ -107,8 +107,8 @@ abUsVis.addEventListener("click", function () {
 
   if (abUsVis.textContent === "Свернуть") {
     abUsVis.innerHTML =
-      ' <p class="ab-us__visibled" > Подробнее <img src="image/Arrow3.png" alt=""></p>';
-    abUsVis.style.left = "10px";
+      '<p class="ab-us__visibled"> <img src="image/Arrow3.png" alt=""></p>';
+    abUsVis.style.left = "40px";
   } else {
     abUsVis.textContent = "Свернуть";
   }
