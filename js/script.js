@@ -86,3 +86,30 @@ arrow.onclick = function () {
     behavior: "smooth",
   });
 };
+let burger = document.querySelector(".header__row_burger-btn");
+let burgerMenu = document.querySelector(".burger");
+let firstLines = document.querySelector(".top-bun");
+let secondLines = document.querySelector(".meat");
+let threeLines = document.querySelector(".bottom-bun");
+
+burger.addEventListener("click", function () {
+  firstLines.classList.toggle("firstLine");
+  secondLines.classList.toggle("secondLine");
+  threeLines.classList.toggle("threeLine");
+  burgerMenu.classList.toggle("range");
+});
+
+let abUsVis = document.querySelector(".ab-us__visibled");
+let abUsHid = document.querySelector(".ab-us__hidden");
+abUsVis.addEventListener("click", function () {
+  abUsHid.classList.toggle("visiblesss");
+  abUsVis.style.left = "70px";
+
+  if (abUsVis.textContent === "Свернуть") {
+    abUsVis.innerHTML =
+      '<p class="ab-us__visibled"> <img src="image/Arrow3.png" alt=""></p>';
+    abUsVis.style.left = "40px";
+  } else {
+    abUsVis.textContent = "Свернуть";
+  }
+});
