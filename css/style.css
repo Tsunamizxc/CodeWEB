@@ -2884,9 +2884,6 @@ body {
     line-height: 24px;
     color: #FFFFFF;
   }
-  .footer__row_email {
-    margin-top: 50px;
-  }
   .footer__row_email a {
     font-family: "Montserrat";
     font-style: normal;
@@ -2954,8 +2951,8 @@ body {
   }
   .scrollTop {
     position: absolute;
-    top: 145px;
-    right: 167px;
+    top: 15px;
+    right: 15px;
   }
   .scrollTop img {
     -webkit-animation: arrow 2s infinite ease alternate;
