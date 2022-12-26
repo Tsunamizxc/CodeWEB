@@ -91,13 +91,22 @@ let burgerMenu = document.querySelector(".burger");
 let firstLines = document.querySelector(".top-bun");
 let secondLines = document.querySelector(".meat");
 let threeLines = document.querySelector(".bottom-bun");
-
+let bgcgray = document.querySelector(".bgcgray");
 burger.addEventListener("click", function () {
   firstLines.classList.toggle("firstLine");
   secondLines.classList.toggle("secondLine");
   threeLines.classList.toggle("threeLine");
   burgerMenu.classList.toggle("range");
+  bgcgray.classList.toggle("visib");
 });
+bgcgray.addEventListener("click", function () {
+  firstLines.classList.toggle("firstLine");
+  secondLines.classList.toggle("secondLine");
+  threeLines.classList.toggle("threeLine");
+  burgerMenu.classList.toggle("range");
+  bgcgray.classList.toggle("visib");
+});
+
 
 let abUsVis = document.querySelector(".ab-us__visibled");
 let abUsHid = document.querySelector(".ab-us__hidden");
@@ -127,3 +136,17 @@ $('.stages__cards-slider').slick({
   dots: true,
   arrows: false,
 });
+
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
