@@ -102,7 +102,7 @@ body {
     // .header__row_button
     &_button {
       a {
-        @extend %blackbtn;
+     
       }
     }
   }
@@ -447,7 +447,7 @@ body {
     margin-top: 35px;
     text-align: center;
     a {
-      @extend %blackbtn;
+     
     }
   }
   &__header {
@@ -1303,6 +1303,9 @@ body {
   @import "_320px";
 };
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 772px) {
   @import "_575px";
+}
+@media (min-width: 773px) and (max-width: 992px) {
+  @import "_772px";
 }

@@ -2,7 +2,7 @@ body {
   scroll-behavior: smooth;
 }
 
-%blackbtn {
+%blackbtnMob {
   padding: 18px 24px 18px 24px;
   border: 1px solid #000000;
   border-radius: 105px;
@@ -25,10 +25,30 @@ body {
   }
 }
 
-
+%bluebtnMob {
+  display: inline-block;
+  padding: 25px 105px;
+  background: #5e25c8;
+  border-radius: 105px;
+  // text
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #7644d3;
+  }
+  &:active {
+    background: #5800ff;
+  }
+}
 
 .container {
-  max-width: 260px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -50,7 +70,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 30px;
         line-height: 24px;
 
         color: #000000;
@@ -85,7 +105,6 @@ body {
     &_button {
       display: none;
       a {
-        
       }
     }
   }
@@ -101,12 +120,12 @@ body {
   top: 0px;
   padding-top: 150px;
   transition: all 1s ease;
-  left: -1000px;
+  right: -1000px;
   text-align: center;
   position: fixed;
-  width: 100%;
+  width: 300px;
   height: 100%;
-  z-index: 10;
+  z-index: 30;
   background-color: white;
 }
 .burger-title {
@@ -144,10 +163,10 @@ body {
 }
 .range {
   transition: all 1s ease;
-  left: 0px;
+  right: 0px;
 }
 .burger-btn {
-  z-index: 11;
+  z-index: 28;
   a {
     display: inline-block;
     padding: 10px 38px;
@@ -174,9 +193,9 @@ body {
   &__row {
     &_burger-btn {
       position: fixed;
-      z-index: 15;
+      z-index: 36;
       right: 10px;
-      top: 1px;
+      top: -10px;
     }
   }
 }
@@ -185,8 +204,8 @@ body {
 }
 
 /**
-    Hamburger
-  **/
+      Hamburger
+    **/
 .hamburger {
   position: absolute;
   top: 5.4em;
@@ -195,7 +214,7 @@ body {
   margin-top: -45px;
   width: 3em;
   height: 45px;
-  z-index: 5;
+  z-index: 31;
 }
 
 .hamburger div {
@@ -210,14 +229,17 @@ body {
 
 .firstLine {
   transform: rotate(-45deg);
+  z-index: 36;
   top: 6.5px;
   left: 0px;
 }
 .threeLine {
+  z-index: 36;
   display: none;
   transform: rotate(45deg);
 }
 .secondLine {
+  z-index: 36;
   transform: rotate(45deg);
 }
 
@@ -226,17 +248,23 @@ body {
 .hello {
   // .hello__row
   margin-top: 30px;
-  height: 550px;
+  height: 700px;
   &__row {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     // .hello__row_content
     &_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 10px;
     }
     // .hello__row_image
     &_image {
-      left: 15px;
+      top: -20px;
+      left: 220px;
       position: relative;
     }
   }
@@ -244,18 +272,18 @@ body {
 
 .content {
   display: flex;
-  justify-content: space-between;
+
   flex-direction: column;
   // .content__title
   &__title {
-    margin: 0 50px 15px 50px;
     text-align: center;
-    width: 153px;
+
     h1 {
+      max-width: 460px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 36px;
       line-height: 100.9%;
       /* or 24px */
 
@@ -264,15 +292,15 @@ body {
   }
   // .content__discription
   &__discription {
-    width: 198px;
-    margin: 0 30px 15px 30px;
+    margin: 0 30px 24px 30px;
 
     text-align: center;
     p {
+      max-width: 444px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 24px;
       line-height: 160.4%;
       /* or 22px */
 
@@ -283,11 +311,11 @@ body {
   &__button {
     text-align: center;
     a {
-      padding: 10px 38px;
+      padding: 25px 97px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 22px;
       line-height: 16px;
       letter-spacing: -0.05em;
 
@@ -304,9 +332,9 @@ body {
     animation: items 2s infinite ease alternate;
     z-index: 0;
     right: 1px;
-    top: 240px;
+    top: 20px;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   // .image__second-frame
@@ -315,12 +343,12 @@ body {
     animation: shadow 2s infinite ease alternate;
 
     z-index: 0;
-    top: 326px;
-    right: 192px;
+    top: 156px;
+    right: 305.5px;
     img {
       animation: shadow-cup 2s infinite ease alternate;
 
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   // .image__three-frame
@@ -328,10 +356,10 @@ body {
     position: absolute;
     animation: shadow 2s infinite ease alternate;
     right: 1px;
-    top: 240px;
+    top: 20px;
     z-index: -1;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   // .image__four-frame
@@ -339,10 +367,10 @@ body {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
-    top: 240px;
+    top: 20px;
     z-index: 0;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   // .image__five-frame
@@ -350,10 +378,10 @@ body {
     position: absolute;
     animation: cup 2s infinite ease alternate;
     right: 1px;
-    top: 240px;
+    top: 20px;
     z-index: 0;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   // .image__six-frame
@@ -361,20 +389,20 @@ body {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
-    top: 240px;
+    top: 20px;
     z-index: 0;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
   &__seven-frame {
     position: absolute;
     animation: blocks 2s infinite ease alternate;
     right: 1px;
-    top: 240px;
+    top: 20px;
     z-index: 0;
     img {
-      max-width: 300px;
+      max-width: 450px;
     }
   }
 }
@@ -425,12 +453,12 @@ body {
 }
 .ab-us__hidden {
   transition: all 1s ease;
-  display: none;
+  display: block;
 
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 160.9%;
   /* or 23px */
 
@@ -445,7 +473,7 @@ body {
   overflow: hidden;
   background: #1e0972;
   position: relative;
-  padding: 20px;
+  padding: 60px;
   &__row {
     display: flex;
     flex-direction: column;
@@ -462,7 +490,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 36px;
         line-height: 100.9%;
         /* or 24px */
         text-align: center;
@@ -487,13 +515,12 @@ body {
         padding-top: 20px;
         color: #ffffff;
       }
-      max-width: 219px;
       p {
         z-index: 5;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 160.9%;
         /* or 23px */
 
@@ -524,7 +551,7 @@ body {
       animation: ab-us1 5s infinite ease alternate;
       img {
         z-index: -1;
-        max-width: 300px;
+        max-width: 350px;
       }
     }
     // .image__row_second
@@ -535,14 +562,14 @@ body {
       animation: ab-us2 3s infinite ease alternate;
       img {
         z-index: -1;
-        max-width: 300px;
+        max-width: 350px;
       }
     }
     // .image__row_three
     &_three {
       img {
         z-index: -1;
-        max-width: 300px;
+        max-width: 350px;
       }
       top: 0px;
       z-index: 0;
@@ -553,7 +580,7 @@ body {
     &_four {
       img {
         z-index: -1;
-        max-width: 300px;
+        max-width: 350px;
       }
       top: 0px;
       z-index: 0;
@@ -564,7 +591,7 @@ body {
     &_five {
       img {
         z-index: -1;
-        max-width: 300px;
+        max-width: 350px;
       }
       top: 0px;
       z-index: 0;
@@ -663,11 +690,11 @@ body {
     text-align: center;
     a {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 30px 40px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 10px;
+      font-size: 20px;
       line-height: 12px;
       letter-spacing: -0.05em;
 
@@ -683,7 +710,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 32px;
         line-height: 100.9%;
         /* or 24px */
 
@@ -701,8 +728,9 @@ body {
   }
   // .service__card
   &__card {
-    max-width: 400px;
-    padding: 15px 20px;
+    width: 310px;
+
+    padding: 15px 15px;
     border: 1px solid #666666;
     border-radius: 25px;
     margin-bottom: 25px;
@@ -710,13 +738,13 @@ body {
     &_key {
       display: inline-block;
       background: #ebebeb;
-      margin-bottom: 12px;
+      margin-bottom: 32px;
       p {
-        padding: 5px 8px;
+        padding: 8px 16px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 160.9%;
         /* or 16px */
 
@@ -725,12 +753,12 @@ body {
     }
     // .service__card_title
     &_title {
-      margin-bottom: 12px;
+      margin-bottom: 22px;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 20px;
 
         color: #000000;
@@ -738,12 +766,13 @@ body {
     }
     // .service__card_discription
     &_discription {
-      margin-bottom: 12px;
+      height: 80px;
+      margin-bottom: 32px;
       p {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 160.9%;
         /* or 16px */
 
@@ -754,12 +783,12 @@ body {
     }
     // .service__card_price
     &_price {
-      margin-bottom: 12px;
+      margin-bottom: 32px;
       p {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 20px;
 
         color: #000000;
@@ -768,13 +797,14 @@ body {
     // .service__card_button
     &_button {
       text-align: center;
+      margin-bottom: 10px;
       a {
-        padding: 10px 38px;
+        padding: 20px 58px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 18px;
         letter-spacing: -0.05em;
 
         color: #ffffff;
@@ -808,6 +838,7 @@ body {
 }
 
 .works {
+  padding: 50px 0px 0px 0px;
   overflow: hidden;
   position: relative;
   background: linear-gradient(
@@ -818,13 +849,21 @@ body {
   );
   &__row {
     display: flex;
-    flex-direction: column;
+
     margin-left: 0px;
     margin-top: 36px;
+    margin: 0 auto;
     &_first-column {
+      margin-left: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     &_two-column {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -836,7 +875,7 @@ body {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 34px;
       line-height: 100.9%;
       /* or 24px */
 
@@ -856,27 +895,28 @@ body {
   &__card-second {
     margin-left: -20px;
     position: relative;
+    z-index: 10;
     &_content {
     }
 
     &_img {
       img {
-        max-width: 300px;
+        max-width: 350px;
       }
     }
 
     &_text {
       display: none;
       position: absolute;
-      top: 60px;
-      left: 50px;
+      top: 110px;
+      left: 80px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -887,7 +927,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 22px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -899,32 +939,36 @@ body {
   }
 
   &__three-card {
+    position: relative;
+    z-index: 10;
     margin-left: -20px;
     margin-bottom: 20px;
   }
 
   &__card-three {
+    z-index: 10;
     &_content {
     }
 
     &_img {
+      z-index: 10;
       img {
-        max-width: 300px;
+        max-width: 350px;
       }
     }
 
     &_text {
       display: none;
       position: absolute;
-      top: 60px;
-      left: 70px;
+      top: 120px;
+      left: 90px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -935,7 +979,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 22px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -947,32 +991,35 @@ body {
   }
 
   &__four-card {
+    position: relative;
+    z-index: 10;
     margin-left: -20px;
     margin-bottom: 20px;
   }
 
   &__card-four {
+    z-index: 10;
     &_content {
     }
 
     &_img {
       img {
-        max-width: 300px;
+        max-width: 350px;
       }
     }
 
     &_text {
       display: none;
       position: absolute;
-      top: 50px;
-      left: 60px;
+      top: 90px;
+      left: 120px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -983,7 +1030,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 22px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -995,24 +1042,27 @@ body {
   }
 
   &__five-card {
+    position: relative;
+    z-index: 10;
     margin-left: -20px;
     margin-bottom: 10px;
   }
 
   &__card-five {
+    z-index: 10;
     &_content {
     }
 
     &_img {
       img {
-        max-width: 300px;
+        max-width: 350px;
       }
     }
 
     &_text {
       display: none;
       position: absolute;
-      top: 60px;
+      top: 110px;
       left: 20px;
       z-index: 5;
       text-align: center;
@@ -1020,7 +1070,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -1031,7 +1081,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 22px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1043,6 +1093,8 @@ body {
   }
 
   &__six-card {
+    position: relative;
+    z-index: 10;
     margin-left: -20px;
   }
 
@@ -1052,22 +1104,22 @@ body {
 
     &_img {
       img {
-        max-width: 300px;
+        max-width: 350px;
       }
     }
 
     &_text {
       display: none;
       position: absolute;
-      top: 40px;
-      left: 60px;
+      top: 70px;
+      left: 90px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -1078,7 +1130,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 22px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1239,7 +1291,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 34px;
         line-height: 100.9%;
         /* or 24px */
 
@@ -1271,20 +1323,21 @@ body {
     position: absolute;
     // .stage__cards_card
     &_card {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 150px;
+      margin-left: 150px;
       filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
       position: relative;
-      width: 276px;
-      height: 135px;
-      padding: 40px 25px 30px 25px;
+      max-width: 450px;
+      height: 225px;
+      padding: 60px 35px 40px 50px;
       background: #833ddb;
       border-radius: 10px;
-      margin-bottom: 21px;
+      margin-bottom: 41px;
     }
   }
   // .stage__card
   &__card {
+
     // .stage__card_number
     &_number {
       position: absolute;
@@ -1295,7 +1348,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 15px */
 
@@ -1309,7 +1362,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 16px */
 
@@ -1322,7 +1375,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 20px;
         line-height: 130%;
         /* or 16px */
 
@@ -1344,7 +1397,7 @@ body {
     // .question__row_img
     &_img {
       img {
-        max-width: 289px;
+        max-width: 410px;
       }
     }
     // .question__row_form
@@ -1360,7 +1413,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 30px;
         line-height: 100.9%;
         /* or 20px */
 
@@ -1376,11 +1429,12 @@ body {
         display: flex;
         flex-direction: column;
         input {
+          width: 400px;
           margin-bottom: 12px;
-          padding: 8px 15px;
+          padding: 18px 30px;
           background: #ffffff;
           border: 2px solid #aaaaaa;
-          border-radius: 15px;
+          border-radius: 5px;
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
@@ -1390,11 +1444,12 @@ body {
           color: #b6b6b6;
         }
         button {
-          padding: 8px 30px;
+          margin-top: 20px;
+          padding: 24px 30px;
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
-          font-size: 15px;
+          font-size: 18px;
           line-height: 18px;
           letter-spacing: -0.05em;
 
@@ -1412,12 +1467,12 @@ body {
   &__row {
     // .robots__row_title
     &_title {
-      margin-bottom: 24px;
+      margin-bottom: 34px;
       h2 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 120.4%;
         /* or 24px */
 
@@ -1454,7 +1509,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 160.9%;
         /* or 23px */
 
@@ -1471,7 +1526,7 @@ body {
 }
 
 .footer {
-overflow: hidden;
+  overflow: hidden;
   position: relative;
   padding: 20px 0px 20px 0px;
   // .footer__row
@@ -1480,70 +1535,70 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     text-align: center;
+   
     // .footer__row_menu
     &_menu {
       flex-direction: column;
-      max-width: 300px;
-      display: flex;
-
+align-items: center;
+      display: flex;margin-left: 60px;
     }
     // .footer__row_logo
     &_logo {
-      margin-left: -40px;
+      margin-left: -70px;
       margin-bottom: 20px;
       text-align: center;
       a {
-        
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 24px;
 
-color: #FFFFFF;
+        color: #ffffff;
       }
     }
     // .footer__row_email
     &_email {
-     
+      margin-left: -20px;
       a {
-        font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
 
-color: #FFFFFF;
+        color: #ffffff;
 
-opacity: 0.7;
+        opacity: 0.7;
       }
     }
   }
   // .footer__content
   &__content {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+
+    flex-direction: column;
   }
   // .footer__pk
   &__pk {
     display: flex;
-margin-left: 13px;
+    margin-left: 200px;
     margin-top: 20px;
     a {
       text-align: center;
       display: inline-block;
-      padding:20px 0px 0px 0px;
+      padding: 20px 0px 0px 0px;
       border-top: 1px solid #212749;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 17px;
       text-align: center;
-      
-      color: #FFFFFF;
-      
+
+      color: #ffffff;
+
       opacity: 0.7;
     }
   }
@@ -1557,14 +1612,14 @@ margin-left: 13px;
   li {
     margin-bottom: 10px;
     a {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 17px;
-      
-      color: #FFFFFF;
-      
+
+      color: #ffffff;
+
       opacity: 0.7;
     }
   }
@@ -1606,14 +1661,38 @@ margin-left: 13px;
   }
 }
 .ab-us__visibled {
-  display: block;
+  display: none;
   max-width: 200px;
-  left: 100px;
+  left: 217px;
   bottom: -20;
   position: absolute;
   z-index: 5;
   cursor: pointer;
 }
 .hidden-320 {
-  display: none;
+  display: block;
+}
+.bgcgray {
+  display: block;
+  top: 0px;
+  transition: all 1s ease;
+  right: -1000px;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 29;
+  opacity: 0;
+  background-color: black;
+}
+.visib {
+  position: fixed;
+  transition: 1s all ease;
+  opacity: 0.3;
+  top: 0px;
+  display: block;
+  left: 0px;
+}
+.header__row_burger-btn {
+  z-index: 35;
 }
