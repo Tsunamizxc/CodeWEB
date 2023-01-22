@@ -690,7 +690,7 @@ body {
     text-align: center;
     a {
       display: inline-block;
-      padding: 30px 40px;
+      padding: 20px 30px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
@@ -908,15 +908,15 @@ body {
     &_text {
       display: none;
       position: absolute;
-      top: 110px;
-      left: 80px;
+      top: 80px;
+      left:70px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -927,7 +927,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 12px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -960,7 +960,7 @@ body {
     &_text {
       display: none;
       position: absolute;
-      top: 120px;
+      top: 80px;
       left: 90px;
       z-index: 5;
       text-align: center;
@@ -968,7 +968,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -979,7 +979,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 12px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1011,15 +1011,15 @@ body {
     &_text {
       display: none;
       position: absolute;
-      top: 90px;
-      left: 120px;
+      top: 70px;
+      left: 80px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -1030,7 +1030,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 12px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1062,15 +1062,15 @@ body {
     &_text {
       display: none;
       position: absolute;
-      top: 110px;
-      left: 20px;
+      top: 80px;
+      left: 45px;
       z-index: 5;
       text-align: center;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -1081,7 +1081,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 12px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1111,7 +1111,7 @@ body {
     &_text {
       display: none;
       position: absolute;
-      top: 70px;
+      top: 50px;
       left: 90px;
       z-index: 5;
       text-align: center;
@@ -1119,7 +1119,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 24px;
         line-height: 100.9%;
         /* or 65px */
         color: #ffffff;
@@ -1130,7 +1130,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 12px;
         line-height: 100.9%;
         /* or 32px */
         color: #ffffff;
@@ -1696,3 +1696,6 @@ align-items: center;
 .header__row_burger-btn {
   z-index: 35;
 }
+.header__row_burger-btn{
+  display: block; 
+ }

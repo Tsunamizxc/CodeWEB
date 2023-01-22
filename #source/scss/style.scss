@@ -1,5 +1,4 @@
 
-
 body {
   scroll-behavior: smooth;
 }
@@ -102,7 +101,7 @@ body {
     // .header__row_button
     &_button {
       a {
-     
+     @extend %blackbtn;
       }
     }
   }
@@ -115,6 +114,7 @@ body {
 
 // header finish
 .hello {
+  overflow: hidden;
   height: 76vh;
   // .hello__row
   margin-top: 150px;
@@ -447,7 +447,7 @@ body {
     margin-top: 35px;
     text-align: center;
     a {
-     
+     @extend  %blackbtn
     }
   }
   &__header {
@@ -1052,6 +1052,7 @@ body {
 
 .question {
   padding: 90px 0px;
+  overflow: hidden;
   // .question__row
   background: #f6f7fe;
   &__row {
@@ -1297,7 +1298,9 @@ body {
     transform: scaleY(10px);
   }
 }
-
+.header__row_burger-btn{
+ display: none; 
+}
 
 @media (min-width: 320px) and (max-width: 575px) {
   @import "_320px";
@@ -1308,4 +1311,13 @@ body {
 }
 @media (min-width: 773px) and (max-width: 992px) {
   @import "_772px";
+}
+@media (min-width: 992px) and (max-width: 1465px) {
+  @import "_992px";
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+  @import "_1600px";
+}
+@media (min-width: 1466px) and (max-width: 1600px) {
+  @import "_1400px";
 }
