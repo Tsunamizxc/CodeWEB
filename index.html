@@ -69,9 +69,7 @@
   </header>
 
   <body>
-    <div class="bgcgray">
-      
-    </div>
+    <div class="bgcgray"></div>
     <div
       data-aos="zoom-in"
       data-aos-anchor-placement="top-center"
@@ -415,7 +413,10 @@
                     </div>
                   </div>
                   <div class="works__card-five_text wworktext">
-                    <a href="http://adaevilyasworks.tilda.ws/barroso" target="_blank">
+                    <a
+                      href="http://adaevilyasworks.tilda.ws/barroso"
+                      target="_blank"
+                    >
                       <h3>Bodao team</h3>
                       <p>Команда профессионального бойца ММА</p>
                     </a>
@@ -432,7 +433,10 @@
                     </div>
                   </div>
                   <div class="works__card-six_text wworktext">
-                    <a href="https://speak-official.netlify.app/" target="_blank">
+                    <a
+                      href="https://speak-official.netlify.app/"
+                      target="_blank"
+                    >
                       <h3>SPEAK</h3>
                       <p>онлайн сесси с психологом</p>
                     </a>
@@ -766,6 +770,50 @@
         </div>
       </div>
     </footer>
+    <div class="callback">
+      <div class="callback-close">
+        <a href="#"><img src="image/cbclose.svg" alt="" /></a>
+      </div>
+      <div class="container">
+        <div class="callback__row">
+          <div class="callback__row_header">
+            <h2>Оставьте ваши данные</h2>
+          </div>
+          <div class="callback__row_form">
+            <form action="">
+              <input
+                maxlength="20"
+                type="text"
+                placeholder="Ваше имя"
+                id="input-name"
+                onkeypress="noDigits(event)"
+              />
+              <input
+                type="tel"
+                placeholder="Ваш номер"
+                id="input-phone"
+                data-phone-pattern="+7 (___) ___-__-__
+      "
+              />
+              <input id="inputEmail" type="text" placeholder="Ваш email" />
+            </form>
+          </div>
+          <div class="callback__row_accept">
+            <p>
+              Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+              обработке данных
+            </p>
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              class="custom-checkbox"
+            />
+          </div>
+
+          <button class="btn-question">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
     <!-- scripts -->
     <script
       type="text/javascript"
