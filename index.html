@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div class="header__row_button">
-          <a href="#" id="popup">Заполнить заявку</a>
+          <a href="#" id="popup" class="popup">Заполнить заявку</a>
         </div>
         <div class="header__row_burger-btn">
           <label for="toggle" class="hamburger">
@@ -62,14 +62,14 @@
           <li><a href="#">О нас</a></li>
         </ul>
       </div>
-      <div class="burger-btn">
-        <a href="#">Заполнить заявку</a>
+      <div class="burger-btn ">
+        <a class="popup" href="#">Заполнить заявку</a>
       </div>
     </div>
   </header>
 
   <body>
-    <div class="bgcgray"></div>
+    <div class="bgcgray bgcgray-modal"></div>
     <div
       data-aos="zoom-in"
       data-aos-anchor-placement="top-center"
@@ -91,7 +91,7 @@
               </p>
             </div>
             <div class="content__button">
-              <a href="#" id="popup">Заказать</a>
+              <a class="popup" href="#" id="popup">Заказать</a>
             </div>
           </div>
           <div
@@ -792,8 +792,7 @@
                 type="tel"
                 placeholder="Ваш номер"
                 id="input-phone"
-                data-phone-pattern="+7 (___) ___-__-__
-      "
+                data-phone-pattern="+7 (___) ___-__-__"
               />
               <input id="inputEmail" type="text" placeholder="Ваш email" />
             </form>
@@ -809,8 +808,7 @@
               class="custom-checkbox"
             />
           </div>
-
-          <button class="btn-question">Оставить заявку</button>
+          <a href="#" class="btn-question">Оставить заявку</a>
         </div>
       </div>
     </div>

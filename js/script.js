@@ -100,26 +100,26 @@ burger.addEventListener("click", function () {
   bgcgray.classList.toggle("visib");
 });
 bgcgray.addEventListener("click", function () {
-  firstLines.classList.toggle("firstLine");
-  secondLines.classList.toggle("secondLine");
-  threeLines.classList.toggle("threeLine");
-  burgerMenu.classList.toggle("range");
+  firstLines.classList.remove("firstLine");
+  secondLines.classList.remove("secondLine");
+  threeLines.classList.remove("threeLine");
+  burgerMenu.classList.remove("range");
   bgcgray.classList.toggle("visib");
+  modal.style.display = "none";
 });
-
 
 let abUsVis = document.querySelector(".ab-us__visibled");
 let abUsHid = document.querySelector(".ab-us__hidden");
 abUsVis.addEventListener("click", function () {
   abUsHid.classList.toggle("visiblesss");
-  
 
-  if (abUsVis.innerHTML ===
-      '<p class="ab-us__visibled"> <img src="image/arrowback.png" alt=""></p>') {
+  if (
+    abUsVis.innerHTML ===
+    '<p class="ab-us__visibled"> <img src="image/arrowback.png" alt=""></p>'
+  ) {
     abUsVis.innerHTML =
       '<p class="ab-us__visibled"> <img src="image/Arrow3.png" alt=""></p>';
     abUsVis.style.left = "0px";
-    
   } else {
     abUsVis.innerHTML =
       '<p class="ab-us__visibled"> <img src="image/arrowback.png" alt=""></p>';
@@ -127,8 +127,7 @@ abUsVis.addEventListener("click", function () {
   }
 });
 
-
-$('.stages__cards-slider').slick({
+$(".stages__cards-slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -137,16 +136,29 @@ $('.stages__cards-slider').slick({
   arrows: false,
 });
 
+let btnmodal = document.querySelectorAll(".popup");
+let modal = document.querySelector(".callback");
+let vismodal = document.querySelector(".popup-vis");
+let closeModal = document.querySelector(".callback-close");
+console.log(closeModal)
+let bgcgrayModal = document.querySelector(".bgcgray-modal");
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+  bgcgrayModal.classList.remove("visib");
+  firstLines.classList.remove("firstLine");
+  secondLines.classList.remove("secondLine");
+  threeLines.classList.remove("threeLine");
+});
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-};
+for(let i = 0;i<btnmodal.length;i++){
+  btnmodal[i].addEventListener("click", function () {
+    modal.style.display = "block";
+    bgcgrayModal.classList.add("visib");
+    burgerMenu.classList.remove("range");
+    firstLines.classList.remove("firstLine");
+    secondLines.classList.remove("secondLine");
+    threeLines.classList.remove("threeLine");
+  });
+}
+
