@@ -105,7 +105,7 @@ bgcgray.addEventListener("click", function () {
   threeLines.classList.remove("threeLine");
   burgerMenu.classList.remove("range");
   bgcgray.classList.toggle("visib");
-  modal.style.display = "none";
+
 });
 
 let abUsVis = document.querySelector(".ab-us__visibled");
@@ -140,22 +140,24 @@ let btnmodal = document.querySelectorAll(".popup");
 let modal = document.querySelector(".callback");
 let vismodal = document.querySelector(".popup-vis");
 let closeModal = document.querySelector(".callback-close");
-console.log(closeModal)
+console.log(closeModal);
 let bgcgrayModal = document.querySelector(".bgcgray-modal");
 closeModal.addEventListener("click", function () {
-  modal.style.display = "none";
+  modal.classList.remove('range-cb')
   bgcgrayModal.classList.remove("visib");
   firstLines.classList.remove("firstLine");
   secondLines.classList.remove("secondLine");
   threeLines.classList.remove("threeLine");
 });
-
+bgcgrayModal.addEventListener("click", function () {
+  modal.classList.remove('range-cb')
+});
 
 for(let i = 0;i<btnmodal.length;i++){
   btnmodal[i].addEventListener("click", function () {
-    modal.style.display = "block";
+    modal.classList.add('range-cb')
     bgcgrayModal.classList.add("visib");
-    burgerMenu.classList.remove("range");
+    burgerMenu.classList.toggle("range");
     firstLines.classList.remove("firstLine");
     secondLines.classList.remove("secondLine");
     threeLines.classList.remove("threeLine");
