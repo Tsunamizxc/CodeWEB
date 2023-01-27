@@ -157,7 +157,7 @@ for(let i = 0;i<btnmodal.length;i++){
   btnmodal[i].addEventListener("click", function () {
     modal.classList.add('range-cb')
     bgcgrayModal.classList.add("visib");
-    burgerMenu.classList.toggle("range");
+    burgerMenu.classList.remove("range");
     firstLines.classList.remove("firstLine");
     secondLines.classList.remove("secondLine");
     threeLines.classList.remove("threeLine");
