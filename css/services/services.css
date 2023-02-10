@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat' !important;
+}
+
+.head__heading {
+  margin-bottom: 64px;
+}
+
+.head__description {
+  max-width: 840px;
+  margin-bottom: 64px;
+}
+
+/* section */
+
+.cards_website {
+  margin-bottom: 64px;
+}
+
+.cards__body_website {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 440px);
+  gap: 20px;
+}
+
+/* card */
+
+.cards__title {
+  margin-bottom: 64px;
+}
+
+.cards__body {
+  display: grid;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  border: 1px solid #666666;
+  border-radius: 25px;
+}
+
+.key {
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160.9%;
+  color: #000000;
+  opacity: 0.8;
+  padding: 4px 13px;
+  background: #EBEBEB;
+  top: 32px;
+  left: 22px;
+}
+
+.card__subtitle {
+  margin-bottom: 16px;
+}
+
+.card__signature {
+  margin-bottom: 43px;
+}
+
+.card__money {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 43px;
+}
+
+.card__btn {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  padding: 25px 90px;
+  background: #5E25C8;
+  border-radius: 105px;
+  align-self: center;
+  transition: background 0.5s ease;
+}
+
+.card__btn:hover {
+  background: #7644D3;
+}
+
+.card__btn:active {
+  background: #5800FF;
+}
+
+/* section */
+
+.cards_design {
+  margin-bottom: 64px;
+}
+
+.cards__body_design {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 400px);
+  gap: 20px;
+}
+
+/* section */
+
+.cards_seo {
+  margin-bottom: 100px;
+}
+
+.cards__body_seo {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 400px);
+  gap: 20px;
+}
+
+/*  */
+
+.design-card-box>.signature {
+  margin-bottom: 68px;
+}
+
+.logo-card-box>.signature {
+  margin-bottom: 68px;
+}

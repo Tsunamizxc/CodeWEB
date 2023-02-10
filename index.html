@@ -1,840 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-    <!-- nullstyle -->
-    <link rel="stylesheet" href="css/zero.css" />
-    <!-- nullstyle -->
+<head>
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeWEB</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- slick -->
-  </head>
-  <header id="logoID" class="header">
-    <div class="container">
-      <div class="header__row">
-        <div class="header__row_logo">
-          <a href="#"> Code <span style="color: #5e25c8">WEB</span> </a>
-        </div>
-        <div class="header__row_menu">
-          <ul class="ul-menu">
-            <li><a href="#price">Услуги и цены</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">О нас</a></li>
-          </ul>
-        </div>
-        <div class="header__row_button">
-          <a href="#" id="popup" class="popup">Заполнить заявку</a>
-        </div>
-        <div class="header__row_burger-btn">
-          <label for="toggle" class="hamburger">
-            <div class="top-bun"></div>
-            <div class="meat"></div>
-            <div class="bottom-bun"></div>
-          </label>
-        </div>
+  <!-- nullstyle -->
+  <link rel="stylesheet" href="css/zero.css" />
+  <!-- nullstyle -->
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- slick -->
+</head>
+<header id="logoID" class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="header__row_logo">
+        <a href="index.html"> Code <span style="color: #5e25c8">WEB</span> </a>
       </div>
-    </div>
-
-    <div class="burger">
-      <div class="burger-title">
-        <a href="#logoID"> Code <span style="color: #5e25c8">WEB</span> </a>
-      </div>
-      <div class="burger-menu">
-        <ul>
-          <li><a href="#price">Услуги и цены</a></li>
+      <div class="header__row_menu">
+        <ul class="ul-menu">
+          <li><a href="services.html">Услуги и цены</a></li>
           <li><a href="#">Портфолио</a></li>
-          <li><a href="#">О нас</a></li>
+          <li><a href="abus.html">О нас</a></li>
         </ul>
       </div>
-      <div class="burger-btn ">
-        <a class="popup" href="#">Заполнить заявку</a>
+      <div class="header__row_button">
+        <a href="#" id="popup" class="popup">Заполнить заявку</a>
+      </div>
+      <div class="header__row_burger-btn">
+        <label for="toggle" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
       </div>
     </div>
-  </header>
+  </div>
 
-  <body>
-    <div class="bgcgray bgcgray-modal"></div>
-    <div
-      data-aos="zoom-in"
-      data-aos-anchor-placement="top-center"
-      class="hello"
-    >
-      <div class="container">
-        <div class="hello__row">
-          <div class="hello__row_content">
-            <div class="content__title">
-              <h1>
-                Разработка веб-сайтов
-                <span style="color: #5e25c8">под ключ</span>
-              </h1>
-            </div>
-            <div class="content__discription">
-              <p>
-                Создаем готовые сайты, разработка с нуля, продвижение в
-                поисковых системах
-              </p>
-            </div>
-            <div class="content__button">
-              <a class="popup" href="#" id="popup">Заказать</a>
-            </div>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="500"
-            class="hello__row_image"
-          >
-            <div class="image__first-frame image-hello">
-              <img src="image/1.png" alt="" />
-            </div>
-            <div class="image__second-frame image-hello">
-              <img src="image/2 1.png" alt="" />
-            </div>
-            <div class="image__three-frame image-hello">
-              <img src="image/3.png" alt="" />
-            </div>
-            <div class="image__four-frame image-hello">
-              <img src="image/4.png" alt="" />
-            </div>
-            <div class="image__five-frame image-hello">
-              <img src="image/5.png" alt="" />
-            </div>
-            <div class="image__six-frame image-hello">
-              <img src="image/6.png" alt="" />
-            </div>
-            <div class="image__seven-frame image-hello">
-              <img src="image/7.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="burger">
+    <div class="burger-title">
+      <a href="index.html"> Code <span style="color: #5e25c8">WEB</span> </a>
     </div>
-    <div class="about-us">
-      <img class="ellipse-ab-us-one" src="image/Ellipse-ab-us1.png" alt="" />
-      <img class="ellipse-ab-us-two" src="image/Ellipse-ab-us2.png" alt="" />
-      <div class="container">
-        <div class="about-us__row">
-          <div class="about-us__content">
-            <div data-aos="zoom-in-right" class="about-us__content_title">
-              <h2>Code <span style="color: #5e25c8">WEB</span></h2>
-            </div>
-            <div data-aos="fade-up" class="about-us__content_discription">
-              <p class="sss">
-                Это небольшая команда молодых и перспективных IT специалистов
-                готовых выполнять различные по тематике и сложности проекты в
-                области Web-разработки. <br />
-                <span data-aos="zoom-in-right" class="ab-us__hidden"
-                  >Мы очень любим наше дело, и всегда заботимся о качестве
-                  нашего продукта, в каждый наш проект мы вкладываем все свои
-                  силы и стараемся сделать не обычный шаблонный сайт, а нечто
-                  особенное!</span
-                >
-              </p>
-              <p class="ab-us__visibled">
-                <img src="image/Arrow3.png" alt="" />
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="about-us__image">
-            <div class="about-us__image_row">
-              <div data-aos="fade-left" class="image__row_first">
-                <img src="image/1ab-us.png" alt="" />
-              </div>
-              <div data-aos="fade-left" class="image__row_second">
-                <img src="image/2ab-us.png" alt="" />
-              </div>
-              <div data-aos="fade-left" class="image__row_three">
-                <img src="image/3ab-us.png" alt="" />
-              </div>
-              <div data-aos="fade-left" class="image__row_four">
-                <img src="image/4ab-us.png" alt="" />
-              </div>
-              <div data-aos="fade-left" class="image__row_five">
-                <img src="image/5ab-us.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="burger-menu">
+      <ul>
+        <li><a href="services.html">Услуги и цены</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
     </div>
-    <div id="price" class="service">
-      <div class="container">
-        <div class="service__header">
-          <div data-aos="fade-left" class="service__header_title">
-            <h2>Какие услуги мы предлагаем?</h2>
-          </div>
-        </div>
-        <div data-aos="zoom-in" class="service__cards">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="250"
-            class="service__card visitBG"
-          >
-            <div data-aos="fade-right" class="service__card_key">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>Сайт визитка</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Представительский сайт небольших размеров с информацией об
-                организации, фирме, компании или частном лице.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 3.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="700"
-            class="service__card lpBG"
-          >
-            <div class="service__card_key">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>Landing Page</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Креативная посадочная страница дляпрезентации товаров, услуг и
-                проведениярекламных компаний, акций.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 12.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1150"
-            class="service__card mnogoBG"
-          >
-            <div class="service__card_key">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>Многостраничный сайт</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Многостраничный сайт с товарами или услугами для увеличения
-                клиентской базы и получения контактов клиента.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 18.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div class="service__card seoBG hidden-320">
-            <div class="service__card_key hidden">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>SEO оптимизация</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Оптимизация вашего сайта с исправлением ошибок и большим списком
-                рекомендаций по улучшению сайта.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 5.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="500"
-            class="service__card tildaBG hidden-320"
-          >
-            <div class="service__card_key">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>Разработка сайта на Tilda</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Креативная посадочная страница дляпрезентации товаров, услуг
-                выполненная на Tilda.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 3.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="750"
-            class="service__card designBG hidden-320"
-          >
-            <div class="service__card_key hidden">
-              <p>под ключ</p>
-            </div>
-            <div class="service__card_title">
-              <h3>Создание макета сайта</h3>
-            </div>
-            <div class="service__card_discription">
-              <p>
-                Предварительный дизайн, который определяет внешний вид сайта и
-                его функционал.
-              </p>
-            </div>
-            <div class="service__card_price">
-              <p>От 10.000 ₽</p>
-            </div>
-            <div class="service__card_button">
-              <a href="#">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="service__button">
-          <a href="#">Посмотреть всё</a>
-        </div>
-      </div>
+    <div class="burger-btn ">
+      <a class="popup" href="#">Заполнить заявку</a>
     </div>
-    <div class="works">
-      <div class="ellipse-portfolio-one">
-        <img src="image/BigEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="ellipse-portfolio-two">
-        <img src="image/BigEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="ellipse-portfolio-three">
-        <img src="image/semiBigEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="ellipse-portfolio-four">
-        <img src="image/mediumEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="ellipse-portfolio-five">
-        <img src="image/compositEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="ellipse-portfolio-six">
-        <img src="image/lowcompositEllipsePortfolio.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="works__row">
-          <div class="works__row_first-column">
-            <div data-aos="zoom-in" class="works__first-card">
-              <h3>Примеры наших работ</h3>
-            </div>
-            <div class="works__second-card">
-              <div class="second-card-blur item">
-                <div data-aos="fade-right" class="works__card-second">
-                  <div class="works__card-second_content wworkcard">
-                    <div class="works__card-second_img">
-                      <img src="image/works-second.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="works__card-second_text wworktext">
-                    <a href="https://stroykontrol.netlify.app/" target="_blank">
-                      <h3>Стройконтроль</h3>
-                      <p>Сайт строительной компании</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="works__three-card">
-              <div class="three-card-blur item">
-                <div data-aos="fade-right" class="works__card-three">
-                  <div class="works__card-three_content wworkcard">
-                    <div class="works__card-three_img">
-                      <img src="image/works-four.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="works__card-three_text wworktext">
-                    <a href="#">
-                      <h3>Britlex</h3>
-                      <p>Школа английского языка</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="works__row_two-column">
-            <div class="works__four-card hidden-320">
-              <div class="four-card-blur item">
-                <div data-aos="fade-left" class="works__card-four">
-                  <div class="works__card-four_content wworkcard">
-                    <div class="works__card-four_img">
-                      <img src="image/works-one.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="works__card-four_text wworktext">
-                    <a href="#">
-                      <h3>Digital Agency</h3>
-                      <p>Цифровое агентство</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="works__five-card">
-              <div class="five-card-blur item">
-                <div data-aos="fade-left" class="works__card-five">
-                  <div class="works__card-five_content wworkcard">
-                    <div class="works__card-five_img">
-                      <img src="image/works-three.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="works__card-five_text wworktext">
-                    <a
-                      href="http://adaevilyasworks.tilda.ws/barroso"
-                      target="_blank"
-                    >
-                      <h3>Bodao team</h3>
-                      <p>Команда профессионального бойца ММА</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="works__six-card hidden-320">
-              <div class="six-card-blur item">
-                <div data-aos="fade-left" class="works__card-six">
-                  <div class="works__card-six_content wworkcard">
-                    <div class="works__card-six_img">
-                      <img src="image/works-five.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="works__card-six_text wworktext">
-                    <a
-                      href="https://speak-official.netlify.app/"
-                      target="_blank"
-                    >
-                      <h3>SPEAK</h3>
-                      <p>онлайн сесси с психологом</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works__button">
-          <a href="#">Смотреть всё</a>
-        </div>
-      </div>
-    </div>
-    <div class="stages">
-      <div class="container">
-        <div class="stages__header">
-          <div class="stages__header_title">
-            <h3>Этапы нашей работы</h3>
-          </div>
-        </div>
-        <div data-aos="zoom-in-right" class="stages__cards-slider">
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>1</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Разрабатываем концепцию</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Для начала необходимо заполнить бриф, где вы опишете все свои
-                пожелания. Мы проведем маркетинговый анализ рынка, решим, по
-                какому пути пойдем.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>2</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>
-                Проектирование <br />
-                интерфейсов
-              </h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Для начала необходимо заполнить бриф в личном кабинете, где вы
-                опишете все свои пожелания. Мы проведем маркетинговый анализ
-                рынка, решим, по какому пути пойдем.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>3</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Создание контента</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Напишем тексты для главных и второстепенных страниц. Позаботимся
-                о том, чтобы они были и продающими, и оптимизированными
-                одновременно.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>4</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Дизайн сайта</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Создадим наиболее подходящее оформление, которое не просто будет
-                красивым, но и будет соответствовать правилам юзабилити.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>5</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>
-                Верстка и <br />
-                программирование
-              </h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Напишем тексты для главных и второстепенных страниц. Позаботимся
-                о том, чтобы они были и продающими, и оптимизированными
-                одновременно.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>6</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Тестирование</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Перед запуском сайта проверим корректность его работы. Исправим
-                ошибки и недочеты. Настроим счетчики веб-аналитики.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div data-aos="zoom-in-right" class="stages__cards">
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>1</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Разрабатываем концепцию</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Для начала необходимо заполнить бриф, где вы опишете все свои
-                пожелания. Мы проведем маркетинговый анализ рынка, решим, по
-                какому пути пойдем.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>2</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>
-                Проектирование <br />
-                интерфейсов
-              </h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Для начала необходимо заполнить бриф в личном кабинете, где вы
-                опишете все свои пожелания. Мы проведем маркетинговый анализ
-                рынка, решим, по какому пути пойдем.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>3</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Создание контента</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Напишем тексты для главных и второстепенных страниц. Позаботимся
-                о том, чтобы они были и продающими, и оптимизированными
-                одновременно.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>4</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Дизайн сайта</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Создадим наиболее подходящее оформление, которое не просто будет
-                красивым, но и будет соответствовать правилам юзабилити.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-right" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>5</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>
-                Верстка и <br />
-                программирование
-              </h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Напишем тексты для главных и второстепенных страниц. Позаботимся
-                о том, чтобы они были и продающими, и оптимизированными
-                одновременно.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-left" class="stage__cards_card">
-            <div class="stage__card_number">
-              <p>6</p>
-            </div>
-            <div class="stage__card_title">
-              <h3>Тестирование</h3>
-            </div>
-            <div class="stage__card_discription">
-              <p>
-                Перед запуском сайта проверим корректность его работы. Исправим
-                ошибки и недочеты. Настроим счетчики веб-аналитики.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="question">
-      <div class="container">
-        <div data-aos="zoom-in" class="question__row">
-          <div data-aos="fade-right" class="question__row_img">
-            <img src="image/question.png" alt="" />
-          </div>
-          <div class="question__row_form">
-            <div data-aos="fade-right" class="question__form_title">
-              <h3>
-                Остались вопросы? <br />
-                Напиши нам
-              </h3>
-            </div>
-            <div data-aos="fade-left" class="question__form_content">
-              <form action="">
-                <input
-                  data-aos="fade-right"
-                  maxlength="20"
-                  type="text"
-                  placeholder="Ваше имя"
-                  id="input-name"
-                  onkeypress="noDigits(event)"
-                />
-                <input
-                  data-aos="fade-right"
-                  type="tel"
-                  placeholder="Ваш номер"
-                  id="input-phone"
-                  data-phone-pattern="+7 (___) ___-__-__
-                "
-                />
-                <input
-                  id="inputEmail"
-                  data-aos="fade-right"
-                  type="text"
-                  placeholder="Ваш email"
-                />
-                <input
-                  data-aos="fade-right "
-                  type="text "
-                  maxlength="40 "
-                  placeholder="Ваш вопрос "
-                  id="input-question "
-                />
-                <button class="btn-question">Оставить заявку</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="robots">
-      <div class="container">
-        <div class="robots__row">
-          <div class="robots__row_title">
-            <h2>
-              Создание сайтов. Заказать лендинг, интернет-магазин,
-              многостраничный сайт.
-            </h2>
-          </div>
-          <div class="robots__tow_text">
-            <div class="robots__text_title">
-              <h4>Цены и сроки</h4>
-            </div>
-            <div class="robots__text_content">
-              <p>
-                Закажите современный сайт любого формата в комании CodeWEB.
-                Лендинги и сайты-визитки создаются за 7-14 дней от 40000 рублей
-                с дизайном и мобильной версией. Многостраничные сайты создаются
-                за 10-21 день от 40000 рублей с указанием всех услуг компании,
-                контактов и добавлением формы обратной связи.
-              </p>
-            </div>
-            <div class="robots__text_title">
-              <h4>Примеры сайтов</h4>
-            </div>
-            <div class="robots__text_content">
-              <p>
-                Все примеры сайтов вы можете посмотреть на странице работы.Наши
-                примеры сайтов изготовленные по дизайну заказчика:
-                интернет-магазин
-                <span class="links"><a href="# ">ПромТеплица55</a></span> ,
-                лендинг
-                <span class="links"><a href="# ">Irina-laser-Omsk</a></span> .
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+</header>
 
-    <footer class="footer">
-      <div class="scrollTop">
-        <img src="image/arrowTop.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="footer__row">
-          <div class="footer__content">
-            <div class="footer__row_menu">
-              <div class="footer__row_logo">
-                <a href="# "> Code <span style="color: #5e25c8">WEB</span> </a>
-              </div>
-              <ul class="footer-nav">
-                <li><a href="# ">Услуги</a></li>
-                <li><a href="# ">Проекты</a></li>
-                <li><a href="# ">Консультация</a></li>
-              </ul>
-            </div>
-            <div class="footer__row_email">
-              <a href="# ">Email: commercia@code-web.com </a>
-            </div>
+<body>
+  <div class="bgcgray bgcgray-modal"></div>
+  <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="hello">
+    <div class="container">
+      <div class="hello__row">
+        <div class="hello__row_content">
+          <div class="content__title">
+            <h1>
+              Разработка веб-сайтов
+              <span style="color: #5e25c8">под ключ</span>
+            </h1>
           </div>
-          <div class="footer__pk">
-            <a href="№ ">Политика конфиденциальности</a>
+          <div class="content__discription">
+            <p>
+              Создаем готовые сайты, разработка с нуля, продвижение в
+              поисковых системах
+            </p>
+          </div>
+          <div class="content__button">
+            <a class="popup" href="#" id="popup">Заказать</a>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="500" class="hello__row_image">
+          <div class="image__first-frame image-hello">
+            <img src="image/1.png" alt="" />
+          </div>
+          <div class="image__second-frame image-hello">
+            <img src="image/2 1.png" alt="" />
+          </div>
+          <div class="image__three-frame image-hello">
+            <img src="image/3.png" alt="" />
+          </div>
+          <div class="image__four-frame image-hello">
+            <img src="image/4.png" alt="" />
+          </div>
+          <div class="image__five-frame image-hello">
+            <img src="image/5.png" alt="" />
+          </div>
+          <div class="image__six-frame image-hello">
+            <img src="image/6.png" alt="" />
+          </div>
+          <div class="image__seven-frame image-hello">
+            <img src="image/7.png" alt="" />
           </div>
         </div>
       </div>
-    </footer>
-    <div class="callback">
-      <div class="callback-close">
-        <a href="#"><img src="image/cbclose.svg" alt="" /></a>
-      </div>
-      <div class="container">
-        <div class="callback__row">
-          <div class="callback__row_header">
-            <h2>Оставьте ваши данные</h2>
+    </div>
+  </div>
+  <div class="about-us">
+    <img class="ellipse-ab-us-one" src="image/Ellipse-ab-us1.png" alt="" />
+    <img class="ellipse-ab-us-two" src="image/Ellipse-ab-us2.png" alt="" />
+    <div class="container">
+      <div class="about-us__row">
+        <div class="about-us__content">
+          <div data-aos="zoom-in-right" class="about-us__content_title">
+            <h2>Code <span style="color: #5e25c8">WEB</span></h2>
           </div>
-          <div class="callback__row_form">
+          <div data-aos="fade-up" class="about-us__content_discription">
+            <p class="sss">
+              Это небольшая команда молодых и перспективных IT специалистов
+              готовых выполнять различные по тематике и сложности проекты в
+              области Web-разработки. <br />
+              <span data-aos="zoom-in-right" class="ab-us__hidden">Мы очень любим наше дело, и всегда заботимся о
+                качестве
+                нашего продукта, в каждый наш проект мы вкладываем все свои
+                силы и стараемся сделать не обычный шаблонный сайт, а нечто
+                особенное!</span>
+            </p>
+            <p class="ab-us__visibled">
+              <img src="image/Arrow3.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="about-us__image">
+          <div class="about-us__image_row">
+            <div data-aos="fade-left" class="image__row_first">
+              <img src="image/1ab-us.png" alt="" />
+            </div>
+            <div data-aos="fade-left" class="image__row_second">
+              <img src="image/2ab-us.png" alt="" />
+            </div>
+            <div data-aos="fade-left" class="image__row_three">
+              <img src="image/3ab-us.png" alt="" />
+            </div>
+            <div data-aos="fade-left" class="image__row_four">
+              <img src="image/4ab-us.png" alt="" />
+            </div>
+            <div data-aos="fade-left" class="image__row_five">
+              <img src="image/5ab-us.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="price" class="service">
+    <div class="container">
+      <div class="service__header">
+        <div data-aos="fade-left" class="service__header_title">
+          <h2>Какие услуги мы предлагаем?</h2>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="service__cards">
+        <div data-aos="fade-right" data-aos-duration="250" class="service__card visitBG">
+          <div data-aos="fade-right" class="service__card_key">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>Сайт визитка</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Представительский сайт небольших размеров с информацией об
+              организации, фирме, компании или частном лице.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 3.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="700" class="service__card lpBG">
+          <div class="service__card_key">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>Landing Page</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Креативная посадочная страница дляпрезентации товаров, услуг и
+              проведениярекламных компаний, акций.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 12.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1150" class="service__card mnogoBG">
+          <div class="service__card_key">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>Многостраничный сайт</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Многостраничный сайт с товарами или услугами для увеличения
+              клиентской базы и получения контактов клиента.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 18.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="service__card seoBG hidden-320">
+          <div class="service__card_key hidden">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>SEO оптимизация</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Оптимизация вашего сайта с исправлением ошибок и большим списком
+              рекомендаций по улучшению сайта.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 5.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="500" class="service__card tildaBG hidden-320">
+          <div class="service__card_key">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>Разработка сайта на Tilda</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Креативная посадочная страница дляпрезентации товаров, услуг
+              выполненная на Tilda.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 3.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="750" class="service__card designBG hidden-320">
+          <div class="service__card_key hidden">
+            <p>под ключ</p>
+          </div>
+          <div class="service__card_title">
+            <h3>Создание макета сайта</h3>
+          </div>
+          <div class="service__card_discription">
+            <p>
+              Предварительный дизайн, который определяет внешний вид сайта и
+              его функционал.
+            </p>
+          </div>
+          <div class="service__card_price">
+            <p>От 10.000 ₽</p>
+          </div>
+          <div class="service__card_button">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="service__button">
+        <a href="services.html">Посмотреть всё</a>
+      </div>
+    </div>
+  </div>
+  <div class="works">
+    <div class="ellipse-portfolio-one">
+      <img src="image/BigEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="ellipse-portfolio-two">
+      <img src="image/BigEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="ellipse-portfolio-three">
+      <img src="image/semiBigEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="ellipse-portfolio-four">
+      <img src="image/mediumEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="ellipse-portfolio-five">
+      <img src="image/compositEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="ellipse-portfolio-six">
+      <img src="image/lowcompositEllipsePortfolio.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="works__row">
+        <div class="works__row_first-column">
+          <div data-aos="zoom-in" class="works__first-card">
+            <h3>Примеры наших работ</h3>
+          </div>
+          <div class="works__second-card">
+            <div class="second-card-blur item">
+              <div data-aos="fade-right" class="works__card-second">
+                <div class="works__card-second_content wworkcard">
+                  <div class="works__card-second_img">
+                    <img src="image/works-second.png" alt="" />
+                  </div>
+                </div>
+                <div class="works__card-second_text wworktext">
+                  <a href="https://stroykontrol.netlify.app/" target="_blank">
+                    <h3>Стройконтроль</h3>
+                    <p>Сайт строительной компании</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__three-card">
+            <div class="three-card-blur item">
+              <div data-aos="fade-right" class="works__card-three">
+                <div class="works__card-three_content wworkcard">
+                  <div class="works__card-three_img">
+                    <img src="image/works-four.png" alt="" />
+                  </div>
+                </div>
+                <div class="works__card-three_text wworktext">
+                  <a href="#">
+                    <h3>Britlex</h3>
+                    <p>Школа английского языка</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="works__row_two-column">
+          <div class="works__four-card hidden-320">
+            <div class="four-card-blur item">
+              <div data-aos="fade-left" class="works__card-four">
+                <div class="works__card-four_content wworkcard">
+                  <div class="works__card-four_img">
+                    <img src="image/works-one.png" alt="" />
+                  </div>
+                </div>
+                <div class="works__card-four_text wworktext">
+                  <a href="#">
+                    <h3>Digital Agency</h3>
+                    <p>Цифровое агентство</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__five-card">
+            <div class="five-card-blur item">
+              <div data-aos="fade-left" class="works__card-five">
+                <div class="works__card-five_content wworkcard">
+                  <div class="works__card-five_img">
+                    <img src="image/works-three.png" alt="" />
+                  </div>
+                </div>
+                <div class="works__card-five_text wworktext">
+                  <a href="http://adaevilyasworks.tilda.ws/barroso" target="_blank">
+                    <h3>Bodao team</h3>
+                    <p>Команда профессионального бойца ММА</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__six-card hidden-320">
+            <div class="six-card-blur item">
+              <div data-aos="fade-left" class="works__card-six">
+                <div class="works__card-six_content wworkcard">
+                  <div class="works__card-six_img">
+                    <img src="image/works-five.png" alt="" />
+                  </div>
+                </div>
+                <div class="works__card-six_text wworktext">
+                  <a href="https://speak-official.netlify.app/" target="_blank">
+                    <h3>SPEAK</h3>
+                    <p>онлайн сесси с психологом</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="works__button">
+        <a href="#">Смотреть всё</a>
+      </div>
+    </div>
+  </div>
+  <div class="stages">
+    <div class="container">
+      <div class="stages__header">
+        <div class="stages__header_title">
+          <h3>Этапы нашей работы</h3>
+        </div>
+      </div>
+      <div data-aos="zoom-in-right" class="stages__cards-slider">
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>1</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Разрабатываем концепцию</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Для начала необходимо заполнить бриф, где вы опишете все свои
+              пожелания. Мы проведем маркетинговый анализ рынка, решим, по
+              какому пути пойдем.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>2</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>
+              Проектирование <br />
+              интерфейсов
+            </h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Для начала необходимо заполнить бриф в личном кабинете, где вы
+              опишете все свои пожелания. Мы проведем маркетинговый анализ
+              рынка, решим, по какому пути пойдем.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>3</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Создание контента</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Напишем тексты для главных и второстепенных страниц. Позаботимся
+              о том, чтобы они были и продающими, и оптимизированными
+              одновременно.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>4</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Дизайн сайта</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Создадим наиболее подходящее оформление, которое не просто будет
+              красивым, но и будет соответствовать правилам юзабилити.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>5</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>
+              Верстка и <br />
+              программирование
+            </h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Напишем тексты для главных и второстепенных страниц. Позаботимся
+              о том, чтобы они были и продающими, и оптимизированными
+              одновременно.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>6</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Тестирование</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Перед запуском сайта проверим корректность его работы. Исправим
+              ошибки и недочеты. Настроим счетчики веб-аналитики.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-right" class="stages__cards">
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>1</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Разрабатываем концепцию</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Для начала необходимо заполнить бриф, где вы опишете все свои
+              пожелания. Мы проведем маркетинговый анализ рынка, решим, по
+              какому пути пойдем.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>2</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>
+              Проектирование <br />
+              интерфейсов
+            </h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Для начала необходимо заполнить бриф в личном кабинете, где вы
+              опишете все свои пожелания. Мы проведем маркетинговый анализ
+              рынка, решим, по какому пути пойдем.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>3</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Создание контента</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Напишем тексты для главных и второстепенных страниц. Позаботимся
+              о том, чтобы они были и продающими, и оптимизированными
+              одновременно.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>4</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Дизайн сайта</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Создадим наиболее подходящее оформление, которое не просто будет
+              красивым, но и будет соответствовать правилам юзабилити.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>5</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>
+              Верстка и <br />
+              программирование
+            </h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Напишем тексты для главных и второстепенных страниц. Позаботимся
+              о том, чтобы они были и продающими, и оптимизированными
+              одновременно.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="stage__cards_card">
+          <div class="stage__card_number">
+            <p>6</p>
+          </div>
+          <div class="stage__card_title">
+            <h3>Тестирование</h3>
+          </div>
+          <div class="stage__card_discription">
+            <p>
+              Перед запуском сайта проверим корректность его работы. Исправим
+              ошибки и недочеты. Настроим счетчики веб-аналитики.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <div class="container">
+      <div data-aos="zoom-in" class="question__row">
+        <div data-aos="fade-right" class="question__row_img">
+          <img src="image/question.png" alt="" />
+        </div>
+        <div class="question__row_form">
+          <div data-aos="fade-right" class="question__form_title">
+            <h3>
+              Остались вопросы? <br />
+              Напиши нам
+            </h3>
+          </div>
+          <div data-aos="fade-left" class="question__form_content">
             <form action="">
-              <input
-                maxlength="20"
-                type="text"
-                placeholder="Ваше имя"
-                id="input-name"
-                onkeypress="noDigits(event)"
-              />
-              <input
-                type="tel"
-                placeholder="Ваш номер"
-                id="input-phone"
-                data-phone-pattern="+7 (___) ___-__-__"
-              />
-              <input id="inputEmail" type="text" placeholder="Ваш email" />
+              <input data-aos="fade-right" maxlength="20" type="text" placeholder="Ваше имя" id="input-name"
+                onkeypress="noDigits(event)" />
+              <input data-aos="fade-right" type="tel" placeholder="Ваш номер" id="input-phone" data-phone-pattern="+7 (___) ___-__-__
+                " />
+              <input id="inputEmail" data-aos="fade-right" type="text" placeholder="Ваш email" />
+              <input data-aos="fade-right " type="text " maxlength="40 " placeholder="Ваш вопрос "
+                id="input-question " />
+              <button class="btn-question">Оставить заявку</button>
             </form>
           </div>
-          <div class="callback__row_accept">
-            <p>
-              Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-              обработке данных
-            </p>
-            <div class="checkbox">
-              <input type="checkbox" id="unchecked" class="checkbox-input"/>
-              <label for="unchecked" class="checkbox-label"></label>    
-            </div>
-          </div>
-          <a href="#" class="btn-question">Оставить заявку</a>
         </div>
       </div>
     </div>
-    <!-- scripts -->
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/script.js "></script>
-    <!-- animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- маска -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="inputmask.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#inputEmail").inputmask("email");
-      });
-    </script>
-    <script type="text/javascript"></script>
-  </body>
+  </div>
+  <div class="robots">
+    <div class="container">
+      <div class="robots__row">
+        <div class="robots__row_title">
+          <h2>
+            Создание сайтов. Заказать лендинг, интернет-магазин,
+            многостраничный сайт.
+          </h2>
+        </div>
+        <div class="robots__tow_text">
+          <div class="robots__text_title">
+            <h4>Цены и сроки</h4>
+          </div>
+          <div class="robots__text_content">
+            <p>
+              Закажите современный сайт любого формата в комании CodeWEB.
+              Лендинги и сайты-визитки создаются за 7-14 дней от 40000 рублей
+              с дизайном и мобильной версией. Многостраничные сайты создаются
+              за 10-21 день от 40000 рублей с указанием всех услуг компании,
+              контактов и добавлением формы обратной связи.
+            </p>
+          </div>
+          <div class="robots__text_title">
+            <h4>Примеры сайтов</h4>
+          </div>
+          <div class="robots__text_content">
+            <p>
+              Все примеры сайтов вы можете посмотреть на странице работы.Наши
+              примеры сайтов изготовленные по дизайну заказчика:
+              интернет-магазин
+              <span class="links"><a href="# ">ПромТеплица55</a></span> ,
+              лендинг
+              <span class="links"><a href="# ">Irina-laser-Omsk</a></span> .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="scrollTop">
+      <img src="image/arrowTop.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__content">
+          <div class="footer__row_menu">
+            <div class="footer__row_logo">
+              <a href="# "> Code <span style="color: #5e25c8">WEB</span> </a>
+            </div>
+            <ul class="footer-nav">
+              <li><a href="# ">Услуги</a></li>
+              <li><a href="# ">Проекты</a></li>
+              <li><a href="# ">Консультация</a></li>
+            </ul>
+          </div>
+          <div class="footer__row_email">
+            <a href="# ">Email: commercia@code-web.com </a>
+          </div>
+        </div>
+        <div class="footer__pk">
+          <a href="№ ">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="callback">
+    <div class="callback-close">
+      <a href="#"><img src="image/cbclose.svg" alt="" /></a>
+    </div>
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__row_header">
+          <h2>Оставьте ваши данные</h2>
+        </div>
+        <div class="callback__row_form">
+          <form action="">
+            <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)" />
+            <input type="tel" placeholder="Ваш номер" id="input-phone" data-phone-pattern="+7 (___) ___-__-__" />
+            <input id="inputEmail" type="text" placeholder="Ваш email" />
+          </form>
+        </div>
+        <div class="callback__row_accept">
+          <p>
+            Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+            обработке данных
+          </p>
+          <div class="checkbox">
+            <input type="checkbox" id="unchecked" class="checkbox-input" />
+            <label for="unchecked" class="checkbox-label"></label>
+          </div>
+        </div>
+        <a href="#" class="btn-question">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+  <!-- scripts -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/script.js "></script>
+  <!-- animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- маска -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+  <script src="inputmask.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#inputEmail").inputmask("email");
+    });
+  </script>
+  <script type="text/javascript"></script>
+</body>
+
 </html>
