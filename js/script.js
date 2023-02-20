@@ -1,6 +1,6 @@
 // карточки
-var card = document.querySelectorAll(".wworkcard");
-var text = document.querySelectorAll(".wworktext");
+let card = document.querySelectorAll(".wworkcard");
+let text = document.querySelectorAll(".wworktext");
 
 let texting = function () {
   for (let i = 0; i < text.length; i++) {
