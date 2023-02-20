@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat' !important;
+}
+
+.main-links {
+  margin-bottom: 32px;
+}
+
+.head__heading {
+  margin-bottom: 64px;
+}
+
+.table__description-box {
+  display: flex;
+  justify-content: end;
+}
+
+.table__description {
+  max-width: 530px;
+}
+
+.title-box {
+  margin-bottom: 64px;
+}
+
+/* table */
+
+.table {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  margin-bottom: 64px;
+}
+
+.table thead th {
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 23px 0px;
+  background: #F8F8F8;
+  font-size: 14px;
+}
+
+
+.table thead tr th:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+.table thead tr th:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+.table tbody td {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140.9%;
+  color: #000000;
+  border: none;
+  padding: 29px 0;
+  vertical-align: top;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.table thead tr th:last-child {
+  padding-right: 15px;
+}
+
+.table tbody tr td:last-child {
+  padding-right: 15px;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+.table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+.table__heading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #B4B4B4;
+  margin-bottom: 28px;
+}
+
+.table__money {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.table__btn {
+  text-align: center;
+  padding: 25px 100px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  background: #5E25C8;
+  border-radius: 105px;
+  cursor: pointer;
+  border: none;
+}
+
+.table__btn:hover {
+  background: #7644D3;
+}
+
+.table__btn:active {
+  background: #5800FF;
+}
+
+.btn-box {
+  text-align: center;
+}
