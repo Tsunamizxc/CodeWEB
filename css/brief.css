@@ -1,6 +1,65 @@
+.custom-checkbox .checkbox {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 3px solid #5e25c8;
+  margin-right: 10px;
+  position: relative;
+}
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 80%;
+  height: auto;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkbox .checkmark {
+  display: block;
+}
+
+.hidden-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-radio .radio {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 3px solid #5e25c8;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 50px;
+}
+.custom-radio .radiomark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 80%;
+  height: auto;
+  display: none;
+}
+
+.radio-hidden {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-radio > input:checked + .radio .radiomark {
+  display: block;
+}
+
 .main-links {
   padding-top: 24px;
-  padding-bottom: 64px;
+  padding-bottom: 24px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -51,16 +110,27 @@
 }
 
 .form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .usl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .usl label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -83,12 +153,21 @@
 
 .budj {
   margin-left: 202px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .budj label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -96,6 +175,9 @@
   /* or 34px */
   margin-bottom: 28px;
   color: #000000;
+}
+.budj label input {
+  margin-right: 10px;
 }
 .budj__header {
   margin-bottom: 40px;
@@ -110,13 +192,24 @@
 }
 
 .form__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form__cont_req {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .name-inp label {
   font-family: "Montserrat";
@@ -125,8 +218,13 @@
   font-size: 30px;
   line-height: 37px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .name-inp label input {
   margin-top: 25px;
@@ -141,7 +239,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #b6b6b6;
+  color: #5e25c8;
 }
 
 .phone-inp label {
@@ -151,8 +249,13 @@
   font-size: 30px;
   line-height: 37px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .phone-inp label input {
   margin-top: 25px;
@@ -167,7 +270,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #b6b6b6;
+  color: #5e25c8;
 }
 
 .email-inp label {
@@ -177,8 +280,13 @@
   font-size: 30px;
   line-height: 37px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .email-inp label input {
   margin-top: 25px;
@@ -192,7 +300,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #b6b6b6;
+  color: #5e25c8;
 }
 
 .company-inp label {
@@ -202,8 +310,13 @@
   font-size: 30px;
   line-height: 37px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 71px;
 }
 .company-inp label textarea {
@@ -214,7 +327,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #b6b6b6;
+  color: #5e25c8;
   padding: 25px;
   resize: none;
   margin-top: 25px;
@@ -230,8 +343,13 @@
   font-size: 30px;
   line-height: 37px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .zadacha-inp label textarea {
   width: 729px;
@@ -241,7 +359,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #b6b6b6;
+  color: #5e25c8;
   padding: 25px;
   resize: none;
   margin-top: 25px;
@@ -259,10 +377,41 @@
   line-height: 120.5%;
   /* or 29px */
   letter-spacing: -0.04em;
-  width: 551px;
+}
+.rq label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rq label p {
+  margin-left: 10px;
+  width: 550px;
 }
 
 form button {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  background: #d9d9d9;
+  border-radius: 105px;
+  padding: 25px 90px;
+  border: none;
+  color: #5e25c8;
+}
+
+.none {
+  display: none;
+}
+
+.accept {
   margin-top: 20px;
   margin-bottom: 150px;
   font-family: "Montserrat";
@@ -276,4 +425,2093 @@ form button {
   padding: 25px 90px;
   border: none;
   color: #ffffff;
+}
+
+@media (min-width: 1401px) and (max-width: 1466px) {
+  .custom-checkbox .checkbox {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio .radio {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+  }
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .radio-hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio > input:checked + .radio .radiomark {
+    display: block;
+  }
+  .main-links {
+    padding-top: 24px;
+    padding-bottom: 64px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main-links__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main__header {
+    margin-bottom: 30px;
+  }
+  .main__header_title {
+    margin-bottom: 24px;
+  }
+  .main__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 77px */
+    color: #000000;
+  }
+  .main__header_discription {
+    max-width: 835px;
+  }
+  .main__header_discription p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160.4%;
+    /* or 32px */
+    color: #000000;
+  }
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .usl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .usl__header {
+    margin-bottom: 20px;
+  }
+  .usl__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .budj {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .budj label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .budj label input {
+    margin-right: 10px;
+  }
+  .budj__header {
+    margin-bottom: 20px;
+  }
+  .budj__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .form__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_nonreq {
+    margin-left: 40px;
+  }
+  .name-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .phone-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .email-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-inp label input {
+    margin-top: 25px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .company-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 71px;
+  }
+  .company-inp label textarea {
+    width: 369px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .zadacha-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .zadacha-inp label textarea {
+    width: 369px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .rq {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120.5%;
+    /* or 29px */
+    letter-spacing: -0.04em;
+  }
+  .rq label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 550px;
+  }
+  form button {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #d9d9d9;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #5e25c8;
+  }
+  .none {
+    display: none;
+  }
+  .accept {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #5e25c8;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #ffffff;
+  }
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  .custom-checkbox .checkbox {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio .radio {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+  }
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .radio-hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio > input:checked + .radio .radiomark {
+    display: block;
+  }
+  .main-links {
+    padding-top: 24px;
+    padding-bottom: 64px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main-links__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main__header {
+    margin-bottom: 30px;
+  }
+  .main__header_title {
+    margin-bottom: 24px;
+  }
+  .main__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 77px */
+    color: #000000;
+  }
+  .main__header_discription {
+    max-width: 835px;
+  }
+  .main__header_discription p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160.4%;
+    /* or 32px */
+    color: #000000;
+  }
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .usl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .usl__header {
+    margin-bottom: 20px;
+  }
+  .usl__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .budj {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .budj label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .budj label input {
+    margin-right: 10px;
+  }
+  .budj__header {
+    margin-bottom: 20px;
+  }
+  .budj__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .form__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_nonreq {
+    margin-left: 40px;
+  }
+  .name-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .phone-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .email-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-inp label input {
+    margin-top: 25px;
+    width: 300px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .company-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 71px;
+  }
+  .company-inp label textarea {
+    width: 369px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .zadacha-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .zadacha-inp label textarea {
+    width: 369px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .rq {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120.5%;
+    /* or 29px */
+    letter-spacing: -0.04em;
+  }
+  .rq label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 550px;
+  }
+  form button {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #d9d9d9;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #5e25c8;
+  }
+  .none {
+    display: none;
+  }
+  .accept {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #5e25c8;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #ffffff;
+  }
+}
+@media (min-width: 772px) and (max-width: 992px) {
+  .custom-checkbox .checkbox {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio .radio {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+  }
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .radio-hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio > input:checked + .radio .radiomark {
+    display: block;
+  }
+  .main-links {
+    padding-top: 24px;
+    padding-bottom: 64px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main-links__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main__header {
+    margin-bottom: 30px;
+  }
+  .main__header_title {
+    margin-bottom: 24px;
+  }
+  .main__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 77px */
+    color: #000000;
+  }
+  .main__header_discription {
+    max-width: 835px;
+  }
+  .main__header_discription p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160.4%;
+    /* or 32px */
+    color: #000000;
+  }
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .usl__header {
+    margin-bottom: 38px;
+  }
+  .usl__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .budj {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .budj label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    /* or 34px */
+    margin-bottom: 28px;
+    color: #000000;
+  }
+  .budj label input {
+    margin-right: 10px;
+  }
+  .budj__header {
+    margin-bottom: 40px;
+  }
+  .budj__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .form__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .name-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 529px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .phone-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-inp label input {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    width: 529px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .email-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-inp label input {
+    margin-top: 25px;
+    width: 529px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 31px 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+  }
+  .company-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 71px;
+  }
+  .company-inp label textarea {
+    width: 529px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .zadacha-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .zadacha-inp label textarea {
+    width: 529px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5e25c8;
+    padding: 25px;
+    resize: none;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .rq {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120.5%;
+    /* or 29px */
+    letter-spacing: -0.04em;
+  }
+  .rq label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 550px;
+  }
+  form button {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #d9d9d9;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #5e25c8;
+  }
+  .none {
+    display: none;
+  }
+  .accept {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #5e25c8;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #ffffff;
+  }
+}
+@media (min-width: 576px) and (max-width: 771px) {
+  .custom-checkbox .checkbox {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio .radio {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+  }
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .radio-hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio > input:checked + .radio .radiomark {
+    display: block;
+  }
+  .main-links {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main-links__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main__header {
+    margin-bottom: 24px;
+  }
+  .main__header_title {
+    margin-bottom: 24px;
+  }
+  .main__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #000000;
+  }
+  .main__header_discription {
+    max-width: 835px;
+  }
+  .main__header_discription p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 159.9%;
+    /* or 16px */
+    color: #000000;
+  }
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+    /* or 34px */
+    margin-bottom: 17px;
+    color: #000000;
+  }
+  .usl__header {
+    margin-bottom: 14px;
+  }
+  .usl__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    color: #000000;
+  }
+  .budj {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .budj label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+    /* or 34px */
+    margin-bottom: 17px;
+    color: #000000;
+    color: #000000;
+  }
+  .budj label input {
+    margin-right: 10px;
+  }
+  .budj__header {
+    margin-bottom: 14px;
+  }
+  .budj__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    color: #000000;
+  }
+  .form__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .name-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .phone-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .email-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .company-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .company-inp label textarea {
+    width: 400px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5e25c8;
+    padding: 13px;
+    resize: none;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .zadacha-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .zadacha-inp label textarea {
+    width: 400px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5e25c8;
+    padding: 13px;
+    resize: none;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .rq {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+  .rq label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 330px;
+  }
+  form button {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    background: #d9d9d9;
+    border-radius: 105px;
+    padding: 10px 38px;
+    border: none;
+    color: #5e25c8;
+  }
+  .none {
+    display: none;
+  }
+  .accept {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #5e25c8;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #ffffff;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .custom-checkbox .checkbox {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio .radio {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50px;
+  }
+  .custom-radio .radiomark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+    display: none;
+  }
+  .radio-hidden {
+    opacity: 0;
+    position: absolute;
+  }
+  .custom-radio > input:checked + .radio .radiomark {
+    display: block;
+  }
+  .main-links {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main-links__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.9%;
+    /* or 26px */
+    color: #000000;
+    opacity: 0.6;
+  }
+  .main__header {
+    margin-bottom: 24px;
+  }
+  .main__header_title {
+    margin-bottom: 24px;
+  }
+  .main__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+  }
+  .main__header_discription {
+    max-width: 835px;
+  }
+  .main__header_discription p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 159.9%;
+    /* or 16px */
+    color: #000000;
+  }
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usl label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+    /* or 34px */
+    margin-bottom: 17px;
+    color: #000000;
+  }
+  .usl__header {
+    margin-bottom: 14px;
+  }
+  .usl__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    color: #000000;
+  }
+  .budj {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .budj label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+    /* or 34px */
+    margin-bottom: 17px;
+    color: #000000;
+    color: #000000;
+  }
+  .budj label input {
+    margin-right: 10px;
+  }
+  .budj__header {
+    margin-bottom: 14px;
+  }
+  .budj__header h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    color: #000000;
+  }
+  .form__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__cont_req {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .name-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 242px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .phone-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 242px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .email-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-inp label input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 242px;
+    background: #ffffff;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 13px 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5e25c8;
+  }
+  .company-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .company-inp label textarea {
+    width: 242px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5e25c8;
+    padding: 13px;
+    resize: none;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .zadacha-inp label {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .zadacha-inp label textarea {
+    width: 242px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5e25c8;
+    padding: 13px;
+    resize: none;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 3px solid #aaaaaa;
+    border-radius: 15px;
+  }
+  .rq {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+  .rq label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 230px;
+  }
+  form button {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    background: #d9d9d9;
+    border-radius: 105px;
+    padding: 10px 38px;
+    border: none;
+    color: #5e25c8;
+  }
+  .none {
+    display: none;
+  }
+  .accept {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    background: #5e25c8;
+    border-radius: 105px;
+    padding: 25px 90px;
+    border: none;
+    color: #ffffff;
+  }
 }

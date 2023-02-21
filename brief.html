@@ -69,7 +69,7 @@
       <div class="container">
         <div class="main-links">
           <a href="index.html" class="main-links__link">Главная /</a>
-          <a href="services.html" class="main-links__link">Услуги и цены</a>
+          <a href="services.html" class="main-links__link">Услуги и цены /</a>
         </div>
 
         <div class="main__header">
@@ -80,7 +80,7 @@
             <p>
               Заполните все поля, опишите вашу задачу и укажите примерный
               бюджет. Если не хотите заполнять всю форму, заполните только номер
-              телефона и имя.
+              телефона имя и почту.
             </p>
           </div>
         </div>
@@ -90,91 +90,146 @@
               <div class="usl__header">
                 <h2>Услуги</h2>
               </div>
-              <label for="RS"
+              <label class="custom-checkbox"
                 ><input
                   type="checkbox"
                   name="Разработка сайтов"
                   id="RS"
-                />Разработка сайтов</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Разработка сайтов</label
               >
-              <label for="DI"
+              <label class="custom-checkbox" for="DI"
                 ><input
                   type="checkbox"
                   name="Дизайн,иллюстрации"
                   id="DI"
-                />Дизайн , иллюстрации</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Дизайн , иллюстрации</label
               >
-              <label for="AuOS"
+              <label class="custom-checkbox" for="AuOS"
                 ><input
                   type="checkbox"
                   name="Аудит , оптимизация сайта"
                   id="AuOS"
-                />Аудит , оптимизация сайта</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Аудит , оптимизация сайта</label
               >
-              <label for="SVS"
+              <label class="custom-checkbox" for="SVS"
                 ><input
                   type="checkbox"
                   name="Сопровождение,ведение сайта"
                   id="SVS"
-                />Сопровождение,ведение сайта</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Сопровождение,ведение сайта</label
               >
-              <label for="RDS"
+              <label class="custom-checkbox" for="RDS"
                 ><input
                   type="checkbox"
                   name="Редизайн вашего сайта"
                   id="RDS"
-                />Редизайн вашего сайта</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Редизайн вашего сайта</label
               >
-              <label for="VS"
+              <label class="custom-checkbox" for="VS"
                 ><input
                   type="checkbox"
                   name="Верстка сайта по вашему макету"
                   id="VS"
-                />Верстка сайта по вашему макету</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Верстка сайта по вашему макету</label
               >
-              <label for="RT"
+              <label class="custom-checkbox" for="RT"
                 ><input
                   type="checkbox"
                   name="Разработка сайта на Tilda"
                   id="RT"
-                />Разработка сайта на Tilda</label
+                  class="hidden-checkbox"
+                />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                Разработка сайта на Tilda</label
               >
             </div>
             <div class="budj">
               <div class="budj__header">
                 <h2>Бюджет</h2>
               </div>
-              <label for="9999"
+              <label class="custom-radio" for="9999"
                 ><input
                   type="radio"
                   value="Менее 10 000 рублей"
                   name="priceradio"
                   id="9999"
-                />Менее 10 000 рублей</label
+                  class="radio-hidden"
+                />
+                <div class="radio">
+                  <img src="image/radio.svg" alt="" class="radiomark" />
+                </div>
+                Менее 10 000 рублей</label
               >
-              <label for="19999"
+              <label class="custom-radio" for="19999"
                 ><input
                   type="radio"
                   value="10 000 - 20 000 рублей"
                   name="priceradio"
                   id="19999"
-                />10 000 - 20 000 рублей</label
+                  class="radio-hidden"
+                />
+                <div class="radio">
+                  <img src="image/radio.svg" alt="" class="radiomark" />
+                </div>
+                10 000 - 20 000 рублей</label
               >
-              <label for="39999"
+              <label class="custom-radio" for="39999"
                 ><input
                   type="radio"
                   value="20 000 - 40 000рублей"
                   name="priceradio"
                   id="39999"
-                />20 000 - 40 000 рублей</label
+                  class="radio-hidden"
+                />
+                <div class="radio">
+                  <img src="image/radio.svg" alt="" class="radiomark" />
+                </div>
+                20 000 - 40 000 рублей</label
               >
-              <label for="69999"
+              <label class="custom-radio" for="69999"
                 ><input
                   type="radio"
                   value="40 000 - 70 000 рублей"
                   name="priceradio"
                   id="69999"
-                />40 000 - 70 000 рублей</label
+                  class="radio-hidden"
+                />
+                <div class="radio">
+                  <img src="image/radio.svg" alt="" class="radiomark" />
+                </div>
+                40 000 - 70 000 рублей</label
               >
             </div>
           </div>
@@ -217,20 +272,35 @@
               <div class="company-inp">
                 <label for="compa"
                   >О компании
-                  <textarea name="textarea" maxlength="242"></textarea>
+                  <textarea
+                    name="textarea"
+                    maxlength="242"
+                    placeholder="Здесь вы можете описать вашу компанию..."
+                  ></textarea>
                 </label>
               </div>
               <div class="zadacha-inp">
                 <label for="zadacha"
-                  >Задача <textarea name="textarea" maxlength="242"></textarea>
+                  >Задача
+                  <textarea
+                    name="textarea"
+                    maxlength="242"
+                    placeholder="Здесь вы можете описать вашу задачу... "
+                  ></textarea>
                 </label>
               </div>
             </div>
           </div>
           <div class="rq">
-            <label for="last">
-              <input type="checkbox" id="last" />Нажимая кнопку «Отправить», вы
-              соглашаетесь с услугами по обработке данных
+            <label class="custom-checkbox" for="last">
+              <input type="checkbox" id="last" class="hidden-checkbox" />
+              <div class="checkbox">
+                <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+              </div>
+              <p>
+                Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                обработке данных
+              </p>
             </label>
           </div>
           <br />
@@ -306,6 +376,7 @@
         </div>
       </div>
     </div>
+    <script src="js/checked.js"></script>
     <script src="js//services.js/script.js "></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
