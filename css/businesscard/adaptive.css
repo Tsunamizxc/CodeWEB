@@ -1,5 +1,7 @@
 @media (min-width: 772px) {
-  .table-box__mobile {
+
+  .table-box__mobile,
+  .table__description-box_mobile {
     display: none;
   }
 }
