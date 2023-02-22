@@ -30,9 +30,15 @@
 .table {
   width: 100%;
   border: none;
-  margin-bottom: 20px;
   border-collapse: separate;
   margin-bottom: 64px;
+}
+
+.table-mobile {
+  width: 100%;
+  border: none;
+  border-collapse: separate;
+  margin-bottom: 20px;
 }
 
 .table thead th {
