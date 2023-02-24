@@ -3,6 +3,10 @@ body {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow: hidden;
+}
+
 .service__button a, .header__row_button a {
   padding: 18px 24px 18px 24px;
   border: 1px solid #000000;
@@ -1587,7 +1591,7 @@ body {
   background: #bcbcbc;
 }
 
-@media (min-width: 320px) and (max-width: 575.2px) {
+@media (min-width: 320px) and (max-width: 575px) {
   body {
     scroll-behavior: smooth;
   }

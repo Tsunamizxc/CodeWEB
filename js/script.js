@@ -157,6 +157,7 @@ bgcgrayModal.addEventListener("click", function () {
 
 for (let i = 0; i < btnmodal.length; i++) {
   btnmodal[i].addEventListener("click", function () {
+
     document.body.style.overflow = 'hidden';
     modal.classList.add('range-cb');
     bgcgrayModal.classList.add("visib");
