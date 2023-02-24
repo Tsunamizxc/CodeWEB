@@ -2086,17 +2086,17 @@ form button {
     display: none;
   }
   .accept {
-    margin-top: 20px;
-    margin-bottom: 150px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
     letter-spacing: -0.05em;
     background: #5e25c8;
     border-radius: 105px;
-    padding: 25px 90px;
+    padding: 10px 38px;
     border: none;
     color: #ffffff;
   }
@@ -2500,17 +2500,17 @@ form button {
     display: none;
   }
   .accept {
-    margin-top: 20px;
-    margin-bottom: 150px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 14px;
+    text-align: center;
     letter-spacing: -0.05em;
     background: #5e25c8;
     border-radius: 105px;
-    padding: 25px 90px;
+    padding: 10px 38px;
     border: none;
     color: #ffffff;
   }
