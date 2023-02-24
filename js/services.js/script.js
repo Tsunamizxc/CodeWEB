@@ -80,19 +80,22 @@ closeModal.addEventListener("click", function () {
   firstLines.classList.remove("firstLine");
   secondLines.classList.remove("secondLine");
   threeLines.classList.remove("threeLine");
+  document.body.style.overflow = 'auto';
 });
 bgcgrayModal.addEventListener("click", function () {
-  modal.classList.remove('range-cb')
+  modal.classList.remove('range-cb');
+  document.body.style.overflow = 'auto';
 });
 
 for (let i = 0; i < btnmodal.length; i++) {
   btnmodal[i].addEventListener("click", function () {
-    modal.classList.add('range-cb')
+    modal.classList.add('range-cb');
     bgcgrayModal.classList.add("visib");
     burgerMenu.classList.remove("range");
     firstLines.classList.remove("firstLine");
     secondLines.classList.remove("secondLine");
     threeLines.classList.remove("threeLine");
+    document.body.style.overflow = 'hidden';
   });
 }
 

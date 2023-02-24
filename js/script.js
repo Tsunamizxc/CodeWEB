@@ -143,19 +143,22 @@ let vismodal = document.querySelector(".popup-vis");
 let closeModal = document.querySelector(".callback-close");
 let bgcgrayModal = document.querySelector(".bgcgray-modal");
 closeModal.addEventListener("click", function () {
-  modal.classList.remove('range-cb')
+  modal.classList.remove('range-cb');
   bgcgrayModal.classList.remove("visib");
   firstLines.classList.remove("firstLine");
   secondLines.classList.remove("secondLine");
   threeLines.classList.remove("threeLine");
+  document.body.style.overflow = 'auto';
 });
 bgcgrayModal.addEventListener("click", function () {
-  modal.classList.remove('range-cb')
+  modal.classList.remove('range-cb');
+  document.body.style.overflow = 'auto';
 });
 
 for (let i = 0; i < btnmodal.length; i++) {
   btnmodal[i].addEventListener("click", function () {
-    modal.classList.add('range-cb')
+    document.body.style.overflow = 'hidden';
+    modal.classList.add('range-cb');
     bgcgrayModal.classList.add("visib");
     burgerMenu.classList.remove("range");
     firstLines.classList.remove("firstLine");
