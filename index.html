@@ -257,7 +257,11 @@
                 <a href="multipage.html">Подробнее</a>
               </div>
             </div>
-            <div class="service__card seoBG hidden-320">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="500"
+              class="service__card seoBG hidden-320"
+            >
               <div class="service__card_key hidden">
                 <p>под ключ</p>
               </div>
@@ -446,7 +450,7 @@
                         target="_blank"
                       >
                         <h3>SPEAK</h3>
-                        <p>онлайн сесси с психологом</p>
+                        <p>Онлайн сесси с психологом</p>
                       </a>
                     </div>
                   </div>
@@ -694,7 +698,7 @@
                   <input
                     id="inputEmail"
                     data-aos="fade-right"
-                    type="text"
+                    type="email"
                     placeholder="Ваш email"
                   />
                   <input
@@ -741,9 +745,9 @@
                   Все примеры сайтов вы можете посмотреть на странице
                   работы.Наши примеры сайтов изготовленные по дизайну заказчика:
                   интернет-магазин
-                  <span class="links"><a href="# ">ПромТеплица55</a></span> ,
+                  <span class="links"><a href="# ">ПромТеплица55</a></span>,
                   лендинг
-                  <span class="links"><a href="# ">Irina-laser-Omsk</a></span> .
+                  <span class="links"><a href="# ">Irina-laser-Omsk</a></span>.
                 </p>
               </div>
             </div>
@@ -788,35 +792,49 @@
             <h2>Оставьте ваши данные</h2>
           </div>
           <div class="callback__row_form">
-            <form class="SendMail" method="post" enctype="multipart/form-data">
+            <form id="form" class="SendMail" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="type_name" value="С попапа" />
               <input
                 maxlength="20"
                 type="text"
                 placeholder="Ваше имя"
                 id="input-name"
                 onkeypress="noDigits(event)"
+                name="name"
+                required
               />
               <input
                 type="tel"
+                name="phone"
                 placeholder="Ваш номер"
                 id="input-phone"
                 data-phone-pattern="+7 (___) ___-__-__"
+                required
               />
-              <input id="inputEmail" type="text" placeholder="Ваш email" />
+              <input
+                id="inputEmail"
+                type="email"
+                placeholder="Ваш email"
+                name="email"
+                required
+              />
               <div class="callback__row_accept">
                 <p>
                   Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
                   обработке данных
                 </p>
                 <div class="checkbox">
-                  <input type="checkbox" id="unchecked" class="checkbox-input" />
+                  <input
+                    type="checkbox"
+                    id="unchecked"
+                    class="checkbox-input"
+                  />
                   <label for="unchecked" class="checkbox-label"></label>
                 </div>
               </div>
-             <button type="submit">Отправить</button>
+              <button  class="btn-question" type="submit">Отправить</button>
             </form>
           </div>
-       
         </div>
       </div>
     </div>

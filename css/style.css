@@ -1451,6 +1451,15 @@ main {
   letter-spacing: -0.05em;
   border: 0px;
   color: #ffffff;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.btn-question:hover {
+  background: #7644d3;
+}
+.btn-question:active {
+  background: #5800ff;
 }
 
 .callback-close a {

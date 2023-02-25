@@ -1509,6 +1509,14 @@ main{
   letter-spacing: -0.05em;
   border: 0px;
   color: #ffffff;
+  transition: 1s all;
+  &:hover {
+    background: #7644d3;
+  }
+
+  &:active {
+    background: #5800ff;
+  }
 }
 
 .custom-checkbox {}

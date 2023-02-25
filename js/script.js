@@ -167,4 +167,6 @@ for (let i = 0; i < btnmodal.length; i++) {
     threeLines.classList.remove("threeLine");
   });
 }
-
+document.getElementById("form").onsubmit = function() {
+  location.reload(true);
+};
