@@ -678,7 +678,17 @@
                 </h3>
               </div>
               <div data-aos="fade-left" class="question__form_content">
-                <form action="">
+                <form
+                  id="form"
+                  class="SendMail formed"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <input
+                    type="hidden"
+                    name="type_name"
+                    value="С блока Остались вопросы? "
+                  />
                   <input
                     data-aos="fade-right"
                     maxlength="20"
@@ -686,20 +696,22 @@
                     placeholder="Ваше имя"
                     id="input-name"
                     onkeypress="noDigits(event)"
+                    name="name"
                   />
                   <input
                     data-aos="fade-right"
                     type="tel"
                     placeholder="Ваш номер"
                     id="input-phone"
-                    data-phone-pattern="+7 (___) ___-__-__
-                "
+                    data-phone-pattern="+7 (___) ___-__-__"
+                    name="phone"
                   />
                   <input
                     id="inputEmail"
                     data-aos="fade-right"
                     type="email"
                     placeholder="Ваш email"
+                    name="email"
                   />
                   <input
                     data-aos="fade-right "
@@ -707,8 +719,11 @@
                     maxlength="40 "
                     placeholder="Ваш вопрос "
                     id="input-question "
+                    name="ask"
                   />
-                  <button class="btn-question">Оставить заявку</button>
+                  <button type="submit" class="btn-question">
+                    Оставить заявку
+                  </button>
                 </form>
               </div>
             </div>
@@ -745,9 +760,10 @@
                   Все примеры сайтов вы можете посмотреть на странице
                   работы.Наши примеры сайтов изготовленные по дизайну заказчика:
                   интернет-магазин
-                  <span class="links"><a href="# ">ПромТеплица55</a></span>,
-                  лендинг
-                  <span class="links"><a href="# ">Irina-laser-Omsk</a></span>.
+                  <span class="links"><a href="# ">ПромТеплица55</a></span
+                  >, лендинг
+                  <span class="links"><a href="# ">Irina-laser-Omsk</a></span
+                  >.
                 </p>
               </div>
             </div>
@@ -792,7 +808,12 @@
             <h2>Оставьте ваши данные</h2>
           </div>
           <div class="callback__row_form">
-            <form id="form" class="SendMail" method="post" enctype="multipart/form-data">
+            <form
+              id="form"
+              class="SendMail formed"
+              method="post"
+              enctype="multipart/form-data"
+            >
               <input type="hidden" name="type_name" value="С попапа" />
               <input
                 maxlength="20"
@@ -832,7 +853,7 @@
                   <label for="unchecked" class="checkbox-label"></label>
                 </div>
               </div>
-              <button  class="btn-question" type="submit">Отправить</button>
+              <button class="btn-question" type="submit">Отправить</button>
             </form>
           </div>
         </div>

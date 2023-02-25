@@ -84,7 +84,15 @@
             </p>
           </div>
         </div>
-        <form action="" method="post">
+       
+          <form
+            id="form"
+            class="SendMail formed"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" name="type_name" value="бриф" />
+ 
           <div class="form__checkbox">
             <div class="usl">
               <div class="usl__header">
@@ -243,6 +251,7 @@
                     placeholder="Ваше имя"
                     id="input-name"
                     onkeypress="noDigits(event)"
+                    name="name"
                     required
                 /></label>
               </div>
@@ -253,6 +262,7 @@
                     placeholder="Ваш номер"
                     id="input-phone"
                     data-phone-pattern="+7 (___) ___-__-__"
+                    name="phone"
                     required
                 /></label>
               </div>
@@ -264,6 +274,7 @@
                     id="einp"
                     placeholder="Ваша почта"
                     maxlength="30"
+                    name="email"
                     required
                 /></label>
               </div>
@@ -273,7 +284,8 @@
                 <label for="compa"
                   >О компании
                   <textarea
-                    name="textarea"
+                  type="text"
+                    name="O company"
                     maxlength="242"
                     placeholder="Здесь вы можете описать вашу компанию..."
                   ></textarea>
@@ -283,7 +295,8 @@
                 <label for="zadacha"
                   >Задача
                   <textarea
-                    name="textarea"
+                  type="text"
+                    name="Zadacha"
                     maxlength="242"
                     placeholder="Здесь вы можете описать вашу задачу... "
                   ></textarea>
@@ -304,7 +317,7 @@
             </label>
           </div>
           <br />
-          <button>Отправить</button>
+          <button type="submit">Отправить</button>
         </form>
       </div>
     </main>
@@ -345,34 +358,54 @@
             <h2>Оставьте ваши данные</h2>
           </div>
           <div class="callback__row_form">
-            <form action="">
+            <form
+              id="form"
+              class="SendMail formed"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <input type="hidden" name="type_name" value="С попапа стр о нас" />
               <input
                 maxlength="20"
                 type="text"
                 placeholder="Ваше имя"
                 id="input-name"
                 onkeypress="noDigits(event)"
+                name="name"
+                required
               />
               <input
                 type="tel"
+                name="phone"
                 placeholder="Ваш номер"
                 id="input-phone"
                 data-phone-pattern="+7 (___) ___-__-__"
+                required
               />
-              <input id="inputEmail" type="text" placeholder="Ваш email" />
+              <input
+                id="inputEmail"
+                type="email"
+                placeholder="Ваш email"
+                name="email"
+                required
+              />
+              <div class="callback__row_accept">
+                <p>
+                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                  обработке данных
+                </p>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="unchecked"
+                    class="checkbox-input"
+                  />
+                  <label for="unchecked" class="checkbox-label"></label>
+                </div>
+              </div>
+              <button class="btn-question" type="submit">Отправить</button>
             </form>
           </div>
-          <div class="callback__row_accept">
-            <p>
-              Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-              обработке данных
-            </p>
-            <div class="checkbox">
-              <input type="checkbox" id="unchecked" class="checkbox-input" />
-              <label for="unchecked" class="checkbox-label"></label>
-            </div>
-          </div>
-          <a href="#" class="btn-question">Оставить заявку</a>
         </div>
       </div>
     </div>
@@ -382,5 +415,6 @@
     <script>
       AOS.init();
     </script>
+     <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
   </body>
 </html>
