@@ -788,7 +788,7 @@
             <h2>Оставьте ваши данные</h2>
           </div>
           <div class="callback__row_form">
-            <form action="">
+            <form class="SendMail" method="post" enctype="multipart/form-data">
               <input
                 maxlength="20"
                 type="text"
@@ -803,19 +803,20 @@
                 data-phone-pattern="+7 (___) ___-__-__"
               />
               <input id="inputEmail" type="text" placeholder="Ваш email" />
+              <div class="callback__row_accept">
+                <p>
+                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                  обработке данных
+                </p>
+                <div class="checkbox">
+                  <input type="checkbox" id="unchecked" class="checkbox-input" />
+                  <label for="unchecked" class="checkbox-label"></label>
+                </div>
+              </div>
+             <button type="submit">Отправить</button>
             </form>
           </div>
-          <div class="callback__row_accept">
-            <p>
-              Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-              обработке данных
-            </p>
-            <div class="checkbox">
-              <input type="checkbox" id="unchecked" class="checkbox-input" />
-              <label for="unchecked" class="checkbox-label"></label>
-            </div>
-          </div>
-          <a href="#" class="btn-question">Оставить заявку</a>
+       
         </div>
       </div>
     </div>
@@ -844,5 +845,7 @@
       });
     </script>
     <script type="text/javascript"></script>
+
+    <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
   </body>
 </html>

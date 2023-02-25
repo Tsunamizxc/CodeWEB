@@ -367,3 +367,16 @@ body {
   }
 }
 
+.scrollTop {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+
+  img {
+    animation: arrow 2s infinite ease alternate;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -116,7 +116,7 @@ main {
 .hello {
   overflow: hidden;
   height: 76vh;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .hello__row {
   display: -webkit-box;
@@ -1382,21 +1382,6 @@ main {
           align-items: center;
   margin: 0 auto;
 }
-.callback__row button {
-  margin: 24px 0px 0px 0px;
-  width: 182px;
-  height: 40px;
-  background: #5e25c8;
-  border-radius: 105px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.05em;
-  border: 0px;
-  color: #ffffff;
-}
 .callback__row_header {
   margin: 0 auto;
 }
@@ -1453,7 +1438,7 @@ main {
 }
 
 .btn-question {
-  margin: 24px 0px 0px 0px;
+  margin: 24px auto;
   padding: 10px 30px;
   text-align: center;
   background: #5e25c8;
@@ -8893,6 +8878,18 @@ main {
     background-color: white;
     color: #6b53fc;
   }
+  .scrollTop {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+  .scrollTop img {
+    -webkit-animation: arrow 2s infinite ease alternate;
+            animation: arrow 2s infinite ease alternate;
+  }
+  .scrollTop:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width: 1466px) and (max-width: 1600px) {
   body {
@@ -8956,7 +8953,8 @@ main {
   .hello {
     overflow: hidden;
     height: 76vh;
-    margin-top: 150px;
+    margin-top: 10px;
+    padding-bottom: 50px;
   }
   .hello__row {
     display: -webkit-box;
@@ -9489,5 +9487,17 @@ main {
   .works__button a:hover {
     background-color: white;
     color: #6b53fc;
+  }
+  .scrollTop {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+  .scrollTop img {
+    -webkit-animation: arrow 2s infinite ease alternate;
+            animation: arrow 2s infinite ease alternate;
+  }
+  .scrollTop:hover {
+    cursor: pointer;
   }
 }
