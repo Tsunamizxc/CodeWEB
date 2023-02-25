@@ -1451,9 +1451,9 @@ main {
   letter-spacing: -0.05em;
   border: 0px;
   color: #ffffff;
-  -webkit-transition: 1s all;
-  -o-transition: 1s all;
-  transition: 1s all;
+  -webkit-transition: 1s background;
+  -o-transition: 1s background;
+  transition: 1s background;
 }
 .btn-question:hover {
   background: #7644d3;
