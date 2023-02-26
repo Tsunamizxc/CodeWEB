@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О нас</title>
     <link rel="stylesheet" href="css/abus.css">
-    <link rel="stylesheet" href="css/services/zero.css" />
+    <link rel="stylesheet" href="css/zero.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,8 +69,8 @@
     <main  class="main">
       <div class="container">
         <div class="main-links">
-          <a href="index.html" class="main-links__link">Главная /</a> 
-          <a href="abus.html" class="main-links__link">О нас</a>
+          <a href="index.html" class="main-links__links">Главная /</a> 
+          <a href="abus.html" class="main-links__links">О нас</a>
         </div>
       </div>
       <div  class="abus-face">
@@ -169,11 +169,11 @@
           <div class="callback__row_form">
             <form
               id="form"
-              class="SendMail formed"
+              class="SendMail formed cbform"
               method="post"
               enctype="multipart/form-data"
             >
-              <input type="hidden" name="type_name" value="С попапа стр о нас" />
+              <input type="hidden" name="type_name" value="С попапа о нас" />
               <input
                 maxlength="20"
                 type="text"
@@ -198,27 +198,25 @@
                 name="email"
                 required
               />
-              <div class="callback__row_accept">
-                <p>
-                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-                  обработке данных
-                </p>
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="unchecked"
-                    class="checkbox-input"
-                  />
-                  <label for="unchecked" class="checkbox-label"></label>
-                </div>
+              <div class="rq">
+                <label class="custom-checkbox" for="lasts">
+                  <input type="checkbox" id="lasts" class="hidden-checkbox" />
+                  <div class="checkbox">
+                    <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                  </div>
+                  <p>
+                    Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                    обработке данных
+                  </p>
+                </label>
               </div>
-              <button class="btn-question" type="submit">Отправить</button>
+              <button class="btn-question-pop" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/script.js "></script>
+
     <script src="js//services.js/script.js "></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>

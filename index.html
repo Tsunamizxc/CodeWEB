@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <div class="bgcgray bgcgray-modal"></div>
     <header id="logoID" class="header">
       <div class="container">
         <div class="header__row">
@@ -56,6 +57,7 @@
       </div>
 
       <div class="burger">
+        
         <div class="burger-title">
           <a href="index.html">
             Code <span style="color: #5e25c8">WEB</span>
@@ -74,7 +76,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="bgcgray bgcgray-modal"></div>
+     
       <div
         data-aos="zoom-in"
         data-aos-anchor-placement="top-center"
@@ -810,7 +812,7 @@
           <div class="callback__row_form">
             <form
               id="form"
-              class="SendMail formed"
+              class="SendMail formed cbform"
               method="post"
               enctype="multipart/form-data"
             >
@@ -839,21 +841,19 @@
                 name="email"
                 required
               />
-              <div class="callback__row_accept">
-                <p>
-                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-                  обработке данных
-                </p>
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="unchecked"
-                    class="checkbox-input"
-                  />
-                  <label for="unchecked" class="checkbox-label"></label>
-                </div>
+              <div class="rq">
+                <label class="custom-checkbox" for="last">
+                  <input type="checkbox" id="last" class="hidden-checkbox" />
+                  <div class="checkbox">
+                    <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                  </div>
+                  <p>
+                    Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                    обработке данных
+                  </p>
+                </label>
               </div>
-              <button class="btn-question" type="submit">Отправить</button>
+              <button class="btn-question-pop" type="submit">Отправить</button>
             </form>
           </div>
         </div>

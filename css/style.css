@@ -1492,7 +1492,7 @@ main {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 29;
+  z-index: 70;
   opacity: 0;
   background-color: black;
 }
@@ -1583,6 +1583,130 @@ main {
 }
 .checkbox .checkbox-input:disabled ~ label:after {
   background: #bcbcbc;
+}
+
+.custom-checkbox .checkbox {
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 3px solid #5e25c8;
+  margin-right: 10px;
+  position: relative;
+}
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 70%;
+  height: auto;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkbox .checkmark {
+  display: block;
+}
+
+.hidden-checkbox {
+  display: none;
+  position: absolute;
+}
+
+.rq {
+  margin-top: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+.rq label {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rq label p {
+  margin-left: 10px;
+  width: 320px;
+}
+
+.none {
+  display: none;
+}
+
+.btn-question-pop {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+  background: #d9d9d9;
+  color: #5e25c8;
+}
+
+.accept {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+  color: #ffffff;
+}
+
+.main-links {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160.9%;
+  /* or 26px */
+  color: #000000;
+  opacity: 0.6;
+}
+
+.main-links__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160.9%;
+  /* or 26px */
+  color: #000000;
+  opacity: 0.6;
+}
+
+.main-links__links {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160.9%;
+  /* or 26px */
+  color: white;
+  opacity: 0.6;
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -1688,12 +1812,12 @@ main {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    left: -1000px;
+    right: -1000px;
     text-align: center;
     position: fixed;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    z-index: 10;
+    z-index: 101;
     background-color: white;
   }
   .burger-title {
@@ -1729,7 +1853,7 @@ main {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-    left: 0px;
+    right: 0px;
   }
   .burger-btn {
     z-index: 11;
@@ -3283,6 +3407,7 @@ main {
     top: 0px;
     display: block;
     left: 0px;
+    z-index: 100;
   }
   .callback {
     z-index: 100;
@@ -3406,6 +3531,135 @@ main {
     bottom: 0;
     right: 0;
   }
+  .checkbox {
+    margin: 0px 0;
+  }
+  .checkbox .checkbox-label {
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 40px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .checkbox .checkbox-label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #d6d6d6;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    content: "";
+  }
+  .checkbox .checkbox-label:active:after {
+    -webkit-transform: scale(1.15, 0.85);
+        -ms-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  .checkbox .checkbox-input {
+    display: none;
+  }
+  .checkbox .checkbox-input:checked ~ label {
+    background: #5e25c8;
+  }
+  .checkbox .checkbox-input:checked ~ label:after {
+    left: 20px;
+    background: #401987;
+  }
+  .checkbox .checkbox-input:disabled ~ label {
+    background: #d6d6d6;
+    pointer-events: none;
+  }
+  .checkbox .checkbox-input:disabled ~ label:after {
+    background: #bcbcbc;
+  }
+  .custom-checkbox .checkbox {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    display: none;
+    position: absolute;
+  }
+  .rq {
+    margin-top: 0px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+  .rq label {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 220px;
+  }
+  .none {
+    display: none;
+  }
+  .btn-question-pop {
+    margin: 24px auto;
+    padding: 10px 30px;
+    text-align: center;
+    background: #5e25c8;
+    border-radius: 105px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    border: 0px;
+    background: #d9d9d9;
+    color: #5e25c8;
+  }
+  .accept {
+    margin: 24px auto;
+    padding: 10px 30px;
+    text-align: center;
+    background: #5e25c8;
+    border-radius: 105px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    border: 0px;
+    color: #ffffff;
+  }
 }
 @media (min-width: 576px) and (max-width: 772px) {
   body {
@@ -3492,7 +3746,7 @@ main {
     position: fixed;
     width: 300px;
     height: 100%;
-    z-index: 30;
+    z-index: 101;
     background-color: white;
   }
   .burger-title {
@@ -5105,12 +5359,142 @@ main {
     top: 0px;
     display: block;
     left: 0px;
+    z-index: 100;
   }
   .header__row_burger-btn {
     z-index: 35;
   }
   .header__row_burger-btn {
     display: block;
+  }
+  .checkbox {
+    margin: 0px 0;
+  }
+  .checkbox .checkbox-label {
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 40px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .checkbox .checkbox-label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #d6d6d6;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    content: "";
+  }
+  .checkbox .checkbox-label:active:after {
+    -webkit-transform: scale(1.15, 0.85);
+        -ms-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  .checkbox .checkbox-input {
+    display: none;
+  }
+  .checkbox .checkbox-input:checked ~ label {
+    background: #5e25c8;
+  }
+  .checkbox .checkbox-input:checked ~ label:after {
+    left: 20px;
+    background: #401987;
+  }
+  .checkbox .checkbox-input:disabled ~ label {
+    background: #d6d6d6;
+    pointer-events: none;
+  }
+  .checkbox .checkbox-input:disabled ~ label:after {
+    background: #bcbcbc;
+  }
+  .custom-checkbox .checkbox {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkbox input:checked + .checkbox .checkmark {
+    display: block;
+  }
+  .hidden-checkbox {
+    display: none;
+    position: absolute;
+  }
+  .rq {
+    margin-top: 0px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
+  .rq label {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rq label p {
+    margin-left: 10px;
+    width: 220px;
+  }
+  .none {
+    display: none;
+  }
+  .btn-question-pop {
+    margin: 24px auto;
+    padding: 10px 30px;
+    text-align: center;
+    background: #5e25c8;
+    border-radius: 105px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    border: 0px;
+    background: #d9d9d9;
+    color: #5e25c8;
+  }
+  .accept {
+    margin: 24px auto;
+    padding: 10px 30px;
+    text-align: center;
+    background: #5e25c8;
+    border-radius: 105px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    border: 0px;
+    color: #ffffff;
   }
 }
 @media (min-width: 773px) and (max-width: 992px) {
@@ -5198,7 +5582,7 @@ main {
     position: fixed;
     width: 300px;
     height: 100%;
-    z-index: 30;
+    z-index: 101;
     background-color: white;
   }
   .burger-title {
@@ -6834,6 +7218,7 @@ main {
     top: 0px;
     display: block;
     left: 0px;
+    z-index: 100;
   }
   .header__row_burger-btn {
     z-index: 35;
@@ -6927,7 +7312,7 @@ main {
     position: fixed;
     width: 300px;
     height: 100%;
-    z-index: 30;
+    z-index: 101;
     background-color: white;
   }
   .burger-title {
@@ -7010,7 +7395,7 @@ main {
     margin-top: -45px;
     width: 3em;
     height: 45px;
-    z-index: 31;
+    z-index: 10;
   }
   .hamburger div {
     position: relative;
@@ -7022,24 +7407,25 @@ main {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
   }
   .firstLine {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    z-index: 36;
+    z-index: 10;
     top: 6.5px;
     left: 0px;
   }
   .threeLine {
-    z-index: 36;
+    z-index: 10;
     display: none;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
   .secondLine {
-    z-index: 36;
+    z-index: 10;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -8563,6 +8949,7 @@ main {
     top: 0px;
     display: block;
     left: 0px;
+    z-index: 100;
   }
   .header__row_burger-btn {
     z-index: 35;

@@ -125,7 +125,7 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  z-index: 30;
+  z-index: 101;
   background-color: white;
 }
 .burger-title {
@@ -1677,6 +1677,7 @@ body {
   top: 0px;
   display: block;
   left: 0px;
+  z-index: 100;
 }
 .header__row_burger-btn {
   z-index: 35;
@@ -1684,4 +1685,144 @@ body {
 
 .header__row_burger-btn {
   display: block;
+}
+// colors
+$color1: #5e25c8;
+$color2: #898989;
+
+.checkbox {
+  margin: 0px 0;
+
+  .checkbox-label {
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 40px;
+    background: $color2;
+    border-radius: 100px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      left: -2px;
+      top: -3px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100px;
+      background: lighten($color2, 30%);
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+      content: "";
+    }
+
+    &:active:after {
+      transform: scale(1.15, 0.85);
+    }
+  }
+
+  .checkbox-input {
+    display: none;
+
+    &:checked ~ label {
+      background: $color1;
+
+      &:after {
+        left: 20px;
+        background: darken($color1, 15%);
+      }
+    }
+
+    &:disabled ~ label {
+      background: lighten($color2, 30%);
+      pointer-events: none;
+
+      &:after {
+        background: lighten($color2, 20%);
+      }
+    }
+  }
+}
+.custom-checkbox {
+  .checkbox {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+}
+.custom-checkbox input:checked + .checkbox .checkmark {
+  display: block;
+}
+.hidden-checkbox {
+  display: none;
+  position: absolute;
+}
+
+.rq {
+  label {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 10px;
+      width: 220px;
+    }
+  }
+  margin-top: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  letter-spacing: -0.04em;
+
+  color: #000000;
+}
+
+.none {
+  display: none;
+}
+.btn-question-pop {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+
+  background: #d9d9d9;
+
+  color: #5e25c8;
+}
+.accept {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+  color: #ffffff;
 }

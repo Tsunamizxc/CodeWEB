@@ -145,3 +145,20 @@ formeds[i].onsubmit = function() {
   location.reload(true);
 }
 }
+
+let form = document.querySelector(".cbform");
+console.log(form)
+let btnForm = form.querySelector("button");
+console.log(btnForm)
+let mainsub = form.querySelector("#last");
+console.log(mainsub)
+
+mainsub.onclick = function () {
+  if (mainsub.checked) {
+    btnForm.classList.add("accept");
+    btnForm.disabled = false;
+  } else {
+    btnForm.classList.remove("accept");
+    btnForm.disabled = true;
+  }
+};

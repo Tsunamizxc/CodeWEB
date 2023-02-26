@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Создание многостраничного
     сайта</title>
-  <link rel="stylesheet" href="css/services/zero.css">
+  <link rel="stylesheet" href="css/zero.css">
   <link rel="stylesheet" href="css/services/all-main.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/businesscard/businesscard.css">
@@ -483,11 +483,11 @@
         <div class="callback__row_form">
           <form
             id="form"
-            class="SendMail formed"
+            class="SendMail formed cbform"
             method="post"
             enctype="multipart/form-data"
           >
-            <input type="hidden" name="type_name" value="сайт многостраничник" />
+            <input type="hidden" name="type_name" value="С попапа" />
             <input
               maxlength="20"
               type="text"
@@ -512,21 +512,19 @@
               name="email"
               required
             />
-            <div class="callback__row_accept">
-              <p>
-                Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-                обработке данных
-              </p>
-              <div class="checkbox">
-                <input
-                  type="checkbox"
-                  id="unchecked"
-                  class="checkbox-input"
-                />
-                <label for="unchecked" class="checkbox-label"></label>
-              </div>
+            <div class="rq">
+              <label class="custom-checkbox" for="lasts">
+                <input type="checkbox" id="lasts" class="hidden-checkbox" />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                <p>
+                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                  обработке данных
+                </p>
+              </label>
             </div>
-            <button class="btn-question" type="submit">Отправить</button>
+            <button class="btn-question-pop" type="submit">Отправить</button>
           </form>
         </div>
       </div>
