@@ -1,0 +1,106 @@
+.main {
+  overflow: hidden;
+}
+
+.privacy__header {
+  margin-bottom: 40px;
+}
+.privacy__header_title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  /* or 36px */
+  color: #000000;
+}
+.privacy__column {
+  margin-bottom: 20px;
+}
+.privacy__column_title h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140.9%;
+  /* or 20px */
+  color: #5e25c8;
+}
+.privacy__column_discription p {
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140.9%;
+  /* or 20px */
+  color: #000000;
+}
+.privacy__column_list ul {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.privacy__column_list ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140.9%;
+  /* or 20px */
+  color: #000000;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .main {
+    overflow: hidden;
+  }
+  .privacy__header {
+    margin-bottom: 20px;
+  }
+  .privacy__header_title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 36px */
+    color: #000000;
+  }
+  .privacy__column {
+    margin-bottom: 10px;
+  }
+  .privacy__column_title h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #5e25c8;
+  }
+  .privacy__column_discription p {
+    margin-top: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+  }
+  .privacy__column_list ul {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .privacy__column_list ul li {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.9%;
+    /* or 20px */
+    color: #000000;
+  }
+}
