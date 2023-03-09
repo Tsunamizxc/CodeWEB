@@ -219,37 +219,13 @@
           <h2>Оставьте ваши данные</h2>
         </div>
         <div class="callback__row_form">
-          <form
-            id="form"
-            class="SendMail formed cbform"
-            method="post"
-            enctype="multipart/form-data"
-          >
+          <form id="form" class="SendMail formed cbform" method="post" enctype="multipart/form-data">
             <input type="hidden" name="type_name" value="С попапа услуги и цены" />
-            <input
-              maxlength="20"
-              type="text"
-              placeholder="Ваше имя"
-              id="input-name"
-              onkeypress="noDigits(event)"
-              name="name"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Ваш номер"
-              id="input-phone"
-              data-phone-pattern="+7 (___) ___-__-__"
-              required
-            />
-            <input
-              id="inputEmail"
-              type="email"
-              placeholder="Ваш email"
-              name="email"
-              required
-            />
+            <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)"
+              name="name" required />
+            <input type="tel" name="phone" placeholder="Ваш номер" id="input-phone"
+              data-phone-pattern="+7 (___) ___-__-__" required />
+            <input id="inputEmail" type="email" placeholder="Ваш email" name="email" required />
             <div class="rq">
               <label class="custom-checkbox" for="last">
                 <input type="checkbox" id="last" class="hidden-checkbox" />

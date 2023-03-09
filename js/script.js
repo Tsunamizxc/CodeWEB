@@ -169,18 +169,18 @@ for (let i = 0; i < btnmodal.length; i++) {
 }
 
 let formeds = document.querySelectorAll(".formed");
-for(let i = 0;i < formeds.length;i++){
-formeds[i].onsubmit = function() {
-  location.reload(true);
-}
+for (let i = 0; i < formeds.length; i++) {
+  formeds[i].onsubmit = function () {
+    location.reload(true);
+  }
 }
 
 let form = document.querySelector(".cbform");
-console.log(form)
+// console.log(form)
 let btnForm = form.querySelector("button");
-console.log(btnForm)
+// console.log(btnForm)
 let mainsub = form.querySelector("#last");
-console.log(mainsub)
+// console.log(mainsub)
 
 mainsub.onclick = function () {
   if (mainsub.checked) {
@@ -191,3 +191,7 @@ mainsub.onclick = function () {
     btnForm.disabled = true;
   }
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.btn-question-pop').disabled = 'true';
+});

@@ -1,310 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио | Code Web</title>
-  
-    <link rel="stylesheet" href="css/brief.css" />
-    <link rel="stylesheet" href="css/zero.css" />
-    <link rel="stylesheet" href="css/style.css" />  
-    <link rel="stylesheet" href="css/portfoliow.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- slick -->
-  </head>
-  <body>
-    <header id="logoID" class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="header__row_logo">
-            <a href="index.html">
-              Code <span style="color: #5e25c8">WEB</span>
-            </a>
-          </div>
-          <div class="header__row_menu">
-            <ul class="ul-menu">
-              <li><a href="services.html">Услуги и цены</a></li>
-              <li><a href="portfolio.html">Портфолио</a></li>
-              <li><a href="abus.html">О нас</a></li>
-            </ul>
-          </div>
-          <div class="header__row_button">
-            <a href="#" id="popup" class="popup">Заполнить заявку</a>
-          </div>
-          <div class="header__row_burger-btn">
-            <label for="toggle" class="hamburger">
-              <div class="top-bun"></div>
-              <div class="meat"></div>
-              <div class="bottom-bun"></div>
-            </label>
-          </div>
-        </div>
-      </div>
 
-      <div class="burger">
-        <div class="burger-title">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио | Code Web</title>
+
+  <link rel="stylesheet" href="css/brief.css" />
+  <link rel="stylesheet" href="css/zero.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfoliow.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- slick -->
+</head>
+
+<body>
+  <header id="logoID" class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__row_logo">
           <a href="index.html">
             Code <span style="color: #5e25c8">WEB</span>
           </a>
         </div>
-        <div class="burger-menu">
-          <ul>
+        <div class="header__row_menu">
+          <ul class="ul-menu">
             <li><a href="services.html">Услуги и цены</a></li>
             <li><a href="portfolio.html">Портфолио</a></li>
             <li><a href="abus.html">О нас</a></li>
           </ul>
         </div>
-        <div class="burger-btn">
-          <a class="popup" href="#">Заполнить заявку</a>
+        <div class="header__row_button">
+          <a href="#" id="popup" class="popup">Заполнить заявку</a>
         </div>
-      </div>
-    </header>
-    <div class="bgcgray bgcgray-modal"></div>
-    <main>
-      <div class="works portfolio-works">
-        <div class="ellipse-portfolio-one">
-          <img src="image/BigEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="ellipse-portfolio-two">
-          <img src="image/BigEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="ellipse-portfolio-three">
-          <img src="image/semiBigEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="ellipse-portfolio-four">
-          <img src="image/mediumEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="ellipse-portfolio-five">
-          <img src="image/compositEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="ellipse-portfolio-six">
-          <img src="image/lowcompositEllipsePortfolio.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="main-links">
-            <a href="index.html" class="main-links__link">Главная /</a>
-            <a href="portfolio.html" class="main-links__link">Портфолио /</a>
-          </div>
-          <div class="works__row">
-            <div class="works__row_first-column">
-              <div data-aos="zoom-in" class="works__first-card">
-                <h3>Примеры наших работ</h3>
-              </div>
-              <div class="works__second-card">
-                <div class="second-card-blur item">
-                  <div data-aos="fade-right" class="works__card-second">
-                    <div class="works__card-second_content wworkcard">
-                      <div class="works__card-second_img">
-                        <img src="image/works-second.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="works__card-second_text wworktext">
-                      <a
-                        href="https://stroykontrol.netlify.app/"
-                        target="_blank"
-                      >
-                        <h3>Стройконтроль</h3>
-                        <p>Сайт строительной компании</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="works__three-card">
-                <div class="three-card-blur item">
-                  <div data-aos="fade-right" class="works__card-three">
-                    <div class="works__card-three_content wworkcard">
-                      <div class="works__card-three_img">
-                        <img src="image/works-four.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="works__card-three_text wworktext">
-                      <a href="https://tsunamizxc.github.io/britlex/" target="_blank">
-                        <h3>Britlex</h3>
-                        <p>Школа английского языка</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="works__row_two-column">
-              <div class="works__four-card ">
-                <div class="four-card-blur item">
-                  <div data-aos="fade-left" class="works__card-four">
-                    <div class="works__card-four_content wworkcard">
-                      <div class="works__card-four_img">
-                        <img src="image/works-one.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="works__card-four_text wworktext">
-                      <a href="https://tsunamizxc.github.io/digital/" target="_blank">
-                        <h3>Digital Agency</h3>
-                        <p>Цифровое агентство</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="works__five-card">
-                <div class="five-card-blur item">
-                  <div data-aos="fade-left" class="works__card-five">
-                    <div class="works__card-five_content wworkcard">
-                      <div class="works__card-five_img">
-                        <img src="image/works-three.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="works__card-five_text wworktext">
-                      <a
-                        href="http://adaevilyasworks.tilda.ws/barroso"
-                        target="_blank"
-                      >
-                        <h3>Bodao team</h3>
-                        <p>Команда профессионального бойца ММА</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="works__six-card ">
-                <div class="six-card-blur item">
-                  <div data-aos="fade-left" class="works__card-six">
-                    <div class="works__card-six_content wworkcard">
-                      <div class="works__card-six_img">
-                        <img src="image/works-five.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="works__card-six_text wworktext">
-                      <a
-                        href="https://speak-official.netlify.app/"
-                        target="_blank"
-                      >
-                        <h3>SPEAK</h3>
-                        <p>онлайн сесси с психологом</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="scrollTop">
-        <img src="image/arrowTop.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="footer__row">
-          <div class="footer__content">
-            <div class="footer__row_menu">
-              <div class="footer__row_logo">
-                <a href="#"> Code <span style="color: #5e25c8">WEB</span> </a>
-              </div>
-              <ul class="footer-nav">
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="portfolio.html">Проекты</a></li>
-                <li><a href="#" id="popup" class="popup">Консультация</a></li>
-              </ul>
-            </div>
-            <div class="footer__row_email">
-              <a href="mailto:commercia@code-web.com">Email: commercia@code-web.com </a>
-            </div>
-          </div>
-          <div class="footer__pk">
-            <a href="privacy.html">Политика конфиденциальности</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="callback">
-      <div class="callback-close">
-        <a href="#"><img src="image/cbclose.svg" alt="" /></a>
-      </div>
-      <div class="container">
-        <div class="callback__row">
-          <div class="callback__row_header">
-            <h2>Оставьте ваши данные</h2>
-          </div>
-          <div class="callback__row_form">
-            <form
-              id="form"
-              class="SendMail formed cbform"
-              method="post"
-              enctype="multipart/form-data"
-            >
-              <input type="hidden" name="type_name" value="С попапа портфолио" />
-              <input
-                maxlength="20"
-                type="text"
-                placeholder="Ваше имя"
-                id="input-name"
-                onkeypress="noDigits(event)"
-                name="name"
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Ваш номер"
-                id="input-phone"
-                data-phone-pattern="+7 (___) ___-__-__"
-                required
-              />
-              <input
-                id="inputEmail"
-                type="email"
-                placeholder="Ваш email"
-                name="email"
-                required
-              />
-              <div class="rq">
-                <label class="custom-checkbox" for="last">
-                  <input type="checkbox" id="last" class="hidden-checkbox" />
-                  <div class="checkbox">
-                    <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
-                  </div>
-                  <p>
-                    Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
-                    обработке данных
-                  </p>
-                </label>
-              </div>
-              <button class="btn-question-pop" type="submit">Отправить</button>
-            </form>
-          </div>
+        <div class="header__row_burger-btn">
+          <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </label>
         </div>
       </div>
     </div>
 
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="js/portfolio.js"></script>
-    <!-- animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- маска -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="inputmask.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#inputEmail").inputmask("email");
-      });
-    </script>
-    <script type="text/javascript"></script>
-    <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
-  </body>
+    <div class="burger">
+      <div class="burger-title">
+        <a href="index.html">
+          Code <span style="color: #5e25c8">WEB</span>
+        </a>
+      </div>
+      <div class="burger-menu">
+        <ul>
+          <li><a href="services.html">Услуги и цены</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="abus.html">О нас</a></li>
+        </ul>
+      </div>
+      <div class="burger-btn">
+        <a class="popup" href="#">Заполнить заявку</a>
+      </div>
+    </div>
+  </header>
+  <div class="bgcgray bgcgray-modal"></div>
+  <main>
+    <div class="works portfolio-works">
+      <div class="ellipse-portfolio-one">
+        <img src="image/BigEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="ellipse-portfolio-two">
+        <img src="image/BigEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="ellipse-portfolio-three">
+        <img src="image/semiBigEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="ellipse-portfolio-four">
+        <img src="image/mediumEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="ellipse-portfolio-five">
+        <img src="image/compositEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="ellipse-portfolio-six">
+        <img src="image/lowcompositEllipsePortfolio.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="main-links">
+          <a href="index.html" class="main-links__link">Главная /</a>
+          <a href="portfolio.html" class="main-links__link">Портфолио /</a>
+        </div>
+        <div class="works__row">
+          <div class="works__row_first-column">
+            <div data-aos="zoom-in" class="works__first-card">
+              <h3>Примеры наших работ</h3>
+            </div>
+            <div class="works__second-card">
+              <div class="second-card-blur item">
+                <div data-aos="fade-right" class="works__card-second">
+                  <div class="works__card-second_content wworkcard">
+                    <div class="works__card-second_img">
+                      <img src="image/works-second.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="works__card-second_text wworktext">
+                    <a href="https://stroykontrol.netlify.app/" target="_blank">
+                      <h3>Стройконтроль</h3>
+                      <p>Сайт строительной компании</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="works__three-card">
+              <div class="three-card-blur item">
+                <div data-aos="fade-right" class="works__card-three">
+                  <div class="works__card-three_content wworkcard">
+                    <div class="works__card-three_img">
+                      <img src="image/works-four.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="works__card-three_text wworktext">
+                    <a href="https://tsunamizxc.github.io/britlex/" target="_blank">
+                      <h3>Britlex</h3>
+                      <p>Школа английского языка</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__row_two-column">
+            <div class="works__four-card ">
+              <div class="four-card-blur item">
+                <div data-aos="fade-left" class="works__card-four">
+                  <div class="works__card-four_content wworkcard">
+                    <div class="works__card-four_img">
+                      <img src="image/works-one.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="works__card-four_text wworktext">
+                    <a href="https://tsunamizxc.github.io/digital/" target="_blank">
+                      <h3>Digital Agency</h3>
+                      <p>Цифровое агентство</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="works__five-card">
+              <div class="five-card-blur item">
+                <div data-aos="fade-left" class="works__card-five">
+                  <div class="works__card-five_content wworkcard">
+                    <div class="works__card-five_img">
+                      <img src="image/works-three.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="works__card-five_text wworktext">
+                    <a href="http://adaevilyasworks.tilda.ws/barroso" target="_blank">
+                      <h3>Bodao team</h3>
+                      <p>Команда профессионального бойца ММА</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="works__six-card ">
+              <div class="six-card-blur item">
+                <div data-aos="fade-left" class="works__card-six">
+                  <div class="works__card-six_content wworkcard">
+                    <div class="works__card-six_img">
+                      <img src="image/works-five.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="works__card-six_text wworktext">
+                    <a href="https://speak-official.netlify.app/" target="_blank">
+                      <h3>SPEAK</h3>
+                      <p>онлайн сесси с психологом</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="scrollTop">
+      <img src="image/arrowTop.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__content">
+          <div class="footer__row_menu">
+            <div class="footer__row_logo">
+              <a href="#"> Code <span style="color: #5e25c8">WEB</span> </a>
+            </div>
+            <ul class="footer-nav">
+              <li><a href="services.html">Услуги</a></li>
+              <li><a href="portfolio.html">Проекты</a></li>
+              <li><a href="#" id="popup" class="popup">Консультация</a></li>
+            </ul>
+          </div>
+          <div class="footer__row_email">
+            <a href="mailto:commercia@code-web.com">Email: commercia@code-web.com </a>
+          </div>
+        </div>
+        <div class="footer__pk">
+          <a href="privacy.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="callback">
+    <div class="callback-close">
+      <a href="#"><img src="image/cbclose.svg" alt="" /></a>
+    </div>
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__row_header">
+          <h2>Оставьте ваши данные</h2>
+        </div>
+        <div class="callback__row_form">
+          <form id="form" class="SendMail formed cbform" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="type_name" value="С попапа портфолио" />
+            <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)"
+              name="name" required />
+            <input type="tel" name="phone" placeholder="Ваш номер" id="input-phone"
+              data-phone-pattern="+7 (___) ___-__-__" required />
+            <input id="inputEmail" type="email" placeholder="Ваш email" name="email" required />
+            <div class="rq">
+              <label class="custom-checkbox" for="last">
+                <input type="checkbox" id="last" class="hidden-checkbox" />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                <p>
+                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                  обработке данных
+                </p>
+              </label>
+            </div>
+            <button class="btn-question-pop" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/portfolio.js"></script>
+  <!-- animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- маска -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+  <script src="inputmask.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#inputEmail").inputmask("email");
+    });
+  </script>
+  <script type="text/javascript"></script>
+  <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+</body>
+
 </html>
