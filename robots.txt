@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /css
+Disallow: /abus.html
+Disallow: /brief.html
+Disallow: /businesscard.html
+Disallow: /landingcard.html
+Disallow: /multipage.html
+Disallow: /portfolio.html
+Disallow: /privacy.html
+Disallow: /services.html
+Disallow: /index.html
+Host: code-web.ru
+Sitemap: http://code-web.ru/sitemap.xml
