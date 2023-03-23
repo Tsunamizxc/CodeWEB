@@ -536,7 +536,7 @@
             <input type="hidden" name="type_name" value="С попапа лендинг" />
             <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)"
               name="name" required />
-            <input type="tel" name="phone" placeholder="Ваш номер" id="input-phone"
+            <input type="phone" name="phone" placeholder="Ваш номер" id="input-phone"
               data-phone-pattern="+7 (___) ___-__-__" required />
             <input id="inputEmail" type="email" placeholder="Ваш email" name="email" required />
             <div class="rq">
@@ -557,6 +557,38 @@
       </div>
     </div>
   </div>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="inputmask.min.js"></script>
+  <script>
+    var selector = document.querySelector("input[type='phone']")
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+
+    im.mask(selector);
+    var selector = document.querySelector("input[type='name']")
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+
+    im.mask(selector);
+
+    new JustValidate('#form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2,
+          maxLength: 10
+        },
+        tel: {
+          required: true,
+          function: (name, value) => {
+            const phone = selector.inputmask.unmaskedvalue()
+            return Number(phone) && phone.length === 10
+          }
+        },
+
+      },
+    });
+  </script>
   <script src="js/abus.js"></script>
   <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
 </body>

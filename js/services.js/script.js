@@ -118,10 +118,10 @@ mainsub.onclick = function () {
 
 
 let formeds = document.querySelectorAll(".formed");
-for(let i = 0;i < formeds.length;i++){
-formeds[i].onsubmit = function() {
-  location.reload(true);
-}
+for (let i = 0; i < formeds.length; i++) {
+  formeds[i].onsubmit = function () {
+    location.reload(true);
+  }
 }
 
 
@@ -138,3 +138,11 @@ mainsubP.onclick = function () {
     btnFormP.disabled = true;
   }
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.btn-question-pop').disabled = 'true';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.tewa').disabled = 'true';
+});
