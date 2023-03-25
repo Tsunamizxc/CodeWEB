@@ -1,3 +1,4 @@
+AddDefaultCharset	UTF-8
 # в строке HTTP-запроса отлавливаем запрос вида /?\d*
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /\?\d*\ HTTP/
 # и делаем редирект на корень сайта с удалением GET переменных (знак вопроса ОБЯЗАТЕЛЕН)
@@ -10,6 +11,12 @@ RewriteRule ^ https://www.code-web.ru/$0 [R=301,L]
 # Исключаем все лишние слеши.
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+Redirect 301 /index	https://code-web.ru
+
+
