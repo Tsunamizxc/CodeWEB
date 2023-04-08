@@ -7,7 +7,7 @@ main {
   overflow: hidden;
 }
 
-.service__button a, .header__row_button a {
+.header__row_button a {
   padding: 18px 24px 18px 24px;
   border: 1px solid #000000;
   border-radius: 105px;
@@ -21,11 +21,11 @@ main {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.service__button a:hover, .header__row_button a:hover {
+.header__row_button a:hover {
   background-color: black;
   color: white;
 }
-.service__button a:active, .header__row_button a:active {
+.header__row_button a:active {
   background-color: gray;
   color: white;
   border: 1px solid gray;
@@ -560,6 +560,29 @@ main {
   margin-top: 35px;
   text-align: center;
 }
+.service__button a {
+  display: inline-block;
+  border: 1px solid black;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 105px;
+  padding: 23px 64px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.05em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: black;
+}
+.service__button a:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+}
 .service__header {
   margin-top: 87px;
   margin-bottom: 64px;
@@ -902,9 +925,9 @@ main {
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.05em;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #ffffff;
 }
 .works__button a:hover {
@@ -1713,7 +1736,7 @@ main {
   body {
     scroll-behavior: smooth;
   }
-  .header__row_button a, .service__button a {
+  .header__row_button a {
     padding: 18px 24px 18px 24px;
     border: 1px solid #000000;
     border-radius: 105px;
@@ -1727,11 +1750,11 @@ main {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .header__row_button a:hover, .service__button a:hover {
+  .header__row_button a:hover {
     background-color: black;
     color: white;
   }
-  .header__row_button a:active, .service__button a:active {
+  .header__row_button a:active {
     background-color: gray;
     color: white;
     border: 1px solid gray;
@@ -8962,7 +8985,7 @@ main {
   body {
     scroll-behavior: smooth;
   }
-  .header__row_button a, .service__button a {
+  .header__row_button a {
     padding: 18px 24px 18px 24px;
     border: 1px solid #000000;
     border-radius: 105px;
@@ -8976,11 +8999,11 @@ main {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .header__row_button a:hover, .service__button a:hover {
+  .header__row_button a:hover {
     background-color: black;
     color: white;
   }
-  .header__row_button a:active, .service__button a:active {
+  .header__row_button a:active {
     background-color: gray;
     color: white;
     border: 1px solid gray;
@@ -9291,7 +9314,7 @@ main {
   body {
     scroll-behavior: smooth;
   }
-  .header__row_button a, .service__button a {
+  .header__row_button a {
     padding: 18px 24px 18px 24px;
     border: 1px solid #000000;
     border-radius: 105px;
@@ -9305,11 +9328,11 @@ main {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .header__row_button a:hover, .service__button a:hover {
+  .header__row_button a:hover {
     background-color: black;
     color: white;
   }
-  .header__row_button a:active, .service__button a:active {
+  .header__row_button a:active {
     background-color: gray;
     color: white;
     border: 1px solid gray;

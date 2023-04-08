@@ -1,9 +1,11 @@
 body {
   scroll-behavior: smooth;
 }
+
 main {
   overflow: hidden;
 }
+
 %blackbtn {
   padding: 18px 24px 18px 24px;
   border: 1px solid #000000;
@@ -67,6 +69,7 @@ main {
 }
 
 .header {
+
   // .header__row
   &__row {
     margin: 48px 0px 58px 0px;
@@ -136,8 +139,7 @@ main {
 
     // .hello__row_content
 
-    &_content {
-    }
+    &_content {}
 
     // .hello__row_image
 
@@ -153,6 +155,7 @@ main {
 }
 
 .content {
+
   // .content__title
   &__title {
     max-width: 573px;
@@ -327,6 +330,7 @@ main {
 
   // .about-us__content
   &__content {
+
     // .about-us__content_title
     &_title {
       margin-bottom: 36px;
@@ -367,8 +371,10 @@ main {
 }
 
 .image {
+
   // .image__row
   &__row {
+
     // .image__row_first
     &_first {
       animation: ab-us1 5s infinite ease alternate;
@@ -497,7 +503,25 @@ main {
     text-align: center;
 
     a {
-      @extend %blackbtn;
+      display: inline-block;
+      border: 1px solid black;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 105px;
+      padding: 23px 64px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: -0.05em;
+      transition: all 0.3s ease;
+      color: black;
+
+      &:hover {
+        border: 1px solid black;
+        color: white;
+        background-color: black;
+      }
     }
   }
 
@@ -635,23 +659,19 @@ main {
 .works {
   overflow: hidden;
   position: relative;
-  background: linear-gradient(
-    324.17deg,
-    #6b53fc -7.48%,
-    rgba(233, 13, 246, 0.168728) 141.77%,
-    rgba(255, 0, 245, 0.0208333) 141.78%
-  );
+  background: linear-gradient(324.17deg,
+      #6b53fc -7.48%,
+      rgba(233, 13, 246, 0.168728) 141.77%,
+      rgba(255, 0, 245, 0.0208333) 141.78%);
 
   &__row {
     display: flex;
     margin-left: -150px;
     margin-top: 100px;
 
-    &_first-column {
-    }
+    &_first-column {}
 
-    &_two-column {
-    }
+    &_two-column {}
   }
 
   &__first-card {
@@ -683,11 +703,9 @@ main {
   &__card-second {
     position: relative;
 
-    &_content {
-    }
+    &_content {}
 
-    &_img {
-    }
+    &_img {}
 
     &_text {
       display: none;
@@ -729,11 +747,9 @@ main {
   }
 
   &__card-three {
-    &_content {
-    }
+    &_content {}
 
-    &_img {
-    }
+    &_img {}
 
     &_text {
       display: none;
@@ -776,11 +792,9 @@ main {
   }
 
   &__card-four {
-    &_content {
-    }
+    &_content {}
 
-    &_img {
-    }
+    &_img {}
 
     &_text {
       display: none;
@@ -823,11 +837,9 @@ main {
   }
 
   &__card-five {
-    &_content {
-    }
+    &_content {}
 
-    &_img {
-    }
+    &_img {}
 
     &_text {
       display: none;
@@ -869,11 +881,9 @@ main {
   }
 
   &__card-six {
-    &_content {
-    }
+    &_content {}
 
-    &_img {
-    }
+    &_img {}
 
     &_text {
       display: none;
@@ -927,7 +937,7 @@ main {
       font-size: 24px;
       line-height: 29px;
       letter-spacing: -0.05em;
-      transition: all 1s ease;
+      transition: all 0.3s ease;
       color: #ffffff;
 
       &:hover {
@@ -942,8 +952,7 @@ main {
   transition: all 1s ease;
 }
 
-.item {
-}
+.item {}
 
 .wworkcard {
   transition: all 1s ease;
@@ -1071,8 +1080,10 @@ main {
 }
 
 .stage {
+
   // .stage__cards
   &__cards {
+
     // .stage__cards_card
     &_card {
       filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
@@ -1088,6 +1099,7 @@ main {
 
   // .stage__card
   &__card {
+
     // .stage__card_number
     &_number {
       position: absolute;
@@ -1150,16 +1162,15 @@ main {
     align-items: center;
 
     // .question__row_img
-    &_img {
-    }
+    &_img {}
 
     // .question__row_form
-    &_form {
-    }
+    &_form {}
   }
 
   // .question__form
   &__form {
+
     // .question__form_title
     &_title {
       margin-bottom: 64px;
@@ -1214,6 +1225,7 @@ main {
 
   // .robots__row
   &__row {
+
     // .robots__row_title
     &_title {
       margin-bottom: 24px;
@@ -1232,13 +1244,14 @@ main {
 
   // .robots__tow
   &__tow {
+
     // .robots__tow_text
-    &_text {
-    }
+    &_text {}
   }
 
   // .robots__text
   &__text {
+
     // .robots__text_title
     &_title {
       margin-bottom: 24px;
@@ -1515,6 +1528,7 @@ main {
   border: 0px;
   color: #ffffff;
   transition: 1s background;
+
   &:hover {
     background: #7644d3;
   }
@@ -1524,8 +1538,7 @@ main {
   }
 }
 
-.custom-checkbox {
-}
+.custom-checkbox {}
 
 .callback-close {
   a {
@@ -1637,7 +1650,7 @@ $color2: #898989;
   .checkbox-input {
     display: none;
 
-    &:checked ~ label {
+    &:checked~label {
       background: $color1;
 
       &:after {
@@ -1646,7 +1659,7 @@ $color2: #898989;
       }
     }
 
-    &:disabled ~ label {
+    &:disabled~label {
       background: lighten($color2, 30%);
       pointer-events: none;
 
@@ -1656,6 +1669,7 @@ $color2: #898989;
     }
   }
 }
+
 .custom-checkbox {
   .checkbox {
     width: 15px;
@@ -1665,6 +1679,7 @@ $color2: #898989;
     margin-right: 10px;
     position: relative;
   }
+
   .checkmark {
     position: absolute;
     top: 50%;
@@ -1675,9 +1690,11 @@ $color2: #898989;
     display: none;
   }
 }
-.custom-checkbox input:checked + .checkbox .checkmark {
+
+.custom-checkbox input:checked+.checkbox .checkmark {
   display: block;
 }
+
 .hidden-checkbox {
   display: none;
   position: absolute;
@@ -1688,11 +1705,13 @@ $color2: #898989;
     margin-top: 10px;
     display: flex;
     align-items: center;
+
     p {
       margin-left: 10px;
       width: 320px;
     }
   }
+
   margin-top: 0px;
   font-family: "Montserrat";
   font-style: normal;
@@ -1707,6 +1726,7 @@ $color2: #898989;
 .none {
   display: none;
 }
+
 .btn-question-pop {
   margin: 24px auto;
   padding: 10px 30px;
@@ -1725,6 +1745,7 @@ $color2: #898989;
 
   color: #5e25c8;
 }
+
 .accept {
   margin: 24px auto;
   padding: 10px 30px;
@@ -1740,6 +1761,7 @@ $color2: #898989;
   border: 0px;
   color: #ffffff;
 }
+
 .main-links {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -1755,6 +1777,7 @@ $color2: #898989;
 
   opacity: 0.6;
 }
+
 .main-links__link {
   font-family: "Montserrat";
   font-style: normal;
@@ -1767,6 +1790,7 @@ $color2: #898989;
 
   opacity: 0.6;
 }
+
 .main-links__links {
   font-family: "Montserrat";
   font-style: normal;
@@ -1779,6 +1803,7 @@ $color2: #898989;
 
   opacity: 0.6;
 }
+
 @media (min-width: 320px) and (max-width: 575px) {
   @import "_320px";
 }
