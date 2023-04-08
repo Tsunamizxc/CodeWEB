@@ -1,6 +1,7 @@
 User-agent: *
 
-Disallow: /services.html
 
-Host: https://www.code-web.ru/
-Sitemap: https://www.code-web.ru/sitemap.xml
+Disallow: /privacy.html
+
+Host:http://code-web.ru
+Sitemap: https://code-web.ru/sitemap.xml

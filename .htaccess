@@ -9,14 +9,14 @@ RewriteCond %{THE_REQUEST} //
 # Проверяем, повторяется ли слеш (//) более двух раз.
 RewriteRule ^ https://www.code-web.ru/$0 [R=301,L]
 # Исключаем все лишние слеши.
+
+
+Redirect 301 /index https://code-web.ru
+
+RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
-RewriteEngine On
-RewriteRule ^index\.html$ / [R=301,L]
-
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-Redirect 301 /index	https://code-web.ru
-
-
+ErrorDocument 404 https://https://code-web.ru/error.html

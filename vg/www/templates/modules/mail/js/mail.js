@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    document.addEventListener('submit', function(event) {
+    document.addEventListener('submit', function() {
         var $this = event.target;
 
         if ($this.classList.contains("SendMail")) {

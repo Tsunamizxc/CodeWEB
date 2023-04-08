@@ -1,0 +1,153 @@
+@media (min-width: 993px) and (max-width: 1465px) {
+  .container {
+    max-width: 993px;
+    padding: 0 20px;
+  }
+
+  .error__log {
+    width: 993px;
+    top: -110px;
+    font-size: 320px;
+  }
+}
+
+@media (min-width: 773px) and (max-width: 992px) {
+  .container {
+    max-width: 773px;
+    padding: 0 20px;
+  }
+
+  .error {
+    height: auto;
+  }
+
+  .error__heading {
+    font-weight: 900;
+    font-size: 53px;
+    line-height: 65px;
+    margin-bottom: 32px;
+  }
+
+  .error__description {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 32px;
+  }
+
+  .error__log {
+    width: auto;
+    position: static;
+    font-weight: 700;
+    font-size: 300px;
+    line-height: 366px;
+    margin-bottom: 100px;
+  }
+
+  .error__return {
+    align-self: start;
+    padding-bottom: 20px;
+  }
+
+  .error__return a {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 772px) {
+  .container {
+    max-width: 576px;
+    padding: 0 50px;
+  }
+
+  .error {
+    height: auto;
+  }
+
+  .error__heading {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 29px;
+    margin-bottom: 24px;
+  }
+
+  .error__description {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 24px;
+  }
+
+  .error__log {
+    width: auto;
+    position: static;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 110px;
+    margin-bottom: 50px;
+  }
+
+  .error__return {
+    align-self: start;
+    padding-bottom: 20px;
+  }
+
+  .error__return a {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .error__return a::before {
+    right: -30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.2px) {
+
+  .container {
+    max-width: 320px;
+    padding: 0 30px;
+  }
+
+  .error {
+    height: auto;
+  }
+
+  .error__heading {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 24px;
+  }
+
+  .error__description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .error__log {
+    width: auto;
+    position: static;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 110px;
+    margin-bottom: 30px;
+  }
+
+  .error__return {
+    align-self: start;
+    padding-bottom: 20px;
+  }
+
+  .error__return a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .error__return a::before {
+    font-size: 16px;
+    right: -20px;
+  }
+}

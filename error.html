@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ошибка | Code WEB</title>
+  <link rel="stylesheet" href="css/abus.css">
+  <link rel="stylesheet" href="css/zero.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/error.css">
+  <link rel="stylesheet" href="css/adaptiveerror.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- slick -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" sizes="120x120" href="/favicon-120x120.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- og property -->
+  <meta property="og:title" content="404 | Code WEB" />
+  <meta property="og:description"
+    content="Приятно познакомиться!Мы команда Code WEB!Здесь мы расскажем вам кто такие команда Code WEB и почему мы предлагаем выбрать именно нас!" />
+  <meta property="og:image" content="/ogimg.JPG" />
+  <meta property="og:url" content="https://code-web.ru/" />
+  <meta name="description"
+    content="Приятно познакомиться!Мы команда Code WEB!Здесь мы расскажем вам кто такие команда Code WEB и почему мы предлагаем выбрать именно нас!">
+  <meta name="keywords"
+    content="Сайты,создание сайтов,seo,продвижение сайтов,купить сайт,создание дизайна,купить дизайн" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HY72LVC6TR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-HY72LVC6TR');
+</script>
+
+<body>
+  <header id="logoID" class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__row_logo">
+          <a href="index.html">
+            Code <span style="color: #5e25c8">WEB</span>
+          </a>
+        </div>
+        <div class="header__row_menu">
+          <ul class="ul-menu">
+            <li><a href="services.html">Услуги и цены</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="abus.html">О нас</a></li>
+          </ul>
+        </div>
+        <div class="header__row_button">
+          <a href="#" id="popup" class="popup" style="display:none">Заполнить заявку</a>
+        </div>
+        <div class="header__row_burger-btn">
+          <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger">
+      <div class="burger-title">
+        <a href="index.html">
+          Code <span style="color: #5e25c8">WEB</span>
+        </a>
+      </div>
+      <div class="burger-menu">
+        <ul>
+          <li><a href="services.html">Услуги и цены</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="abus.html">О нас</a></li>
+        </ul>
+      </div>
+      <div class="burger-btn">
+        <a class="popup" href="#" style="display:none">Заполнить заявку</a>
+      </div>
+    </div>
+  </header>
+  <div class="bgcgray bgcgray-modal"></div>
+  <main>
+    <div class="container">
+      <div class="error">
+        <div class="error__text">
+          <h2 class="error__heading">
+            Страница не найдена
+          </h2>
+          <p class="error__description">Запрошенный URL не найден на этом сервере</p>
+        </div>
+        <div class="error__log">
+          404
+        </div>
+        <div class="error__return">
+          <a href="index.html">Вернуться на главную страницу</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="scrollTop" style="display:none"></div>
+  <div class=" callback">
+    <div class="callback-close">
+      <a href="#"><img src="image/cbclose.svg" alt="" /></a>
+    </div>
+    <div class="container">
+      <div class="callback__row">
+        <div class="callback__row_header">
+          <h2>Оставьте ваши данные</h2>
+        </div>
+        <div class="callback__row_form">
+          <form id="form" class="SendMail formed cbform" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="type_name" value="С попапа о нас" />
+            <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)"
+              name="name" required />
+            <input type="phone" name="phone" placeholder="Ваш номер" id="input-phone"
+              data-phone-pattern="+7 (___) ___-__-__" required />
+            <input id="inputEmail" type="email" placeholder="Ваш email" name="email" required />
+            <div class="rq">
+              <label class="custom-checkbox" for="last">
+                <input type="checkbox" id="last" class="hidden-checkbox" />
+                <div class="checkbox">
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                </div>
+                <p>
+                  Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
+                  обработке данных
+                </p>
+              </label>
+            </div>
+            <button class="btn-question-pop" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="inputmask.min.js"></script>
+  <script>
+    var selector = document.querySelector("input[type='phone']")
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+
+    im.mask(selector);
+    var selector = document.querySelector("input[type='name']")
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+
+    im.mask(selector);
+
+    new JustValidate('#form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2,
+          maxLength: 10
+        },
+        tel: {
+          required: true,
+          function: (name, value) => {
+            const phone = selector.inputmask.unmaskedvalue()
+            return Number(phone) && phone.length === 10
+          }
+        },
+
+      },
+    });
+  </script>
+  <script src="js/abus.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
+</body>
+
+</html>
