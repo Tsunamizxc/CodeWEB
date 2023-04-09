@@ -15,6 +15,7 @@
 	color: #ffffff;
 
 	opacity: 0.6;
+
 	&__link {
 		font-family: "Montserrat";
 		font-style: normal;
@@ -28,8 +29,10 @@
 		opacity: 0.6;
 	}
 }
+
 .abus-face {
 	padding-bottom: 110px;
+
 	&__title {
 		h2 {
 			font-family: "Montserrat";
@@ -45,6 +48,7 @@
 
 	&__row {
 		display: flex;
+
 		&_content {
 			margin-left: 60px;
 			max-width: 659px;
@@ -61,6 +65,7 @@
 		&_title {
 			margin-top: 76px;
 			margin-bottom: 36px;
+
 			h1 {
 				font-family: "Montserrat";
 				font-style: normal;
@@ -83,15 +88,19 @@
 				/* or 29px */
 
 				color: #ffffff;
+
 				&:first-child {
 					margin-bottom: 20px;
 				}
+
 				&:last-child {
 					margin-top: 20px;
 				}
 			}
+
 			ul {
 				margin-left: 40px;
+
 				li {
 					list-style-type: circle;
 					font-family: "Montserrat";
@@ -107,11 +116,13 @@
 		}
 	}
 }
+
 .ab-face {
 	&__row {
 		display: flex;
 	}
 }
+
 .abus-img {
 	&_first {
 		position: absolute;
@@ -142,10 +153,12 @@
 		animation: ab-us5 2s infinite ease alternate;
 	}
 }
+
 @keyframes ab-us1 {
 	0% {
 		transform: translateY(0);
 	}
+
 	100% {
 		transform: translateY(-20px);
 	}
@@ -155,6 +168,7 @@
 	0% {
 		transform: translateY(0);
 	}
+
 	100% {
 		transform: translateY(-10px);
 	}
@@ -164,6 +178,7 @@
 	0% {
 		transform: translateY(0);
 	}
+
 	100% {
 		transform: translateY(-10px);
 	}
@@ -173,6 +188,7 @@
 	0% {
 		transform: translateY(0);
 	}
+
 	100% {
 		transform: translateY(-10px);
 	}
@@ -182,10 +198,12 @@
 	0% {
 		transform: translateY(0);
 	}
+
 	100% {
 		transform: translateY(-5px);
 	}
 }
+
 @media (min-width: 320px) and (max-width: 575px) {
 	.main-links {
 		padding-top: 13px;
@@ -196,10 +214,11 @@
 		font-size: 24px;
 		line-height: 160.9%;
 		/* or 39px */
-	
+
 		color: #ffffff;
-	
+
 		opacity: 0.6;
+
 		&__link {
 			font-family: "Montserrat";
 			font-style: normal;
@@ -207,14 +226,16 @@
 			font-size: 14px;
 			line-height: 160.9%;
 			/* or 39px */
-	
+
 			color: #ffffff;
-	
+
 			opacity: 0.6;
 		}
 	}
+
 	.abus-face {
 		padding-bottom: 350px;
+
 		&__title {
 			h2 {
 				font-family: "Montserrat";
@@ -231,6 +252,7 @@
 		&__row {
 			display: flex;
 			flex-direction: column;
+
 			&_content {
 				margin-left: 00px;
 				max-width: 659px;
@@ -247,6 +269,7 @@
 			&_title {
 				margin-top: 20px;
 				margin-bottom: 26px;
+
 				h1 {
 					font-family: "Montserrat";
 					font-style: normal;
@@ -269,15 +292,19 @@
 					/* or 26px */
 
 					color: #ffffff;
+
 					&:first-child {
 						margin-bottom: 20px;
 					}
+
 					&:last-child {
 						margin-top: 20px;
 					}
 				}
+
 				ul {
 					margin-left: 40px;
+
 					li {
 						font-family: "Montserrat";
 						font-style: normal;
@@ -292,17 +319,20 @@
 			}
 		}
 	}
+
 	.ab-face {
 		&__row {
 			display: flex;
 			flex-direction: column;
 		}
 	}
+
 	.abus-img {
 		&_first {
 			position: absolute;
 
 			animation: ab-us1 5s infinite ease alternate;
+
 			img {
 				max-width: 270px;
 			}
@@ -310,25 +340,31 @@
 
 		&_second {
 			position: absolute;
+
 			img {
 				max-width: 270px;
 			}
+
 			animation: ab-us2 3s infinite ease alternate;
 		}
 
 		&_three {
 			position: absolute;
+
 			img {
 				max-width: 270px;
 			}
+
 			animation: ab-us3 5s infinite ease alternate;
 		}
 
 		&_four {
 			position: absolute;
+
 			img {
 				max-width: 270px;
 			}
+
 			animation: ab-us4 2s infinite ease alternate;
 		}
 
@@ -336,6 +372,7 @@
 			img {
 				max-width: 270px;
 			}
+
 			position: absolute;
 			animation: ab-us5 2s infinite ease alternate;
 		}
@@ -352,10 +389,11 @@
 		font-size: 24px;
 		line-height: 160.9%;
 		/* or 39px */
-	
+
 		color: #ffffff;
-	
+
 		opacity: 0.6;
+
 		&__link {
 			font-family: "Montserrat";
 			font-style: normal;
@@ -363,14 +401,16 @@
 			font-size: 14px;
 			line-height: 160.9%;
 			/* or 39px */
-	
+
 			color: #ffffff;
-	
+
 			opacity: 0.6;
 		}
 	}
+
 	.abus-face {
 		padding-bottom: 450px;
+
 		&__title {
 			h2 {
 				font-family: "Montserrat";
@@ -387,6 +427,7 @@
 		&__row {
 			display: flex;
 			flex-direction: column;
+
 			&_content {
 				margin-left: 00px;
 				max-width: 659px;
@@ -403,6 +444,7 @@
 			&_title {
 				margin-top: 20px;
 				margin-bottom: 26px;
+
 				h1 {
 					font-family: "Montserrat";
 					font-style: normal;
@@ -425,15 +467,19 @@
 					/* or 26px */
 
 					color: #ffffff;
+
 					&:first-child {
 						margin-bottom: 20px;
 					}
+
 					&:last-child {
 						margin-top: 20px;
 					}
 				}
+
 				ul {
 					margin-left: 40px;
+
 					li {
 						font-family: "Montserrat";
 						font-style: normal;
@@ -448,17 +494,20 @@
 			}
 		}
 	}
+
 	.ab-face {
 		&__row {
 			display: flex;
 			flex-direction: column;
 		}
 	}
+
 	.abus-img {
 		&_first {
 			position: absolute;
 
 			animation: ab-us1 5s infinite ease alternate;
+
 			img {
 				max-width: 450px;
 			}
@@ -466,25 +515,31 @@
 
 		&_second {
 			position: absolute;
+
 			img {
 				max-width: 450px;
 			}
+
 			animation: ab-us2 3s infinite ease alternate;
 		}
 
 		&_three {
 			position: absolute;
+
 			img {
 				max-width: 450px;
 			}
+
 			animation: ab-us3 5s infinite ease alternate;
 		}
 
 		&_four {
 			position: absolute;
+
 			img {
 				max-width: 450px;
 			}
+
 			animation: ab-us4 2s infinite ease alternate;
 		}
 
@@ -492,14 +547,17 @@
 			img {
 				max-width: 450px;
 			}
+
 			position: absolute;
 			animation: ab-us5 2s infinite ease alternate;
 		}
 	}
 }
+
 @media (min-width: 773px) and (max-width: 992px) {
 	.abus-face {
 		padding-bottom: 650px;
+
 		&__title {
 			h2 {
 				font-family: "Montserrat";
@@ -516,6 +574,7 @@
 		&__row {
 			display: flex;
 			flex-direction: column;
+
 			&_content {
 				margin-left: 40px;
 				max-width: 659px;
@@ -532,6 +591,7 @@
 			&_title {
 				margin-top: 76px;
 				margin-bottom: 36px;
+
 				h1 {
 					font-family: "Montserrat";
 					font-style: normal;
@@ -554,15 +614,19 @@
 					/* or 29px */
 
 					color: #ffffff;
+
 					&:first-child {
 						margin-bottom: 20px;
 					}
+
 					&:last-child {
 						margin-top: 20px;
 					}
 				}
+
 				ul {
 					margin-left: 40px;
+
 					li {
 						list-style-type: circle;
 						font-family: "Montserrat";
@@ -578,12 +642,14 @@
 			}
 		}
 	}
+
 	.ab-face {
 		&__row {
 			display: flex;
 			flex-direction: column;
 		}
 	}
+
 	.abus-img {
 		&_first {
 			position: absolute;
@@ -615,9 +681,11 @@
 		}
 	}
 }
+
 @media (min-width: 992px) and (max-width: 1465px) {
 	.abus-face {
 		padding-bottom: 650px;
+
 		&__title {
 			h2 {
 				font-family: "Montserrat";
@@ -634,6 +702,7 @@
 		&__row {
 			display: flex;
 			flex-direction: column;
+
 			&_content {
 				margin-left: 40px;
 				max-width: 659px;
@@ -650,6 +719,7 @@
 			&_title {
 				margin-top: 76px;
 				margin-bottom: 36px;
+
 				h1 {
 					font-family: "Montserrat";
 					font-style: normal;
@@ -672,15 +742,19 @@
 					/* or 29px */
 
 					color: #ffffff;
+
 					&:first-child {
 						margin-bottom: 20px;
 					}
+
 					&:last-child {
 						margin-top: 20px;
 					}
 				}
+
 				ul {
 					margin-left: 40px;
+
 					li {
 						list-style-type: circle;
 						font-family: "Montserrat";
@@ -696,12 +770,14 @@
 			}
 		}
 	}
+
 	.ab-face {
 		&__row {
 			display: flex;
 			flex-direction: column;
 		}
 	}
+
 	.abus-img {
 		&_first {
 			position: absolute;
@@ -732,4 +808,152 @@
 			animation: ab-us5 2s infinite ease alternate;
 		}
 	}
+}
+
+.checkbox {
+	margin: 0px 0;
+}
+
+.checkbox .checkbox-label {
+	position: relative;
+	display: block;
+	height: 14px;
+	width: 40px;
+	background: #898989;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+.checkbox .checkbox-label:after {
+	position: absolute;
+	left: -2px;
+	top: -3px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	background: #d6d6d6;
+	-webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+	content: "";
+}
+
+.checkbox .checkbox-label:active:after {
+	-webkit-transform: scale(1.15, 0.85);
+	-ms-transform: scale(1.15, 0.85);
+	transform: scale(1.15, 0.85);
+}
+
+.checkbox .checkbox-input {
+	display: none;
+}
+
+.checkbox .checkbox-input:checked~label {
+	background: #5e25c8;
+}
+
+.checkbox .checkbox-input:checked~label:after {
+	left: 20px;
+	background: #401987;
+}
+
+.checkbox .checkbox-input:disabled~label {
+	background: #d6d6d6;
+	pointer-events: none;
+}
+
+.checkbox .checkbox-input:disabled~label:after {
+	background: #bcbcbc;
+}
+
+.custom-checkbox .checkbox {
+	width: 30px;
+	height: 30px;
+	background: #ffffff;
+	border: 3px solid #5e25c8;
+	margin-right: 10px;
+	position: relative;
+}
+
+.custom-checkbox .checkmark {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	max-width: 70%;
+	height: auto;
+	display: none;
+}
+
+.custom-checkbox input:checked+.checkbox .checkmark {
+	display: block;
+}
+
+.hidden-checkbox {
+	display: none;
+	position: absolute;
+}
+
+.rq {
+	margin-top: 0px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -0.04em;
+	color: #000000;
+}
+
+.rq label {
+	margin-top: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.rq label p {
+	margin-left: 10px;
+	width: 320px;
+}
+
+.none {
+	display: none;
+}
+
+.btn-question-pop {
+	margin: 24px auto;
+	padding: 10px 30px;
+	text-align: center;
+	background: #5e25c8;
+	border-radius: 105px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.05em;
+	border: 0px;
+	background: #d9d9d9;
+	color: #5e25c8;
+}
+
+.accept {
+	margin: 24px auto;
+	padding: 10px 30px;
+	text-align: center;
+	background: #5e25c8;
+	border-radius: 105px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.05em;
+	border: 0px;
+	color: #ffffff;
 }

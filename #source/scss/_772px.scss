@@ -1866,3 +1866,27 @@ body {
 .header__row_burger-btn {
   display: block;
 }
+
+.hidden-image {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  z-index: 10;
+  width: 750px;
+  height: 500px;
+
+  background-color: black;
+}
+
+.hidden-image-two {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  z-index: 10;
+  width: 750px;
+  height: 400px;
+
+  background-color: black;
+}
