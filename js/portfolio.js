@@ -139,12 +139,7 @@ for (let i = 0; i < itemAll.length; i++) {
   });
 }
 
-let formeds = document.querySelectorAll(".formed");
-for (let i = 0; i < formeds.length; i++) {
-  formeds[i].onsubmit = function () {
-    location.reload(true);
-  }
-}
+
 
 let form = document.querySelector(".cbform");
 console.log(form)

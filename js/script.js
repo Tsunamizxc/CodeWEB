@@ -156,8 +156,8 @@ bgcgrayModal.addEventListener("click", function () {
 });
 
 for (let i = 0; i < btnmodal.length; i++) {
-  btnmodal[i].addEventListener("click", function () {
-
+  btnmodal[i].addEventListener("click", function (e) {
+    e.preventDefault();
     document.body.style.overflow = 'hidden';
     modal.classList.add('range-cb');
     bgcgrayModal.classList.add("visib");
@@ -168,12 +168,6 @@ for (let i = 0; i < btnmodal.length; i++) {
   });
 }
 
-let formeds = document.querySelectorAll(".formed");
-for (let i = 0; i < formeds.length; i++) {
-  formeds[i].onsubmit = function () {
-    location.reload(true);
-  }
-}
 
 let form = document.querySelector(".cbform");
 // console.log(form)
@@ -195,3 +189,5 @@ mainsub.onclick = function () {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.btn-question-pop').disabled = 'true';
 });
+
+
