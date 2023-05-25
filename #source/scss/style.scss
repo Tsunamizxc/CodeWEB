@@ -2,6 +2,17 @@ body {
   scroll-behavior: smooth;
 }
 
+* {
+  scrollbar-width: none;
+  /* firefox */
+}
+
+*::-webkit-scrollbar {
+  /* webkit */
+  width: 0;
+  height: 0;
+}
+
 main {
   overflow: hidden;
 }
