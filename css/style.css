@@ -1553,13 +1553,36 @@ main {
 .range-cb {
   margin: auto;
   visibility: visible;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  -webkit-animation: popupopen 0.3s ease;
+          animation: popupopen 0.3s ease;
 }
 
+@-webkit-keyframes popupopen {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes popupopen {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 .checkbox {
   margin: 0px 0;
 }
@@ -1754,6 +1777,52 @@ main {
   background-color: black;
 }
 
+.message {
+  z-index: 1000;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160.9%;
+  /* or 26px */
+  padding: 10px 0px;
+  color: rgb(133, 62, 255);
+  top: 0px;
+  display: none;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background-color: rgb(238, 231, 231);
+  -webkit-animation: popupopen 0.3s ease;
+          animation: popupopen 0.3s ease;
+}
+
+.message-close {
+  -webkit-animation: messageclose 0.3s ease;
+          animation: messageclose 0.3s ease;
+}
+
+@-webkit-keyframes messageclose {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@keyframes messageclose {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
 @media (min-width: 320px) and (max-width: 575px) {
   body {
     scroll-behavior: smooth;
