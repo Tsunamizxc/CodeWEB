@@ -12,9 +12,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     let inputs = $this.querySelectorAll('input')
                     let close = document.querySelector('.bgcgray-modal');
                     let message = document.querySelector('.message')
+                    let pp = document.querySelector('.callback')
+
                     if (res1.error == 0) {
                         $this.querySelector('button').disabled = true;
                         $this.querySelector('button').classList.remove('accept');
+
+                        // if (pp.style.display = 'block') {
+                        //     pp.classList.remove('range-cb');
+                        //     close.classList.remove("visib");
+                        //     pp.style.display = 'none';
+                        // };
+                        // if (pp.style.display = 'none') {
+                        //     pp.classList.remove('range-cb');
+                        //     close.classList.remove("visib");
+                        // }
+
                         inputs.forEach(el => {
                             if (el.type == 'checkbox') {
                                 el.checked = false;

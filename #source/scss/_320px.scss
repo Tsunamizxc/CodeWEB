@@ -1814,41 +1814,61 @@ body {
   z-index: 100;
 }
 
+.linecb {
+  width: 132px;
+  height: 0px;
+  margin: 15px auto 0 auto;
+  border-top: 0.5px solid #000000;
+}
+
 .callback {
   z-index: 100;
-
+  visibility: hidden;
   margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  max-width: 260px;
+  max-height: 362px;
+  padding: 40px 33px;
 
-  max-width: 316px;
-  max-height: 300px;
+  background: #ffffff;
+  border-radius: 35px;
 
-  background: #ededed;
-  border-radius: 45px;
+  label {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+  }
 
   &__row {
-    max-width: 337px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 
     &_header {
-      margin: 0 auto;
+
+
 
       h2 {
-        margin-top: 56px;
-        font-family: "Montserrat";
+        margin-top: 0;
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 34px;
+        font-size: 16px;
+
 
         color: #000000;
+
       }
     }
 
@@ -1860,16 +1880,19 @@ body {
         flex-direction: column;
 
         input {
-          margin: 2.5px 0px;
-          width: 250px;
-          height: 14px;
+          margin: 5px 0px 0 0;
+          width: 194px;
+          padding: 10px 10px;
+          background: #FFFFFF;
+          border: 1px solid #AAAAAA;
+          border-radius: 8px;
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
+          font-size: 16px;
           line-height: 20px;
           letter-spacing: -0.05em;
-
+          padding: 12px 15px;
           color: #000000;
 
           opacity: 0.5;
@@ -1879,10 +1902,10 @@ body {
 
     &_accept {
       display: flex;
-      margin-top: 5px;
+      align-items: center;
 
       p {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -1897,20 +1920,46 @@ body {
   }
 }
 
+.obrabotka {
+  max-width: 184.71px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 120.5%;
+  /* or 10px */
+
+  letter-spacing: -0.04em;
+
+  color: #000000;
+
+}
+
 .btn-question {
-  margin: 14px 0px 0px 0px;
-  padding: 10px 20px;
+  display: inline-block;
+  margin: 24px auto;
+  padding: 10px 30px;
   text-align: center;
   background: #5e25c8;
   border-radius: 105px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
+  line-height: 15px;
 
-  letter-spacing: -0.05em;
+  color: #FFFFFF;
   border: 0px;
-  color: #ffffff;
+
+  transition: 1s background;
+
+  &:hover {
+    background: #7644d3;
+  }
+
+  &:active {
+    background: #5800ff;
+  }
 }
 
 .custom-checkbox {}
@@ -1921,16 +1970,17 @@ body {
     align-items: center;
 
     img {
-      max-width: 15px;
-      margin-left: 10px;
+      max-width: 11px;
+      margin-left: 5px;
+      margin-top: 1px;
     }
 
-    width: 32px;
-    height: 32px;
-    top: 25px;
-    right: 30px;
+    width: 20px;
+    height:20px;
+    top: 20px;
+    right: 20px;
     position: absolute;
-
+    border: 0.1px solid #0000006c;
     border-radius: 50%;
 
     background: #ffffff;
@@ -1941,7 +1991,7 @@ body {
   margin: auto;
   visibility: visible;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -2063,16 +2113,16 @@ $color2: #898989;
 }
 
 .btn-question-pop {
-  margin: 24px auto;
-  padding: 10px 30px;
+  margin: 15px auto;
+  padding: 11px 62px;
   text-align: center;
   background: #5e25c8;
   border-radius: 105px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: -0.05em;
   border: 0px;
 
@@ -2082,17 +2132,16 @@ $color2: #898989;
 }
 
 .accept {
-  margin: 24px auto;
-  padding: 10px 30px;
+  margin: 15px auto;
+  padding: 11px 62px;
   text-align: center;
   background: #5e25c8;
   border-radius: 105px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.05em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
   border: 0px;
   color: #ffffff;
 }

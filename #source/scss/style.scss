@@ -2,15 +2,26 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
-  scrollbar-width: none;
-  /* firefox */
+
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+
+  height: 5px;
+  width: 5px;
+
+
 }
 
-*::-webkit-scrollbar {
-  /* webkit */
-  width: 0;
-  height: 0;
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(133, 27, 255);
+
+  // border: 1px solid rgb(133, 27, 255);
+
 }
 
 main {
@@ -1441,7 +1452,15 @@ main {
   display: none;
 }
 
+.linecb {
+  width: 218px;
+  height: 0px;
+  margin: 20px auto 0 auto;
+  border-top: 0.5px solid #000000;
+}
+
 .callback {
+  display: none;
   z-index: 100;
   visibility: hidden;
   margin: auto;
@@ -1450,16 +1469,26 @@ main {
   left: 0;
   bottom: 0;
   right: 0;
-
   max-width: 496px;
-  max-height: 350px;
+  max-height: 557px;
   padding: 0px 10px;
 
-  background: #ededed;
+  background: #ffffff;
   border-radius: 45px;
 
+  label {
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+  }
+
   &__row {
-    max-width: 337px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1490,14 +1519,16 @@ main {
         input {
           margin: 7.5px 0px;
           width: 335px;
-
+          background: #FFFFFF;
+          border: 3px solid #AAAAAA;
+          border-radius: 15px;
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 20px;
           letter-spacing: -0.05em;
-
+          padding: 12px 15px;
           color: #000000;
 
           opacity: 0.5;
@@ -1510,7 +1541,7 @@ main {
       align-items: center;
 
       p {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -1525,7 +1556,21 @@ main {
   }
 }
 
+.obrabotka {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120.5%;
+  /* or 14px */
+
+  letter-spacing: -0.04em;
+
+  color: #000000;
+}
+
 .btn-question {
+  display: inline-block;
   margin: 24px auto;
   padding: 10px 30px;
   text-align: center;
@@ -1567,7 +1612,7 @@ main {
     top: 25px;
     right: 30px;
     position: absolute;
-
+    border: 0.1px solid #0000006c;
     border-radius: 50%;
 
     background: #ffffff;

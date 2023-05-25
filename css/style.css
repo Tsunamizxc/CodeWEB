@@ -3,15 +3,18 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
-  scrollbar-width: none;
-  /* firefox */
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
 }
 
-*::-webkit-scrollbar {
-  /* webkit */
-  width: 0;
-  height: 0;
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(133, 27, 255);
 }
 
 main {
@@ -1387,7 +1390,15 @@ main {
   display: none;
 }
 
+.linecb {
+  width: 218px;
+  height: 0px;
+  margin: 20px auto 0 auto;
+  border-top: 0.5px solid #000000;
+}
+
 .callback {
+  display: none;
   z-index: 100;
   visibility: hidden;
   margin: auto;
@@ -1397,13 +1408,21 @@ main {
   bottom: 0;
   right: 0;
   max-width: 496px;
-  max-height: 350px;
+  max-height: 557px;
   padding: 0px 10px;
-  background: #ededed;
+  background: #ffffff;
   border-radius: 45px;
 }
+.callback label {
+  margin-top: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
 .callback__row {
-  max-width: 337px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1443,12 +1462,16 @@ main {
 .callback__row_form form input {
   margin: 7.5px 0px;
   width: 335px;
+  background: #FFFFFF;
+  border: 3px solid #AAAAAA;
+  border-radius: 15px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.05em;
+  padding: 12px 15px;
   color: #000000;
   opacity: 0.5;
 }
@@ -1471,7 +1494,19 @@ main {
   color: #000000;
 }
 
+.obrabotka {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120.5%;
+  /* or 14px */
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
 .btn-question {
+  display: inline-block;
   margin: 24px auto;
   padding: 10px 30px;
   text-align: center;
@@ -1508,6 +1543,7 @@ main {
   top: 25px;
   right: 30px;
   position: absolute;
+  border: 0.1px solid rgba(0, 0, 0, 0.4235294118);
   border-radius: 50%;
   background: #ffffff;
 }
@@ -3534,21 +3570,37 @@ main {
     left: 0px;
     z-index: 100;
   }
+  .linecb {
+    width: 132px;
+    height: 0px;
+    margin: 15px auto 0 auto;
+    border-top: 0.5px solid #000000;
+  }
   .callback {
     z-index: 100;
+    visibility: hidden;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    max-width: 316px;
-    max-height: 300px;
-    background: #ededed;
-    border-radius: 45px;
+    max-width: 260px;
+    max-height: 362px;
+    padding: 40px 33px;
+    background: #ffffff;
+    border-radius: 35px;
+  }
+  .callback label {
+    margin-top: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
   }
   .callback__row {
-    max-width: 337px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3561,16 +3613,12 @@ main {
             align-items: center;
     margin: 0 auto;
   }
-  .callback__row_header {
-    margin: 0 auto;
-  }
   .callback__row_header h2 {
-    margin-top: 56px;
+    margin-top: 0;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 16px;
     color: #000000;
   }
   .callback__row_form {
@@ -3586,15 +3634,19 @@ main {
             flex-direction: column;
   }
   .callback__row_form form input {
-    margin: 2.5px 0px;
-    width: 250px;
-    height: 14px;
+    margin: 5px 0px 0 0;
+    width: 194px;
+    padding: 10px 10px;
+    background: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.05em;
+    padding: 12px 15px;
     color: #000000;
     opacity: 0.5;
   }
@@ -3602,7 +3654,9 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .callback__row_accept p {
     font-family: "Montserrat";
@@ -3614,19 +3668,40 @@ main {
     letter-spacing: -0.04em;
     color: #000000;
   }
+  .obrabotka {
+    max-width: 184.71px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 120.5%;
+    /* or 10px */
+    letter-spacing: -0.04em;
+    color: #000000;
+  }
   .btn-question {
-    margin: 14px 0px 0px 0px;
-    padding: 10px 20px;
+    display: inline-block;
+    margin: 24px auto;
+    padding: 10px 30px;
     text-align: center;
     background: #5e25c8;
     border-radius: 105px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
-    letter-spacing: -0.05em;
+    line-height: 15px;
+    color: #FFFFFF;
     border: 0px;
-    color: #ffffff;
+    -webkit-transition: 1s background;
+    -o-transition: 1s background;
+    transition: 1s background;
+  }
+  .btn-question:hover {
+    background: #7644d3;
+  }
+  .btn-question:active {
+    background: #5800ff;
   }
   .callback-close a {
     display: -webkit-box;
@@ -3635,22 +3710,24 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 32px;
-    height: 32px;
-    top: 25px;
-    right: 30px;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
     position: absolute;
+    border: 0.1px solid rgba(0, 0, 0, 0.4235294118);
     border-radius: 50%;
     background: #ffffff;
   }
   .callback-close a img {
-    max-width: 15px;
-    margin-left: 10px;
+    max-width: 11px;
+    margin-left: 5px;
+    margin-top: 1px;
   }
   .range-cb {
     margin: auto;
     visibility: visible;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -3755,33 +3832,32 @@ main {
     display: none;
   }
   .btn-question-pop {
-    margin: 24px auto;
-    padding: 10px 30px;
+    margin: 15px auto;
+    padding: 11px 62px;
     text-align: center;
     background: #5e25c8;
     border-radius: 105px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
     letter-spacing: -0.05em;
     border: 0px;
     background: #d9d9d9;
     color: #5e25c8;
   }
   .accept {
-    margin: 24px auto;
-    padding: 10px 30px;
+    margin: 15px auto;
+    padding: 11px 62px;
     text-align: center;
     background: #5e25c8;
     border-radius: 105px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.05em;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
     border: 0px;
     color: #ffffff;
   }
