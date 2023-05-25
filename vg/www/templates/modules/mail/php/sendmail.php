@@ -16,8 +16,6 @@ if(_RECAPTCHA_){
         exit();
     }
 }
-
-
 $message = '<p>Новое сообщение с формы обратной связи.</p>';
 
 // Прикрепим все данные из формы
@@ -27,5 +25,4 @@ $message .= \modules\mail\services\sMail::instance()->getBlockBuffer($data);
 \core\PHPMail::instance()->sendSMTPMail($emailto, 'Новое сообщение с сайта '.$_SERVER['HTTP_HOST'], $message, $attachments);
 
 echo json_encode(['error' => 0, 'data' => 'Сообщение успешно отправлено']);
-
 exit();
