@@ -27,7 +27,7 @@
     content="Разработка сайтов-визиток,многостраничных сайтов,лендингов.Создание дизайна и иллюстраций по привлекательным ценам" />
   <meta property="og:image" content="/ogimg.JPG" />
   <meta property="og:url" content="https://code-web.ru/" />
-  
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HY72LVC6TR"></script>
@@ -498,28 +498,32 @@
   </footer>
   <div class="callback">
     <div class="callback-close">
-      <a href="#"><img src="image/cbclose.svg" alt="" /></a>
+      <a href="#"><img src="image/cbclose.svg" alt="купить сайт визитка недорого" /></a>
     </div>
     <div class="container">
       <div class="callback__row">
         <div class="callback__row_header">
           <h2>Оставьте ваши данные</h2>
+          <div class="linecb"></div>
         </div>
         <div class="callback__row_form">
           <form id="form" class="SendMail formed cbform" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="type_name" value="С попапа многостраничник" />
+            <input type="hidden" name="type_name" value="С попапа" />
+            <label for="">Имя*</label>
             <input maxlength="20" type="text" placeholder="Ваше имя" id="input-name" onkeypress="noDigits(event)"
               name="name" required />
+            <label for="">Телефон*</label>
             <input type="phone" name="phone" placeholder="Ваш номер" id="input-phone"
               data-phone-pattern="+7 (___) ___-__-__" required />
+            <label for="">Почта*</label>
             <input id="inputEmail" type="email" placeholder="Ваш email" name="email" required />
             <div class="rq">
               <label class="custom-checkbox" for="last">
                 <input type="checkbox" id="last" class="hidden-checkbox" />
                 <div class="checkbox">
-                  <img class="checkmark" src="image/Rectangle 285.svg" alt="" />
+                  <img class="checkmark" src="image/Rectangle 285.svg" alt="купить сайт визитку в Омске" />
                 </div>
-                <p>
+                <p class="obrabotka">
                   Нажимая кнопку «Отправить», вы соглашаетесь с услугами по
                   обработке данных
                 </p>
@@ -530,6 +534,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="message">
+    <h2>Сообщение успешно отправлено</h2>
   </div>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="inputmask.min.js"></script>

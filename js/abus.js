@@ -74,7 +74,9 @@ let modal = document.querySelector(".callback");
 let vismodal = document.querySelector(".popup-vis");
 let closeModal = document.querySelector(".callback-close");
 let bgcgrayModal = document.querySelector(".bgcgray-modal");
-closeModal.addEventListener("click", function () {
+closeModal.addEventListener("click", function (e) {
+  e.preventDefault();
+  modal.style.display = 'none';
   modal.classList.remove('range-cb')
   bgcgrayModal.classList.remove("visib");
   firstLines.classList.remove("firstLine");
@@ -82,11 +84,13 @@ closeModal.addEventListener("click", function () {
   threeLines.classList.remove("threeLine");
 });
 bgcgrayModal.addEventListener("click", function () {
+  modal.style.display = 'none';
   modal.classList.remove('range-cb')
 });
 
 for (let i = 0; i < btnmodal.length; i++) {
   btnmodal[i].addEventListener("click", function () {
+    modal.style.display = 'block';
     modal.classList.add('range-cb')
     bgcgrayModal.classList.add("visib");
     burgerMenu.classList.remove("range");
