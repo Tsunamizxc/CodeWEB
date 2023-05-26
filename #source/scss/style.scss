@@ -1740,9 +1740,13 @@ $color2: #898989;
 }
 
 .custom-checkbox {
+
+  cursor: pointer;
+
+
   .checkbox {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     background: #ffffff;
     border: 3px solid #5e25c8;
     margin-right: 10px;
@@ -1765,6 +1769,36 @@ $color2: #898989;
 }
 
 .hidden-checkbox {
+  display: none;
+  position: absolute;
+}
+
+.custom-checkboxs {
+  .checkboxs {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .checkmarks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+}
+
+.custom-checkboxs input:checked+.checkboxs .checkmarks {
+  display: block;
+}
+
+.hidden-checkboxs {
   display: none;
   position: absolute;
 }
@@ -1794,6 +1828,10 @@ $color2: #898989;
 
 .none {
   display: none;
+}
+
+.custom-radio {
+  cursor: pointer;
 }
 
 .btn-question-pop {
@@ -1930,6 +1968,7 @@ $color2: #898989;
     transform: translateY(-200px);
   }
 }
+
 
 
 @media (min-width: 320px) and (max-width: 575px) {

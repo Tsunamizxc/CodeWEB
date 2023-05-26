@@ -7,6 +7,7 @@
     margin-right: 10px;
     position: relative;
   }
+
   .checkmark {
     position: absolute;
     top: 50%;
@@ -17,13 +18,18 @@
     display: none;
   }
 }
-.custom-checkbox input:checked + .checkbox .checkmark {
+
+.custom-checkbox input:checked+.checkbox .checkmark {
   display: block;
 }
+
+
+
 .hidden-checkbox {
   opacity: 0;
   position: absolute;
 }
+
 .custom-radio {
   .radio {
     width: 30px;
@@ -34,6 +40,7 @@
     position: relative;
     border-radius: 50px;
   }
+
   .radiomark {
     position: absolute;
     top: 50%;
@@ -44,13 +51,16 @@
     display: none;
   }
 }
+
 .radio-hidden {
   opacity: 0;
   position: absolute;
 }
-.custom-radio > input:checked + .radio .radiomark {
+
+.custom-radio>input:checked+.radio .radiomark {
   display: block;
 }
+
 .main-links {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -66,6 +76,7 @@
 
   opacity: 0.6;
 }
+
 .main-links__link {
   font-family: "Montserrat";
   font-style: normal;
@@ -78,11 +89,14 @@
 
   opacity: 0.6;
 }
+
 .main {
   &__header {
     margin-bottom: 60px;
+
     &_title {
       margin-bottom: 32px;
+
       h1 {
         font-family: "Montserrat";
         font-style: normal;
@@ -97,6 +111,7 @@
 
     &_discription {
       max-width: 835px;
+
       p {
         font-family: "Montserrat";
         font-style: normal;
@@ -110,6 +125,7 @@
     }
   }
 }
+
 .form__checkbox {
   display: flex;
 }
@@ -117,6 +133,7 @@
 .usl {
   display: flex;
   flex-direction: column;
+
   label {
     display: flex;
     align-items: center;
@@ -128,8 +145,10 @@
     margin-bottom: 28px;
     color: #000000;
   }
+
   &__header {
     margin-bottom: 40px;
+
     h2 {
       font-family: "Montserrat";
       font-style: normal;
@@ -141,10 +160,12 @@
     }
   }
 }
+
 .budj {
   margin-left: 202px;
   display: flex;
   flex-direction: column;
+
   label {
     display: flex;
     align-items: center;
@@ -156,12 +177,15 @@
     /* or 34px */
     margin-bottom: 28px;
     color: #000000;
+
     input {
       margin-right: 10px;
     }
   }
+
   &__header {
     margin-bottom: 40px;
+
     h2 {
       font-family: "Montserrat";
       font-style: normal;
@@ -173,22 +197,24 @@
     }
   }
 }
+
 .form {
   &__cont {
     display: flex;
     justify-content: space-between;
-    label {
-    }
+
+    label {}
+
     &_req {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    &_nonreq {
-    }
+    &_nonreq {}
   }
 }
+
 .name-inp {
   label {
     font-family: "Montserrat";
@@ -222,6 +248,7 @@
     }
   }
 }
+
 .phone-inp {
   label {
     font-family: "Montserrat";
@@ -255,6 +282,7 @@
     }
   }
 }
+
 .email-inp {
   label {
     font-family: "Montserrat";
@@ -288,6 +316,7 @@
     }
   }
 }
+
 .company-inp {
   label {
     font-family: "Montserrat";
@@ -300,6 +329,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 71px;
+
     textarea {
       width: 729px;
       height: 150px;
@@ -319,6 +349,7 @@
     }
   }
 }
+
 .zadacha-inp {
   label {
     font-family: "Montserrat";
@@ -330,6 +361,7 @@
     color: #000000;
     display: flex;
     flex-direction: column;
+
     textarea {
       width: 729px;
       height: 150px;
@@ -349,15 +381,18 @@
     }
   }
 }
+
 .rq {
   label {
     display: flex;
     align-items: center;
+
     p {
       margin-left: 10px;
       width: 550px;
     }
   }
+
   margin-top: 40px;
   font-family: "Montserrat";
   font-style: normal;
@@ -368,6 +403,7 @@
 
   letter-spacing: -0.04em;
 }
+
 form {
   button {
     margin-top: 20px;
@@ -385,9 +421,11 @@ form {
     color: #5e25c8;
   }
 }
+
 .none {
   display: none;
 }
+
 .accepted {
   margin-top: 20px;
   margin-bottom: 150px;
@@ -403,6 +441,7 @@ form {
   border: none;
   color: #ffffff;
 }
+
 .accept {
   margin-top: 20px;
   margin-bottom: 150px;
@@ -418,6 +457,7 @@ form {
   border: none;
   color: #ffffff;
 }
+
 @media (min-width: 1401px) and (max-width: 1466px) {
   .custom-checkbox {
     .checkbox {
@@ -428,6 +468,7 @@ form {
       margin-right: 10px;
       position: relative;
     }
+
     .checkmark {
       position: absolute;
       top: 50%;
@@ -438,13 +479,16 @@ form {
       display: none;
     }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
+
+  .custom-checkbox input:checked+.checkbox .checkmark {
     display: block;
   }
+
   .hidden-checkbox {
     opacity: 0;
     position: absolute;
   }
+
   .custom-radio {
     .radio {
       width: 30px;
@@ -455,6 +499,7 @@ form {
       position: relative;
       border-radius: 50px;
     }
+
     .radiomark {
       position: absolute;
       top: 50%;
@@ -465,13 +510,16 @@ form {
       display: none;
     }
   }
+
   .radio-hidden {
     opacity: 0;
     position: absolute;
   }
-  .custom-radio > input:checked + .radio .radiomark {
+
+  .custom-radio>input:checked+.radio .radiomark {
     display: block;
   }
+
   .main-links {
     padding-top: 24px;
     padding-bottom: 64px;
@@ -487,6 +535,7 @@ form {
 
     opacity: 0.6;
   }
+
   .main-links__link {
     font-family: "Montserrat";
     font-style: normal;
@@ -499,11 +548,14 @@ form {
 
     opacity: 0.6;
   }
+
   .main {
     &__header {
       margin-bottom: 30px;
+
       &_title {
         margin-bottom: 24px;
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -518,6 +570,7 @@ form {
 
       &_discription {
         max-width: 835px;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
@@ -531,6 +584,7 @@ form {
       }
     }
   }
+
   .form__checkbox {
     display: flex;
     flex-direction: row;
@@ -539,6 +593,7 @@ form {
   .usl {
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -550,8 +605,10 @@ form {
       margin-bottom: 28px;
       color: #000000;
     }
+
     &__header {
       margin-bottom: 20px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -563,10 +620,12 @@ form {
       }
     }
   }
+
   .budj {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -578,12 +637,15 @@ form {
       /* or 34px */
       margin-bottom: 28px;
       color: #000000;
+
       input {
         margin-right: 10px;
       }
     }
+
     &__header {
       margin-bottom: 20px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -595,13 +657,15 @@ form {
       }
     }
   }
+
   .form {
     &__cont {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      label {
-      }
+
+      label {}
+
       &_req {
         display: flex;
         flex-direction: column;
@@ -613,6 +677,7 @@ form {
       }
     }
   }
+
   .name-inp {
     label {
       font-family: "Montserrat";
@@ -646,6 +711,7 @@ form {
       }
     }
   }
+
   .phone-inp {
     label {
       font-family: "Montserrat";
@@ -679,6 +745,7 @@ form {
       }
     }
   }
+
   .email-inp {
     label {
       font-family: "Montserrat";
@@ -712,6 +779,7 @@ form {
       }
     }
   }
+
   .company-inp {
     label {
       font-family: "Montserrat";
@@ -724,6 +792,7 @@ form {
       display: flex;
       flex-direction: column;
       margin-bottom: 71px;
+
       textarea {
         width: 369px;
         height: 150px;
@@ -743,6 +812,7 @@ form {
       }
     }
   }
+
   .zadacha-inp {
     label {
       font-family: "Montserrat";
@@ -754,6 +824,7 @@ form {
       color: #000000;
       display: flex;
       flex-direction: column;
+
       textarea {
         width: 369px;
         height: 150px;
@@ -773,15 +844,18 @@ form {
       }
     }
   }
+
   .rq {
     label {
       display: flex;
       align-items: center;
+
       p {
         margin-left: 10px;
         width: 550px;
       }
     }
+
     margin-top: 40px;
     font-family: "Montserrat";
     font-style: normal;
@@ -792,6 +866,7 @@ form {
 
     letter-spacing: -0.04em;
   }
+
   form {
     button {
       margin-top: 20px;
@@ -809,9 +884,11 @@ form {
       color: #5e25c8;
     }
   }
+
   .none {
     display: none;
   }
+
   .accepted {
     margin-top: 20px;
     margin-bottom: 150px;
@@ -827,6 +904,7 @@ form {
     border: none;
     color: #ffffff;
   }
+
   .accept {
     margin-top: 20px;
     margin-bottom: 150px;
@@ -843,6 +921,7 @@ form {
     color: #ffffff;
   }
 }
+
 @media (min-width: 993px) and (max-width: 1400px) {
   .custom-checkbox {
     .checkbox {
@@ -853,6 +932,7 @@ form {
       margin-right: 10px;
       position: relative;
     }
+
     .checkmark {
       position: absolute;
       top: 50%;
@@ -863,13 +943,16 @@ form {
       display: none;
     }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
+
+  .custom-checkbox input:checked+.checkbox .checkmark {
     display: block;
   }
+
   .hidden-checkbox {
     opacity: 0;
     position: absolute;
   }
+
   .custom-radio {
     .radio {
       width: 30px;
@@ -880,6 +963,7 @@ form {
       position: relative;
       border-radius: 50px;
     }
+
     .radiomark {
       position: absolute;
       top: 50%;
@@ -890,13 +974,16 @@ form {
       display: none;
     }
   }
+
   .radio-hidden {
     opacity: 0;
     position: absolute;
   }
-  .custom-radio > input:checked + .radio .radiomark {
+
+  .custom-radio>input:checked+.radio .radiomark {
     display: block;
   }
+
   .main-links {
     padding-top: 24px;
     padding-bottom: 64px;
@@ -912,6 +999,7 @@ form {
 
     opacity: 0.6;
   }
+
   .main-links__link {
     font-family: "Montserrat";
     font-style: normal;
@@ -924,11 +1012,14 @@ form {
 
     opacity: 0.6;
   }
+
   .main {
     &__header {
       margin-bottom: 30px;
+
       &_title {
         margin-bottom: 24px;
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -943,6 +1034,7 @@ form {
 
       &_discription {
         max-width: 835px;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
@@ -956,6 +1048,7 @@ form {
       }
     }
   }
+
   .form__checkbox {
     display: flex;
     flex-direction: row;
@@ -964,6 +1057,7 @@ form {
   .usl {
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -975,8 +1069,10 @@ form {
       margin-bottom: 28px;
       color: #000000;
     }
+
     &__header {
       margin-bottom: 20px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -988,10 +1084,12 @@ form {
       }
     }
   }
+
   .budj {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -1003,12 +1101,15 @@ form {
       /* or 34px */
       margin-bottom: 28px;
       color: #000000;
+
       input {
         margin-right: 10px;
       }
     }
+
     &__header {
       margin-bottom: 20px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -1020,13 +1121,15 @@ form {
       }
     }
   }
+
   .form {
     &__cont {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      label {
-      }
+
+      label {}
+
       &_req {
         display: flex;
         flex-direction: column;
@@ -1038,6 +1141,7 @@ form {
       }
     }
   }
+
   .name-inp {
     label {
       font-family: "Montserrat";
@@ -1071,6 +1175,7 @@ form {
       }
     }
   }
+
   .phone-inp {
     label {
       font-family: "Montserrat";
@@ -1104,6 +1209,7 @@ form {
       }
     }
   }
+
   .email-inp {
     label {
       font-family: "Montserrat";
@@ -1137,6 +1243,7 @@ form {
       }
     }
   }
+
   .company-inp {
     label {
       font-family: "Montserrat";
@@ -1149,6 +1256,7 @@ form {
       display: flex;
       flex-direction: column;
       margin-bottom: 71px;
+
       textarea {
         width: 369px;
         height: 150px;
@@ -1168,6 +1276,7 @@ form {
       }
     }
   }
+
   .zadacha-inp {
     label {
       font-family: "Montserrat";
@@ -1179,6 +1288,7 @@ form {
       color: #000000;
       display: flex;
       flex-direction: column;
+
       textarea {
         width: 369px;
         height: 150px;
@@ -1198,15 +1308,18 @@ form {
       }
     }
   }
+
   .rq {
     label {
       display: flex;
       align-items: center;
+
       p {
         margin-left: 10px;
         width: 550px;
       }
     }
+
     margin-top: 40px;
     font-family: "Montserrat";
     font-style: normal;
@@ -1217,6 +1330,7 @@ form {
 
     letter-spacing: -0.04em;
   }
+
   form {
     button {
       margin-top: 20px;
@@ -1234,9 +1348,11 @@ form {
       color: #5e25c8;
     }
   }
+
   .none {
     display: none;
   }
+
   .accepted {
     margin-top: 20px;
     margin-bottom: 150px;
@@ -1252,6 +1368,7 @@ form {
     border: none;
     color: #ffffff;
   }
+
   .accept {
     margin-top: 20px;
     margin-bottom: 150px;
@@ -1268,6 +1385,7 @@ form {
     color: #ffffff;
   }
 }
+
 @media (min-width: 772px) and (max-width: 992px) {
   .custom-checkbox {
     .checkbox {
@@ -1278,6 +1396,7 @@ form {
       margin-right: 10px;
       position: relative;
     }
+
     .checkmark {
       position: absolute;
       top: 50%;
@@ -1288,13 +1407,16 @@ form {
       display: none;
     }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
+
+  .custom-checkbox input:checked+.checkbox .checkmark {
     display: block;
   }
+
   .hidden-checkbox {
     opacity: 0;
     position: absolute;
   }
+
   .custom-radio {
     .radio {
       width: 30px;
@@ -1305,6 +1427,7 @@ form {
       position: relative;
       border-radius: 50px;
     }
+
     .radiomark {
       position: absolute;
       top: 50%;
@@ -1315,13 +1438,16 @@ form {
       display: none;
     }
   }
+
   .radio-hidden {
     opacity: 0;
     position: absolute;
   }
-  .custom-radio > input:checked + .radio .radiomark {
+
+  .custom-radio>input:checked+.radio .radiomark {
     display: block;
   }
+
   .main-links {
     padding-top: 24px;
     padding-bottom: 64px;
@@ -1337,6 +1463,7 @@ form {
 
     opacity: 0.6;
   }
+
   .main-links__link {
     font-family: "Montserrat";
     font-style: normal;
@@ -1349,11 +1476,14 @@ form {
 
     opacity: 0.6;
   }
+
   .main {
     &__header {
       margin-bottom: 30px;
+
       &_title {
         margin-bottom: 24px;
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -1368,6 +1498,7 @@ form {
 
       &_discription {
         max-width: 835px;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
@@ -1381,6 +1512,7 @@ form {
       }
     }
   }
+
   .form__checkbox {
     display: flex;
     flex-direction: column;
@@ -1389,6 +1521,7 @@ form {
   .usl {
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -1400,8 +1533,10 @@ form {
       margin-bottom: 28px;
       color: #000000;
     }
+
     &__header {
       margin-bottom: 38px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -1413,10 +1548,12 @@ form {
       }
     }
   }
+
   .budj {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+
     label {
       display: flex;
       align-items: center;
@@ -1428,12 +1565,15 @@ form {
       /* or 34px */
       margin-bottom: 28px;
       color: #000000;
+
       input {
         margin-right: 10px;
       }
     }
+
     &__header {
       margin-bottom: 40px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -1445,23 +1585,25 @@ form {
       }
     }
   }
+
   .form {
     &__cont {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      label {
-      }
+
+      label {}
+
       &_req {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
 
-      &_nonreq {
-      }
+      &_nonreq {}
     }
   }
+
   .name-inp {
     label {
       font-family: "Montserrat";
@@ -1495,6 +1637,7 @@ form {
       }
     }
   }
+
   .phone-inp {
     label {
       font-family: "Montserrat";
@@ -1528,6 +1671,7 @@ form {
       }
     }
   }
+
   .email-inp {
     label {
       font-family: "Montserrat";
@@ -1561,6 +1705,7 @@ form {
       }
     }
   }
+
   .company-inp {
     label {
       font-family: "Montserrat";
@@ -1573,6 +1718,7 @@ form {
       display: flex;
       flex-direction: column;
       margin-bottom: 71px;
+
       textarea {
         width: 529px;
         height: 150px;
@@ -1592,6 +1738,7 @@ form {
       }
     }
   }
+
   .zadacha-inp {
     label {
       font-family: "Montserrat";
@@ -1603,6 +1750,7 @@ form {
       color: #000000;
       display: flex;
       flex-direction: column;
+
       textarea {
         width: 529px;
         height: 150px;
@@ -1622,15 +1770,18 @@ form {
       }
     }
   }
+
   .rq {
     label {
       display: flex;
       align-items: center;
+
       p {
         margin-left: 10px;
         width: 550px;
       }
     }
+
     margin-top: 40px;
     font-family: "Montserrat";
     font-style: normal;
@@ -1641,6 +1792,7 @@ form {
 
     letter-spacing: -0.04em;
   }
+
   form {
     button {
       margin-top: 20px;
@@ -1658,9 +1810,12 @@ form {
       color: #5e25c8;
     }
   }
+
   .none {
     display: none;
-  }  .accepted {
+  }
+
+  .accepted {
     margin-top: 20px;
     margin-bottom: 150px;
     font-family: "Montserrat";
@@ -1675,6 +1830,7 @@ form {
     border: none;
     color: #ffffff;
   }
+
   .accept {
     margin-top: 20px;
     margin-bottom: 150px;
@@ -1691,6 +1847,7 @@ form {
     color: #ffffff;
   }
 }
+
 @media (min-width: 576px) and (max-width: 771px) {
   .custom-checkbox {
     .checkbox {
@@ -1701,6 +1858,7 @@ form {
       margin-right: 10px;
       position: relative;
     }
+
     .checkmark {
       position: absolute;
       top: 50%;
@@ -1711,13 +1869,16 @@ form {
       display: none;
     }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
+
+  .custom-checkbox input:checked+.checkbox .checkmark {
     display: block;
   }
+
   .hidden-checkbox {
     opacity: 0;
     position: absolute;
   }
+
   .custom-radio {
     .radio {
       width: 20px;
@@ -1728,6 +1889,7 @@ form {
       position: relative;
       border-radius: 50px;
     }
+
     .radiomark {
       position: absolute;
       top: 50%;
@@ -1738,13 +1900,16 @@ form {
       display: none;
     }
   }
+
   .radio-hidden {
     opacity: 0;
     position: absolute;
   }
-  .custom-radio > input:checked + .radio .radiomark {
+
+  .custom-radio>input:checked+.radio .radiomark {
     display: block;
   }
+
   .main-links {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1760,6 +1925,7 @@ form {
 
     opacity: 0.6;
   }
+
   .main-links__link {
     font-family: "Montserrat";
     font-style: normal;
@@ -1772,11 +1938,14 @@ form {
 
     opacity: 0.6;
   }
+
   .main {
     &__header {
       margin-bottom: 24px;
+
       &_title {
         margin-bottom: 24px;
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -1789,6 +1958,7 @@ form {
 
       &_discription {
         max-width: 835px;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
@@ -1802,6 +1972,7 @@ form {
       }
     }
   }
+
   .form__checkbox {
     display: flex;
     flex-direction: column;
@@ -1810,6 +1981,7 @@ form {
   .usl {
     display: flex;
     flex-direction: column;
+
     label {
       font-family: "Montserrat";
       font-style: normal;
@@ -1823,8 +1995,10 @@ form {
       margin-bottom: 17px;
       color: #000000;
     }
+
     &__header {
       margin-bottom: 14px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -1837,10 +2011,12 @@ form {
       }
     }
   }
+
   .budj {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+
     label {
       font-family: "Montserrat";
       font-style: normal;
@@ -1855,12 +2031,15 @@ form {
       color: #000000;
 
       color: #000000;
+
       input {
         margin-right: 10px;
       }
     }
+
     &__header {
       margin-bottom: 14px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -1873,23 +2052,25 @@ form {
       }
     }
   }
+
   .form {
     &__cont {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      label {
-      }
+
+      label {}
+
       &_req {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
 
-      &_nonreq {
-      }
+      &_nonreq {}
     }
   }
+
   .name-inp {
     label {
       font-family: "Montserrat";
@@ -1922,6 +2103,7 @@ form {
       }
     }
   }
+
   .phone-inp {
     label {
       font-family: "Montserrat";
@@ -1954,6 +2136,7 @@ form {
       }
     }
   }
+
   .email-inp {
     label {
       font-family: "Montserrat";
@@ -1986,6 +2169,7 @@ form {
       }
     }
   }
+
   .company-inp {
     label {
       font-family: "Montserrat";
@@ -1999,6 +2183,7 @@ form {
       flex-direction: column;
       margin-bottom: 5px;
       margin-top: 25px;
+
       textarea {
         width: 400px;
         height: 150px;
@@ -2018,6 +2203,7 @@ form {
       }
     }
   }
+
   .zadacha-inp {
     label {
       font-family: "Montserrat";
@@ -2031,6 +2217,7 @@ form {
       flex-direction: column;
       margin-bottom: 5px;
       margin-top: 25px;
+
       textarea {
         width: 400px;
         height: 150px;
@@ -2050,15 +2237,18 @@ form {
       }
     }
   }
+
   .rq {
     label {
       display: flex;
       align-items: center;
+
       p {
         margin-left: 10px;
         width: 330px;
       }
     }
+
     margin-top: 40px;
     font-family: "Montserrat";
     font-style: normal;
@@ -2069,6 +2259,7 @@ form {
 
     color: #000000;
   }
+
   form {
     button {
       margin-top: 0px;
@@ -2086,9 +2277,11 @@ form {
       color: #5e25c8;
     }
   }
+
   .none {
     display: none;
   }
+
   .accepted {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -2104,6 +2297,7 @@ form {
     border: none;
     color: #ffffff;
   }
+
   .accept {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -2131,6 +2325,7 @@ form {
       margin-right: 10px;
       position: relative;
     }
+
     .checkmark {
       position: absolute;
       top: 50%;
@@ -2141,13 +2336,16 @@ form {
       display: none;
     }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
+
+  .custom-checkbox input:checked+.checkbox .checkmark {
     display: block;
   }
+
   .hidden-checkbox {
     opacity: 0;
     position: absolute;
   }
+
   .custom-radio {
     .radio {
       width: 20px;
@@ -2158,6 +2356,7 @@ form {
       position: relative;
       border-radius: 50px;
     }
+
     .radiomark {
       position: absolute;
       top: 50%;
@@ -2168,13 +2367,16 @@ form {
       display: none;
     }
   }
+
   .radio-hidden {
     opacity: 0;
     position: absolute;
   }
-  .custom-radio > input:checked + .radio .radiomark {
+
+  .custom-radio>input:checked+.radio .radiomark {
     display: block;
   }
+
   .main-links {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -2190,6 +2392,7 @@ form {
 
     opacity: 0.6;
   }
+
   .main-links__link {
     font-family: "Montserrat";
     font-style: normal;
@@ -2202,11 +2405,14 @@ form {
 
     opacity: 0.6;
   }
+
   .main {
     &__header {
       margin-bottom: 24px;
+
       &_title {
         margin-bottom: 24px;
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -2219,6 +2425,7 @@ form {
 
       &_discription {
         max-width: 835px;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
@@ -2232,6 +2439,7 @@ form {
       }
     }
   }
+
   .form__checkbox {
     display: flex;
     flex-direction: column;
@@ -2240,6 +2448,7 @@ form {
   .usl {
     display: flex;
     flex-direction: column;
+
     label {
       font-family: "Montserrat";
       font-style: normal;
@@ -2253,8 +2462,10 @@ form {
       margin-bottom: 17px;
       color: #000000;
     }
+
     &__header {
       margin-bottom: 14px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -2267,10 +2478,12 @@ form {
       }
     }
   }
+
   .budj {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
+
     label {
       font-family: "Montserrat";
       font-style: normal;
@@ -2285,12 +2498,15 @@ form {
       color: #000000;
 
       color: #000000;
+
       input {
         margin-right: 10px;
       }
     }
+
     &__header {
       margin-bottom: 14px;
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -2303,23 +2519,25 @@ form {
       }
     }
   }
+
   .form {
     &__cont {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      label {
-      }
+
+      label {}
+
       &_req {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
 
-      &_nonreq {
-      }
+      &_nonreq {}
     }
   }
+
   .name-inp {
     label {
       font-family: "Montserrat";
@@ -2352,6 +2570,7 @@ form {
       }
     }
   }
+
   .phone-inp {
     label {
       font-family: "Montserrat";
@@ -2384,6 +2603,7 @@ form {
       }
     }
   }
+
   .email-inp {
     label {
       font-family: "Montserrat";
@@ -2416,6 +2636,7 @@ form {
       }
     }
   }
+
   .company-inp {
     label {
       font-family: "Montserrat";
@@ -2429,6 +2650,7 @@ form {
       flex-direction: column;
       margin-bottom: 5px;
       margin-top: 25px;
+
       textarea {
         width: 242px;
         height: 150px;
@@ -2448,6 +2670,7 @@ form {
       }
     }
   }
+
   .zadacha-inp {
     label {
       font-family: "Montserrat";
@@ -2461,6 +2684,7 @@ form {
       flex-direction: column;
       margin-bottom: 5px;
       margin-top: 25px;
+
       textarea {
         width: 242px;
         height: 150px;
@@ -2480,15 +2704,18 @@ form {
       }
     }
   }
+
   .rq {
     label {
       display: flex;
       align-items: center;
+
       p {
         margin-left: 10px;
         width: 230px;
       }
     }
+
     margin-top: 40px;
     font-family: "Montserrat";
     font-style: normal;
@@ -2499,6 +2726,7 @@ form {
 
     color: #000000;
   }
+
   form {
     button {
       margin-top: 0px;
@@ -2516,9 +2744,11 @@ form {
       color: #5e25c8;
     }
   }
+
   .none {
     display: none;
   }
+
   .accepted {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -2535,143 +2765,152 @@ form {
     color: #ffffff;
   }
 }
+
 // colors
 $color1: #5e25c8;
 $color2: #898989;
+
 .checkbox {
-	margin: 0px 0;
-  
-	.checkbox-label {
-	  position: relative;
-	  display: block;
-	  height: 14px;
-	  width: 40px;
-	  background: $color2;
-	  border-radius: 100px;
-	  cursor: pointer;
-  
-	  &:after {
-		position: absolute;
-		left: -2px;
-		top: -3px;
-		display: block;
-		width: 20px;
-		height: 20px;
-		border-radius: 100px;
-		background: lighten($color2, 30%);
-		box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
-		content: "";
-	  }
-  
-	  &:active:after {
-		transform: scale(1.15, 0.85);
-	  }
-	}
-  
-	.checkbox-input {
-	  display: none;
-  
-	  &:checked ~ label {
-		background: $color1;
-  
-		&:after {
-		  left: 20px;
-		  background: darken($color1, 15%);
-		}
-	  }
-  
-	  &:disabled ~ label {
-		background: lighten($color2, 30%);
-		pointer-events: none;
-  
-		&:after {
-		  background: lighten($color2, 20%);
-		}
-	  }
-	}
+  margin: 0px 0;
+
+  .checkbox-label {
+    position: relative;
+    display: block;
+    height: 14px;
+    width: 40px;
+    background: $color2;
+    border-radius: 100px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      left: -2px;
+      top: -3px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100px;
+      background: lighten($color2, 30%);
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+      content: "";
+    }
+
+    &:active:after {
+      transform: scale(1.15, 0.85);
+    }
   }
-  .custom-checkbox {
-	.checkbox {
-	  width: 30px;
-	  height: 30px;
-	  background: #ffffff;
-	  border: 3px solid #5e25c8;
-	  margin-right: 10px;
-	  position: relative;
-	}
-	.checkmark {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-	  max-width: 70%;
-	  height: auto;
-	  display: none;
-	}
+
+  .checkbox-input {
+    display: none;
+
+    &:checked~label {
+      background: $color1;
+
+      &:after {
+        left: 20px;
+        background: darken($color1, 15%);
+      }
+    }
+
+    &:disabled~label {
+      background: lighten($color2, 30%);
+      pointer-events: none;
+
+      &:after {
+        background: lighten($color2, 20%);
+      }
+    }
   }
-  .custom-checkbox input:checked + .checkbox .checkmark {
-	display: block;
+}
+
+.custom-checkbox {
+  .checkbox {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
   }
-  .hidden-checkbox {
-	display: none;
-	position: absolute;
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
   }
-  
-  .rq {
-	label {
-	  margin-top: 10px;
-	  display: flex;
-	  align-items: center;
-	  p {
-		margin-left: 10px;
-		width: 320px;
-	  }
-	}
-	margin-top: 0px;
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-  
-	letter-spacing: -0.04em;
-  
-	color: #000000;
+}
+
+.custom-checkbox input:checked+.checkbox .checkmark {
+  display: block;
+}
+
+.hidden-checkbox {
+  display: none;
+  position: absolute;
+}
+
+.rq {
+  label {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 10px;
+      width: 320px;
+    }
   }
-  
-  .none {
-	display: none;
-  }
-  .btn-question-pop {
-	margin: 24px auto;
-	padding: 10px 30px;
-	text-align: center;
-	background: #5e25c8;
-	border-radius: 105px;
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: -0.05em;
-	border: 0px;
-  
-	background: #d9d9d9;
-  
-	color: #5e25c8;
-  }
-  .accept {
-	margin: 24px auto;
-	padding: 10px 30px;
-	text-align: center;
-	background: #5e25c8;
-	border-radius: 105px;
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: -0.05em;
-	border: 0px;
-	color: #ffffff;
-  }
-  
+
+  margin-top: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  letter-spacing: -0.04em;
+
+  color: #000000;
+}
+
+.none {
+  display: none;
+}
+
+.btn-question-pop {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+
+  background: #d9d9d9;
+
+  color: #5e25c8;
+}
+
+.accept {
+  margin: 24px auto;
+  padding: 10px 30px;
+  text-align: center;
+  background: #5e25c8;
+  border-radius: 105px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  border: 0px;
+  color: #ffffff;
+}

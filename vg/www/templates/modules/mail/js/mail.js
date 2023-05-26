@@ -10,31 +10,40 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (http.readyState == 4 && http.status == 200) {
                     var res1 = JSON.parse(http.responseText);
                     let inputs = $this.querySelectorAll('input')
+                    let textareas = $this.querySelectorAll('textarea')
                     let close = document.querySelector('.bgcgray-modal');
                     let message = document.querySelector('.message')
                     let pp = document.querySelector('.callback')
 
                     if (res1.error == 0) {
-                        $this.querySelector('button').disabled = true;
-                        $this.querySelector('button').classList.remove('accept');
 
-                        // if (pp.style.display = 'block') {
-                        //     pp.classList.remove('range-cb');
-                        //     close.classList.remove("visib");
-                        //     pp.style.display = 'none';
-                        // };
-                        // if (pp.style.display = 'none') {
-                        //     pp.classList.remove('range-cb');
-                        //     close.classList.remove("visib");
-                        // }
+
+
+                        console.log($this.parentElement)
+                        if ($this.parentElement.classList.contains('callback__row_form')) {
+                            console.log(document.querySelector('.callback-close a'));
+                            let btn = document.querySelector('.callback-close a');
+                            $this.querySelector('button').disabled = true;
+                            $this.querySelector('button').classList.remove('accept');
+                            btn.click()
+                        } else {
+                            console.log(false)
+                        }
+
+                        if (textareas.length > 0) {
+                            textareas.forEach(el => {
+                                el.value = '';
+                            });
+                            $this.querySelector('button').disabled = true;
+                            $this.querySelector('button').classList.remove('accepted');
+                        }
 
                         inputs.forEach(el => {
-                            if (el.type == 'checkbox') {
+                            if (el.type == 'checkbox' || el.type == 'radio') {
                                 el.checked = false;
                             } else {
                                 el.value = '';
                             }
-
                         });
                         message.style.display = 'block';
                         setTimeout(() => {

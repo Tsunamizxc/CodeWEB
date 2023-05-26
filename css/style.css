@@ -1678,9 +1678,12 @@ main {
   background: #bcbcbc;
 }
 
+.custom-checkbox {
+  cursor: pointer;
+}
 .custom-checkbox .checkbox {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   background: #ffffff;
   border: 3px solid #5e25c8;
   margin-right: 10px;
@@ -1703,6 +1706,35 @@ main {
 }
 
 .hidden-checkbox {
+  display: none;
+  position: absolute;
+}
+
+.custom-checkboxs .checkboxs {
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 3px solid #5e25c8;
+  margin-right: 10px;
+  position: relative;
+}
+.custom-checkboxs .checkmarks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 70%;
+  height: auto;
+  display: none;
+}
+
+.custom-checkboxs input:checked + .checkboxs .checkmarks {
+  display: block;
+}
+
+.hidden-checkboxs {
   display: none;
   position: absolute;
 }
@@ -1732,6 +1764,10 @@ main {
 
 .none {
   display: none;
+}
+
+.custom-radio {
+  cursor: pointer;
 }
 
 .btn-question-pop {
@@ -3806,6 +3842,32 @@ main {
     display: none;
     position: absolute;
   }
+  .custom-checkboxs .checkboxs {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkboxs .checkmarks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkboxs input:checked + .checkboxs .checkmarks {
+    display: block;
+  }
+  .hidden-checkboxs {
+    display: none;
+    position: absolute;
+  }
   .rq {
     margin-top: 0px;
     font-family: "Montserrat";
@@ -5661,6 +5723,32 @@ main {
     display: none;
     position: absolute;
   }
+  .custom-checkboxs .checkboxs {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+  .custom-checkboxs .checkmarks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+  .custom-checkboxs input:checked + .checkboxs .checkmarks {
+    display: block;
+  }
+  .hidden-checkboxs {
+    display: none;
+    position: absolute;
+  }
   .rq {
     margin-top: 0px;
     font-family: "Montserrat";
@@ -5741,6 +5829,9 @@ main {
 @media (min-width: 773px) and (max-width: 992px) {
   body {
     scroll-behavior: smooth;
+  }
+  .form__cont_req {
+    margin-bottom: 50px;
   }
   .container {
     max-width: 720px;

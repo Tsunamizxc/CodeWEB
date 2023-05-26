@@ -91,7 +91,8 @@ bgcgrayModal.addEventListener("click", function () {
 });
 
 for (let i = 0; i < btnmodal.length; i++) {
-  btnmodal[i].addEventListener("click", function () {
+  btnmodal[i].addEventListener("click", function (e) {
+    e.preventDefault();
     modal.style.display = 'block';
     modal.classList.add('range-cb');
     bgcgrayModal.classList.add("visib");
@@ -99,7 +100,7 @@ for (let i = 0; i < btnmodal.length; i++) {
     firstLines.classList.remove("firstLine");
     secondLines.classList.remove("secondLine");
     threeLines.classList.remove("threeLine");
-    document.body.style.overflow = 'hidden';
+
   });
 }
 
@@ -127,7 +128,7 @@ mainsub.onclick = function () {
 
 let formP = document.querySelector(".cbform");
 let btnFormP = formP.querySelector("button");
-let mainsubP = formP.querySelector("#lastes");
+let mainsubP = formP.querySelector("#lasts");
 mainsubP.onclick = function () {
   if (mainsubP.checked) {
     btnFormP.classList.add("accept");

@@ -1909,6 +1909,7 @@ $color2: #898989;
   }
 }
 
+
 .custom-checkbox {
   .checkbox {
     width: 15px;
@@ -1938,6 +1939,37 @@ $color2: #898989;
   display: none;
   position: absolute;
 }
+
+.custom-checkboxs {
+  .checkboxs {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 3px solid #5e25c8;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .checkmarks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+    height: auto;
+    display: none;
+  }
+}
+
+.custom-checkboxs input:checked+.checkboxs .checkmarks {
+  display: block;
+}
+
+.hidden-checkboxs {
+  display: none;
+  position: absolute;
+}
+
 
 .rq {
   label {
